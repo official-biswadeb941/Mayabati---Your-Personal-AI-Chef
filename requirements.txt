@@ -1,0 +1,11 @@
+Flask
+fuzzysearch
+gensim
+keras
+keras
+nltk
+numpy
+tensorflow
+tensorflow
+tensorflow_intel
+tensorflow_intel
