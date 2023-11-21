@@ -1,4 +1,4 @@
-# [Mayabati - India's First Food Processing Chatbot] - Limited Use License [This license is written on 21st November 2023 at 12:35 am]
+# [Mayabati - Your Personal AI Chef (Made by Biswadeb Mukherjee)] - Limited Use License [This license is written on 21st November 2023 at 12:35 am]
 
 By using this software, you explicitly agree to the following terms and conditions:
 
