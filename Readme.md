@@ -1,4 +1,4 @@
-Mayabati - India's First Food Processing Chatbot [Made by Biswadeb Mukherjee]
+Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee]
 │
 ├── data/
 │   ├── input/
