@@ -90,13 +90,12 @@ def format_recipe(recipe):
 
 def extract_recipe_name(user_message):
     user_message = user_message.lower()
-    
     for intent in intents['recipes']:
         if 'patterns' in intent:
             for pattern in intent['patterns']:
                 if pattern.lower() in user_message:
+                    print("Found recipe name:", intent['recipe_name'])  # Add this line
                     return intent['recipe_name']
-    
     return None  # Return None if no recipe name is found
 
 
@@ -135,6 +134,7 @@ def get_recipe_details(recipe_name):
         recipe_details += "\n".join(ingredients) + "\n\n"
         recipe_details += "Methods:\n"
         recipe_details += "\n".join(methods)
+        print("Recipe details:", recipe_details)  # Add this line
         return recipe_details
     else:
         return "I'm sorry, I couldn't find the recipe you're looking for."
@@ -159,13 +159,16 @@ def get_response(intents_list, intents_json, user_message):
     # Extract the recipe name from the user's message
     recipe_name = extract_recipe_name(user_message)
     if recipe_name:
+        print("Recipe name extracted:", recipe_name)  # Add this line
         # Check if the recipe name matches any recipe in the dataset
         for recipe in intents_json['recipes']:
             if recipe['recipe_name'].lower() == recipe_name.lower():
                 # Return the recipe details as a response
+                print("Found matching recipe in dataset.")  # Add this line
                 return format_recipe(recipe)
         # If no matching recipe found, return a message
         response = "I'm sorry, I couldn't find the recipe you're looking for."
+        print("No matching recipe found in the dataset.")  # Add this line
     else:
         # Continue with the existing response logic based on predicted intents
         tag = intents_list[0]['intent']
@@ -178,6 +181,7 @@ def get_response(intents_list, intents_json, user_message):
         # If no matching intent found, use a fallback response
         if not response:
             response = "Hi there, how can I help?"
+        print("Using fallback response.")  # Add this line
     return response
 
 
@@ -186,18 +190,17 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/api/chat', methods=['POST'])
+@app.route('/chat', methods=['POST'])
 def chat():
-    user_message = request.json.get('message')    
-    # Append user's message to the conversation history
+    user_message = request.json.get('message')
+    print("Received message:", user_message)
+
     conversation_history.append({'user': user_message, 'bot': None})
-    # Check if the user's message contains the keyword for recipe suggestions
-    keyword_for_recipe = 'recipe'  # Change this keyword if needed
+
+    keyword_for_recipe = 'recipe'
     if keyword_for_recipe in user_message.lower():
-        # User mentioned the keyword, so provide recipe suggestions
         suggestions = get_closest_recipe_names(user_message)
         if suggestions:
-            # If suggestions are available, include them in the response
             suggestion_message = "Did you mean: "
             if len(suggestions) == 2:
                 suggestion_message += f"{suggestions[0]} or {suggestions[1]}"
@@ -205,16 +208,18 @@ def chat():
                 suggestion_message += ', '.join(suggestions)
             bot_message = suggestion_message
         else:
-            # No recipe suggestions available
             bot_message = "I couldn't find any recipe suggestions."
     else:
-        # User did not mention the keyword, so work normally
         ints = predict_class(user_message)
-        bot_message = get_response(ints, intents, user_message)
-    # Append bot's response to the conversation history
+        tag = ints[0]['intent']
+        if tag == 'recipe_details':
+            recipe_name = extract_recipe_name(user_message)
+            bot_message = get_recipe_details(recipe_name)
+        else:
+            bot_message = get_response(ints, intents, user_message)
+
     conversation_history[-1]['bot'] = bot_message
     return jsonify({'message': bot_message, 'history': conversation_history})
-
 
 # Main entry point
 if __name__ == '__main__':
