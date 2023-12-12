@@ -125,19 +125,17 @@ def get_closest_recipe_names(user_message):
     
 
 def get_recipe_details(recipe_name):
-    # Implement this function to retrieve recipe details based on the recipe_name
     if recipe_name in recipe_data:
         ingredients = recipe_data[recipe_name]["ingredients"]
         methods = recipe_data[recipe_name]["methods"]
-        recipe_details = f"Here's the recipe for {recipe_name}:\n\n"
-        recipe_details += "Ingredients:\n"
-        recipe_details += "\n".join(ingredients) + "\n\n"
-        recipe_details += "Methods:\n"
-        recipe_details += "\n".join(methods)
+        recipe_details = {
+            "text": f"Here's the recipe for {recipe_name}:\n\nIngredients:\n" + "\n".join(ingredients) + "\n\nMethods:\n" + "\n".join(methods),
+            "is_recipe": True
+        }
         print("Recipe details:", recipe_details)  # Add this line
         return recipe_details
     else:
-        return "I'm sorry, I couldn't find the recipe you're looking for."
+        return {"text": "I'm sorry, I couldn't find the recipe you're looking for.", "is_recipe": False}
 
 
 def predict_class(sentence):
@@ -193,10 +191,7 @@ def index():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json.get('message')
-    print("Received message:", user_message)
-
     conversation_history.append({'user': user_message, 'bot': None})
-
     keyword_for_recipe = 'recipe'
     if keyword_for_recipe in user_message.lower():
         suggestions = get_closest_recipe_names(user_message)

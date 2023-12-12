@@ -8,4 +8,4 @@ numpy
 tensorflow
 tensorflow
 tensorflow_intel
-tensorflow_intel
+tensorflow_gpu
