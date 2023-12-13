@@ -4,29 +4,28 @@
 <head>
     <title>Mayabati - Your Personal Chef</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styles/styles.css')}}" />
 </head>
 
-<body class="d-flex flex-column" style="min-height: 100vh; background: rgb(78, 239, 107);">
+<body class="d-flex flex-column">
 
-    <div id="chatbox" class="card flex-grow-1" style="background-color: #b8860b;">  
+    <div id="chatbox" class="card flex-grow-1" style="background-color: #b8870ba0;">
         <div class="logo-container">
             <div class="logo">
                 <img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Logo">
                 <h1><b>Mayabati - Your Personal Chef</b></h1>
+                <h1><b>So what do you want to cook today?</b></h1>
             </div>
         </div>
         <!-- Bot messages (stacking upwards) -->
         <div class="message bot-message">
             <div class="avatar">
-                
+
             </div>
             <div class="message-text"><b></b></div>
         </div>
@@ -34,223 +33,27 @@
         <!-- User messages (stacking upwards) -->
         <div class="message user-message">
             <div class="avatar">
-                
+
             </div>
             <div class="message-text"></div>
         </div>
     </div>
 
-    <div class="card-footer fixed-bottom">
+    <div class="card-footer fixed-bottom" style="border-radius: 15px;">
         <form id="messageArea" class="input-group">
             <input type="text" id="user_input" placeholder="Type a message..." autocomplete="off"
-                class="form-control type_msg" required="" onkeydown="handleKeyPress(event)"
-                oninput="toggleSendButton(this)">
+                class="form-control type_msg" required="">
         </form>
         <br>
         <p class="text">
             Mayabati may produce incorrect answers. Consider checking for important informations.
         </p>
-    </div>
+    </div>    
     
-
-        
-
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-            var messages = document.querySelectorAll(".message");
-            var logoContainer = document.querySelector('.logo-container');
-        
-            messages.forEach(function (message) {
-                message.addEventListener("DOMNodeInserted", function () {
-                    var label = this.querySelector(".message-text-label");
-                    if (label) {
-                        label.style.display = "inline";
-                        hideLogoContainer();
-                    }
-                });
-            });
-        
-            function hideLogoContainer() {
-                logoContainer.style.display = 'none';
-                document.removeEventListener('keydown', hideLogoContainer);
-            }
-        
-            document.addEventListener('keydown', function (event) {
-                if (event.keyCode === 13) { // Check for Enter key
-                    hideLogoContainer();
-                    sendMessageIfNotEmpty();
-                }
-            });
-        });
-        
-        // Simulate typing effect
-        function simulateTyping(message, element) {
-            let index = 0;
-            const typingSpeed = 25; // Adjust typing speed as needed
-            function type() {
-                if (index < message.length) {
-                    element.innerHTML += message.charAt(index);
-                    index++;
-                    setTimeout(type, typingSpeed);
-                }
-            }
-            type();
-        }
-        
-        // Function to toggle the "Send" button based on input field content
-        function toggleSendButton(inputField) {
-            const sendButton = document.getElementById('sendButton');
-            if (inputField.value.trim() !== '') {
-                sendButton.removeAttribute('disabled');
-                sendButton.classList.add('active'); // Add the 'active' class for green color highlight
-            } else {
-                sendButton.setAttribute('disabled', 'disabled');
-                sendButton.classList.remove('active'); // Remove the 'active' class
-            }
-        }
-        
-        // Simulate blinking cursor
-        function blinkCursor(cursorElement) {
-            setInterval(function () {
-                if (cursorElement.style.display === 'none') {
-                    cursorElement.style.display = 'inline';
-                } else {
-                    cursorElement.style.display = 'none';
-                }
-            }, 500); // Adjust blinking speed as needed
-        }
-        
-        // Function to handle "Enter" key press and send message
-        function handleKeyPress(event) {
-            if (event.keyCode === 13) {
-                event.preventDefault();
-                sendMessageIfNotEmpty();
-            }
-        }
-        
-        // Function to send a message if the input is not empty
-        function sendMessageIfNotEmpty() {
-            const userMessage = document.getElementById('user_input').value.trim();
-            if (userMessage !== '') {
-                sendMessage();
-            }
-        }
-        
-        // Modify the sendMessage() function to only send non-empty messages
-        function sendMessage() {
-            const userMessage = document.getElementById('user_input').value.trim();
-        
-            if (userMessage !== '') {
-                document.getElementById('user_input').value = '';
-        
-                // Append user's message to the chatbox with typing effect and user avatar
-                const userDiv = document.createElement('div');
-                userDiv.className = 'user-message';
-                document.getElementById('chatbox').appendChild(userDiv);
-                
-                // Avatar for user
-                const userAvatar = document.createElement('div');
-                userAvatar.className = 'avatar';
-                userAvatar.innerHTML = '<img src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png" alt=" User Avatar">';
-                userDiv.appendChild(userAvatar);
-        
-                // Typing effect for user message
-                simulateTyping(userMessage, userDiv);
-            }
-        
-            // Send the user's message to the server for processing
-            fetch('/chat', {
-                method: 'POST',
-                body: JSON.stringify({ message: userMessage }),
-                headers: { 'Content-Type': 'application/json' },
-            })
-            .then((response) => response.json())
-            .then((data) => {
-                const botResponse = data.message;
-        
-                if (Array.isArray(botResponse)) {
-                    displayBotResponseSequentially(botResponse);
-                } else {
-                    displayBotResponse(botResponse);
-                }
-            });
-        }
-        
-        // Function to display bot's response
-        function displayBotResponse(response) {
-            const botDiv = document.createElement('div');
-            botDiv.className = 'bot-message';
-            document.getElementById('chatbox').appendChild(botDiv);
-        
-            // Avatar for bot
-            const botAvatar = document.createElement('div');
-            botAvatar.className = 'avatar';
-            botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="  Bot Avatar">';
-            botDiv.appendChild(botAvatar);
-        
-            // Typing effect for bot response
-            simulateTyping(response, botDiv);
-        
-            // Scroll to the bottom of the chatbox to show the latest message
-            document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
-        }
-        
-        // Function to display bot's response sequentially
-function displayBotResponseSequentially(responseList) {
-    const chatbox = document.getElementById('chatbox');
-    let currentIndex = 0;
-
-    function displayNextLine() {
-        if (currentIndex < responseList.length) {
-            const botDiv = document.createElement('div');
-            botDiv.className = 'bot-message';
-            chatbox.appendChild(botDiv);
-
-            // Avatar for bot (add this block)
-            const botAvatar = document.createElement('div');
-            botAvatar.className = 'avatar';
-            botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Bot Avatar">';
-            botDiv.appendChild(botAvatar);
-
-            // Typing effect for bot response
-            simulateTyping(responseList[currentIndex], botDiv);
-            currentIndex++;
-
-            // Scroll to the bottom of the chatbox to show the latest message
-            chatbox.scrollTop = chatbox.scrollHeight;
-        }
-    }
-
-    // Start displaying lines one by one
-    setInterval(displayNextLine, 1000); // Adjust the interval as needed
-}
-        
-        // Start the blinking cursor effect
-        const cursorElement = document.createElement('span');
-        cursorElement.className = 'cursor';
-        cursorElement.innerHTML = '|';
-        document.querySelector('.type_msg').appendChild(cursorElement);
-        blinkCursor(cursorElement);
-        
-        // Hide the preloader when the page is fully loaded
-        window.addEventListener('load', function () {
-            const preloader = document.querySelector('.cyclic-preloader');
-            preloader.style.display = 'none';
-        });
-        
-        var botHtml = '<div class="d-flex justify-content-start mb-4">' +
-            '<div class="img_cont_msg">' +
-            '<img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg">' +
-            '<span class="message-indicator">🤖</span>' + // Add the indicator here
-            '</div>' +
-            '<div class="msg_cotainer">' + data +
-            '</div>' +
-            '</div>';
-        $("#messageFormeight").append($.parseHTML(botHtml));
-        
-        </script>
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='JS/script.js') }}"></script>
     
 </body>
 </html>

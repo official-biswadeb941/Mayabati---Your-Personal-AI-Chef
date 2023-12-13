@@ -1,9 +1,12 @@
 /* Updated styles.css */
 
 body {
-    background-color: #a6853c;
-    margin: 0px;
+    background: url('https://r4.wallpaperflare.com/wallpaper/524/228/970/life-interior-home-room-wallpaper-79a0780dd1da4d5bb6a7e8cfc061665d.jpg') center/cover no-repeat;
+    margin: 0;
     padding: 6px;
+    height: 100vh;
+    background-attachment: fixed;
+    transition: background 0.5s ease-in-out; /* Add a smooth transition effect */
 }
 
 .card {
@@ -11,8 +14,10 @@ body {
     max-height: calc(100vh - 160px);
     padding: 20px;
     margin-bottom: 80px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgb(119, 245, 142);
+    border-radius: 40px;
+    border-color: #cd8305;
+    border-width: 5px;
+    box-shadow: 0 10px 20px #ff620092;;
 }
 
 .card-footer {
@@ -22,16 +27,15 @@ body {
     height: 15%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #513703;
+    background-color: #513703cb;
     padding: 15px;
-    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card-footer #user_input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 8px;
 }
 
@@ -62,18 +66,21 @@ body {
     display: flex;
     align-items: flex-start;
     margin-bottom: 10px;
-    margin-left: 335px;
-    margin-right: 70px; /* Adjusted to 60% */
+    margin-left: 315px;
+    margin-right: 340px; /* Adjusted to 60% */
+    color: #000000;
 }
 
 .bot-message {
-    font-family: 'BotFont', sans-serif; /* Replace 'BotFont' with the desired font for bot messages */
-    font-weight: bold; /* Add bold style to bot messages */
+    font-family: 'Kalnia', sans-serif; /* Replace 'BotFont' with the desired font for bot messages */
+    font-weight: bolder; /* Add bold style to bot messages */
+    font-size:18px;
 }
 
 .user-message {
-    font-family: 'UserFont', sans-serif; /* Replace 'UserFont' with the desired font for user messages */
+    font-family: 'Afacad', sans-serif; /* Replace 'UserFont' with the desired font for user messages */
     font-weight: bold; /* Add bold style to user messages */
+    font-size: 18px;
 }
 
 .avatar {

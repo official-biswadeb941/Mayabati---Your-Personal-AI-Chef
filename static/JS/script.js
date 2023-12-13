@@ -1,153 +1,183 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var messages = document.querySelectorAll(".message");
+  var logoContainer = document.querySelector('.logo-container');
+
+  messages.forEach(function (message) {
+      message.addEventListener("DOMNodeInserted", function () {
+          var label = this.querySelector(".message-text-label");
+          if (label) {
+              label.style.display = "inline";
+              hideLogoContainer();
+          }
+      });
+  });
+
+  function hideLogoContainer() {
+      logoContainer.style.display = 'none';
+      document.removeEventListener('keydown', hideLogoContainer);
+  }
+
+  document.addEventListener('keydown', function (event) {
+      if (event.keyCode === 13) { // Check for Enter key
+          hideLogoContainer();
+          sendMessageIfNotEmpty();
+      }
+  });
+});
+
 // Simulate typing effect
 function simulateTyping(message, element) {
-    let index = 0;
-    const typingSpeed = 25; // Adjust typing speed as needed
-    function type() {
-    if (index < message.length) {
-    element.innerHTML += message.charAt(index);
-    index++;
-    setTimeout(type, typingSpeed);
-    }
-    }
-    type();
-    }
-    
-    // Function to toggle the "Send" button based on input field content
-    function toggleSendButton(inputField) {
-    const sendButton = document.getElementById('sendButton');
-    if (inputField.value.trim() !== '') {
-    sendButton.classList.add('active'); // Add the 'active' class for green color highlight
-    } 
-    else 
-    {
-    sendButton.classList.remove('active'); // Remove the 'active' class
-    }
-    }
-    
-    // Simulate blinking cursor
-    function blinkCursor(cursorElement) {
-    setInterval(function () {
-    if (cursorElement.style.display === 'none') {
-    cursorElement.style.display = 'inline';
-    }
-    else 
-    {
-    cursorElement.style.display = 'none';
-    }
-    }, 500); // Adjust blinking speed as needed
-    }
-    
-    // Function to toggle the "Send" button based on input field content
-    function toggleSendButton(inputField) {
-    const sendButton = document.getElementById('sendButton');
-    if (inputField.value.trim() !== '') {
-    sendButton.removeAttribute('disabled');
-    } 
-    else 
-    {
-    sendButton.setAttribute('disabled', 'disabled');
-    }
-    }
-    
-    // Function to handle "Enter" key press and send message
-    function handleKeyPress(event) {
-    if (event.keyCode === 13) {
-    event.preventDefault();
-    sendMessageIfNotEmpty();
-    }
-    }
-    
-    // Function to send a message if the input is not empty
-    function sendMessageIfNotEmpty() {
-    const userMessage = document.getElementById('user_input').value.trim();
-    if (userMessage !== '') {
-    sendMessage();
-    }
-    }
-    
-    // Modify the sendMessage() function to only send non-empty messages
-    function sendMessage() {
-        const userMessage = document.getElementById('user_input').value.trim();
-    
-        if (userMessage !== '') {
-          document.getElementById('user_input').value = '';
-    
-          // Append user's message to the chatbox with typing effect
-          const userDiv = document.createElement('div');
-          userDiv.className = 'user-message';
-          document.getElementById('chatbox').appendChild(userDiv);
-          simulateTyping(userMessage, userDiv);
-        }
-    
-    // Send the user's message to the server for processing
-    fetch('/api/chat', {
-            method: 'POST',
-            body: JSON.stringify({ message: userMessage }),
-            headers: { 'Content-Type': 'application/json' },
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              const botResponse = data.message;
-    
-              if (Array.isArray(botResponse)) {
-                displayBotResponseSequentially(botResponse);
-              } else {
-                displayBotResponse(botResponse);
-              }
-            
-            });
-        }
-    
-    // Function to display bot's response
-    function displayBotResponse(response) {
-        const botDiv = document.createElement('div');
-        botDiv.className = 'bot-message';
-        document.getElementById('chatbox').appendChild(botDiv);
-        simulateTyping(response, botDiv);
-    
-        // Scroll to the bottom of the chatbox to show the latest message
-        document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
-    }
-    
-    // Function to display bot's response sequentially
-    function displayBotResponseSequentially(responseList) {
-        const chatbox = document.getElementById('chatbox');
-        let currentIndex = 0;
-        function displayNextLine() {
-            if (currentIndex < responseList.length) {
-                const botDiv = document.createElement('div');
-                botDiv.className = 'bot-message';
-                chatbox.appendChild(botDiv);
-                simulateTyping(responseList[currentIndex], botDiv);
-                currentIndex++;
-                // Scroll to the bottom of the chatbox to show the latest message
-                chatbox.scrollTop = chatbox.scrollHeight;
-            }
-        }
-    
-    // Start displaying lines one by one
-    setInterval(displayNextLine, 1000); // Adjust the interval as needed
-    }
-    // Start the blinking cursor effect
-    const cursorElement = document.createElement('span');
-    cursorElement.className = 'cursor';
-    cursorElement.innerHTML = '|';
-    document.querySelector('.type_msg').appendChild(cursorElement);
-    blinkCursor(cursorElement);
-    
-      // Hide the preloader when the page is fully loaded
-      window.addEventListener('load', function() {
-        const preloader = document.querySelector('.cyclic-preloader');
-        preloader.style.display = 'none';
-      });
-    
-      var botHtml = '<div class="d-flex justify-content-start mb-4">' +
-        '<div class="img_cont_msg">' +
-        '<img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg">' +
-        '<span class="message-indicator">🤖</span>' + // Add the indicator here
-        '</div>' +
-        '<div class="msg_cotainer">' + data +
-        '</div>' +
-        '</div>';
-    $("#messageFormeight").append($.parseHTML(botHtml));
-    
+  let index = 0;
+  const typingSpeed = 25; // Adjust typing speed as needed
+  function type() {
+      if (index < message.length) {
+          element.innerHTML += message.charAt(index);
+          index++;
+          setTimeout(type, typingSpeed);
+      }
+  }
+  type();
+}
+
+// Function to toggle the "Send" button based on input field content
+function toggleSendButton(inputField) {
+  const sendButton = document.getElementById('sendButton');
+  if (inputField.value.trim() !== '') {
+      sendButton.removeAttribute('disabled');
+      sendButton.classList.add('active'); // Add the 'active' class for green color highlight
+  } else {
+      sendButton.setAttribute('disabled', 'disabled');
+      sendButton.classList.remove('active'); // Remove the 'active' class
+  }
+}
+
+// Simulate blinking cursor
+function blinkCursor(cursorElement) {
+  setInterval(function () {
+      if (cursorElement.style.display === 'none') {
+          cursorElement.style.display = 'inline';
+      } else {
+          cursorElement.style.display = 'none';
+      }
+  }, 500); // Adjust blinking speed as needed
+}
+
+// Function to send a message if the input is not empty
+function sendMessageIfNotEmpty() {
+  const userMessage = document.getElementById('user_input').value.trim();
+  if (userMessage !== '') {
+      sendMessage();
+  }
+}
+
+// Modify the sendMessage() function to only send non-empty messages
+function sendMessage() {
+  const userMessage = document.getElementById('user_input').value.trim();
+
+  if (userMessage !== '') {
+      document.getElementById('user_input').value = '';
+
+      // Append user's message to the chatbox with typing effect and user avatar
+      const userDiv = document.createElement('div');
+      userDiv.className = 'user-message';
+      document.getElementById('chatbox').appendChild(userDiv);
+      
+      // Avatar for user
+      const userAvatar = document.createElement('div');
+      userAvatar.className = 'avatar';
+      userAvatar.innerHTML = '<img src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png" alt=" User Avatar">';
+      userDiv.appendChild(userAvatar);
+
+      // Typing effect for user message
+      simulateTyping(userMessage, userDiv);
+  }
+
+  // Send the user's message to the server for processing
+  fetch('/chat', {
+      method: 'POST',
+      body: JSON.stringify({ message: userMessage }),
+      headers: { 'Content-Type': 'application/json' },
+  })
+  .then((response) => response.json())
+  .then((data) => {
+      const botResponse = data.message;
+
+      if (Array.isArray(botResponse)) {
+          displayBotResponseSequentially(botResponse);
+      } else {
+          displayBotResponse(botResponse);
+      }
+  });
+}
+
+// Function to display bot's response
+function displayBotResponse(response) {
+  const botDiv = document.createElement('div');
+  botDiv.className = 'bot-message';
+  document.getElementById('chatbox').appendChild(botDiv);
+
+  // Avatar for bot
+  const botAvatar = document.createElement('div');
+  botAvatar.className = 'avatar';
+  botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="  Bot Avatar">';
+  botDiv.appendChild(botAvatar);
+
+  // Typing effect for bot response
+  simulateTyping(response, botDiv);
+
+  // Scroll to the bottom of the chatbox to show the latest message
+  document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
+}
+
+// Function to display bot's response sequentially
+function displayBotResponseSequentially(responseList) {
+const chatbox = document.getElementById('chatbox');
+let currentIndex = 0;
+
+function displayNextLine() {
+if (currentIndex < responseList.length) {
+  const botDiv = document.createElement('div');
+  botDiv.className = 'bot-message';
+  chatbox.appendChild(botDiv);
+
+  // Avatar for bot (add this block)
+  const botAvatar = document.createElement('div');
+  botAvatar.className = 'avatar';
+  botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Bot Avatar">';
+  botDiv.appendChild(botAvatar);
+
+  // Typing effect for bot response
+  simulateTyping(responseList[currentIndex], botDiv);
+  currentIndex++;
+
+  // Scroll to the bottom of the chatbox to show the latest message
+  chatbox.scrollTop = chatbox.scrollHeight;
+}
+}
+
+// Start displaying lines one by one
+setInterval(displayNextLine, 1000); // Adjust the interval as needed
+}
+
+// Start the blinking cursor effect
+const cursorElement = document.createElement('span');
+cursorElement.className = 'cursor';
+cursorElement.innerHTML = '|';
+document.querySelector('.type_msg').appendChild(cursorElement);
+blinkCursor(cursorElement);
+
+// Hide the preloader when the page is fully loaded
+window.addEventListener('load', function () {
+  const preloader = document.querySelector('.cyclic-preloader');
+  preloader.style.display = 'none';
+});
+
+var botHtml = '<div class="d-flex justify-content-start mb-4">' +
+  '<div class="img_cont_msg">' +
+  '<img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg">' +
+  '<span class="message-indicator">🤖</span>' + // Add the indicator here
+  '</div>' +
+  '<div class="msg_cotainer">' + data +
+  '</div>' +
+  '</div>';
+$("#messageFormeight").append($.parseHTML(botHtml));
