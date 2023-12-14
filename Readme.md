@@ -23,7 +23,9 @@ Mayabati is a cutting-edge personal AI chef designed to enhance your culinary ex
 
 </div>
 
-<p style="font-align:center; font-size:15px">This Project is under Development.</p>
+<p style="text-align: center; font-size: 20px;">This Project is under Development.</p>
+
+**
 
 ## No Use License
 
