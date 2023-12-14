@@ -1,16 +1,4 @@
-import random                  # For generating random responses
-import json                    # For handling JSON data
-import pickle                  # For serializing and deserializing Python objects
-import numpy as np             # For numerical operations
-import nltk                    # Natural Language Toolkit for text processing
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize  # Lemmatization tool from NLTK
-from keras.models import load_model     # Loading a deep learning model using Keras
-from flask import Flask, render_template, request, jsonify  # Flask web framework for building a web application
-from fuzzysearch import find_near_matches
-from difflib import SequenceMatcher
-
+from imports import *
 
 nltk.download('punkt')
 nltk.download('stopwords')
@@ -20,6 +8,22 @@ nltk.download('wordnet')
 # Initialize Flask app
 app = Flask(__name__)
 
+# Set a secret key for authentication
+app.config['SECRET_KEY'] = generate_secret_key()
+
+# Configure Flask app to use file-based logging only
+log_handler = RotatingFileHandler('app.log', maxBytes=10000, backupCount=1)
+log_handler.setLevel(logging.INFO)
+app.logger.addHandler(log_handler)
+
+# Disable console logging for Flask
+app.logger.removeHandler(default_handler := logging.StreamHandler(sys.stdout))
+
+# Redirect all messages to the log file
+logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# Disable Flask default logger, preventing messages from being printed to the console
+app.logger.disabled = True
 
 # Initialize conversation history to keep track of user-bot interactions
 conversation_history = []
@@ -218,6 +222,14 @@ def chat():
 
 # Main entry point
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Print system information at startup
+    system_info = f"System: {platform.system()} {platform.release()} {platform.machine()}"
+    app.logger.info(system_info)  # Log system information
 
+    # Run the app with the secret key
+    important_message = "Important: Application started with secret key."
+    app.logger.info(important_message)  # Log important message
+    print(important_message)  # Print important message
+
+    app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
 

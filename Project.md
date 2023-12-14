@@ -1,4 +1,4 @@
-Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee]
+Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovation.)]
 │
 ├── data/
 │   ├── input/
@@ -24,7 +24,20 @@ Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee]
 │   ├── trainer.py                     # Trainer module
 │   └── gram.py                        # Gram module
 │
+├── gitignore                          # Contain name of the files or folder to be ignored by git
+|
 ├── app.py                             # Main Flask App
+|
+├── imports.py                         # To import all libraries
+|
+├── secret.py                          # Cryptographic Hashing Algorithm through which the app is accessible
+|
+├── voice.py                           # Code for controlling the bot on voice
+|
 ├── License.md                         # Contain the license instructions about this project
-├── README.md                          # Project Directory Structure
+|
+├── Project.md                         # Contain the Project Directory Structure 
+|
+├── README.md                          # Full Project Explanation
+|
 └── requirements.txt                   # Python libraries used in this project

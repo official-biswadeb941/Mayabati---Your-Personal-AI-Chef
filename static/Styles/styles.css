@@ -149,24 +149,23 @@ body {
     color: #000000; /* Set the desired color for the placeholder text */
 }
 
-
-/* Set the color of the main track (background) */
 ::-webkit-scrollbar {
+    /* Set the color of the main track (background) */
     width: 12px; /* Adjust the width of the scrollbar */
 }
 
-/* Set the color of the scrollbar thumb (the draggable handle) */
 ::-webkit-scrollbar-thumb {
+    /* Set the color of the scrollbar thumb (the draggable handle) */
     background-color: #010d17; /* Set the color of the thumb */
     border-radius: 12px; /* Optional: Round the corners of the thumb */
 }
 
-/* Set the color of the scrollbar track (the area the thumb moves on) */
 ::-webkit-scrollbar-track {
+    /* Set the color of the scrollbar track (the area the thumb moves on) */
     background-color: #ffffff; /* Set the color of the track */
 }
 
-/* Optional: Style the corners of the scrollbar */
 ::-webkit-scrollbar-corner {
+    /* Optional: Style the corners of the scrollbar */
     background-color: #fca503; /* Set the color of the scrollbar corners */
 }

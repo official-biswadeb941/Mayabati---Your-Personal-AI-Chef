@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Simulate typing effect
 function simulateTyping(message, element) {
+  // Simulate typing effect
   let index = 0;
   const typingSpeed = 25; // Adjust typing speed as needed
   function type() {
@@ -39,8 +39,8 @@ function simulateTyping(message, element) {
   type();
 }
 
-// Function to toggle the "Send" button based on input field content
 function toggleSendButton(inputField) {
+  // Function to toggle the "Send" button based on input field content
   const sendButton = document.getElementById('sendButton');
   if (inputField.value.trim() !== '') {
       sendButton.removeAttribute('disabled');
@@ -51,8 +51,8 @@ function toggleSendButton(inputField) {
   }
 }
 
-// Simulate blinking cursor
 function blinkCursor(cursorElement) {
+  // Simulate blinking cursor
   setInterval(function () {
       if (cursorElement.style.display === 'none') {
           cursorElement.style.display = 'inline';
@@ -62,16 +62,16 @@ function blinkCursor(cursorElement) {
   }, 500); // Adjust blinking speed as needed
 }
 
-// Function to send a message if the input is not empty
 function sendMessageIfNotEmpty() {
+  // Function to send a message if the input is not empty
   const userMessage = document.getElementById('user_input').value.trim();
   if (userMessage !== '') {
       sendMessage();
   }
 }
 
-// Modify the sendMessage() function to only send non-empty messages
 function sendMessage() {
+  // Modify the sendMessage() function to only send non-empty messages
   const userMessage = document.getElementById('user_input').value.trim();
 
   if (userMessage !== '') {
@@ -110,8 +110,8 @@ function sendMessage() {
   });
 }
 
-// Function to display bot's response
 function displayBotResponse(response) {
+  // Function to display bot's response
   const botDiv = document.createElement('div');
   botDiv.className = 'bot-message';
   document.getElementById('chatbox').appendChild(botDiv);
@@ -129,8 +129,8 @@ function displayBotResponse(response) {
   document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
 }
 
-// Function to display bot's response sequentially
 function displayBotResponseSequentially(responseList) {
+  // Function to display bot's response sequentially
 const chatbox = document.getElementById('chatbox');
 let currentIndex = 0;
 
@@ -159,15 +159,15 @@ if (currentIndex < responseList.length) {
 setInterval(displayNextLine, 1000); // Adjust the interval as needed
 }
 
-// Start the blinking cursor effect
 const cursorElement = document.createElement('span');
 cursorElement.className = 'cursor';
 cursorElement.innerHTML = '|';
 document.querySelector('.type_msg').appendChild(cursorElement);
 blinkCursor(cursorElement);
 
-// Hide the preloader when the page is fully loaded
+
 window.addEventListener('load', function () {
+  // Hide the preloader when the page is fully loaded
   const preloader = document.querySelector('.cyclic-preloader');
   preloader.style.display = 'none';
 });
@@ -181,3 +181,5 @@ var botHtml = '<div class="d-flex justify-content-start mb-4">' +
   '</div>' +
   '</div>';
 $("#messageFormeight").append($.parseHTML(botHtml));
+
+
