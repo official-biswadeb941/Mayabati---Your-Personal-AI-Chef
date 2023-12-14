@@ -9,18 +9,21 @@
 
 ## Overview
 
-- Mayabati is a personal AI chef designed to assist you in culinary endeavors. Whether you're a cooking enthusiast or someone looking for new recipes, Mayabati is here to make your culinary experience enjoyable and efficient.
+Mayabati is a cutting-edge personal AI chef designed to enhance your culinary experience. Crafted by Biswadeb Mukherjee, a leading developer of ParseSphere Innovations, Mayabati brings a range of features to the kitchen:
 
-## Features
-- Recipe recommendations based on your preferences.
-- Ingredient suggestions and substitutions.
-- Cooking tips and techniques.
+- **Recipe Recommendations:** Receive personalized recipe suggestions based on your preferences.
+- **Ingredient Guidance:** Get helpful suggestions and substitutions for ingredients.
+- **Cooking Tips:** Learn valuable cooking techniques and tips.
+
 
 <div align="center">
 
 (path/to/your/video/file.mp4)
+<p style="font-align:center; font-size:15px">Mayabati(Demo)</p>
 
 </div>
+
+<p style="font-align:center; font-size:15px">This Project is under Development.</p>
 
 ## No Use License
 
