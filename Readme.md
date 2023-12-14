@@ -24,6 +24,8 @@ https://github.com/official-biswadeb941/Mayabati/assets/65611656/6f0383f2-de1b-4
 
 Mayabati is your virtual culinary companion, whether you're a seasoned chef or a cooking enthusiast seeking inspiration.
 
+***
+
 ## No Use License
 
 **Mayabati - Your Personal AI Chef** is protected by a Limited Use License. Excerpts from the license are provided below:
