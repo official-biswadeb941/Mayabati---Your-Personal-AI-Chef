@@ -20,10 +20,10 @@ Mayabati is your virtual culinary companion, whether you're a seasoned chef or a
 
 <div align="center">
 
-<video width="640" height="360" controls>
-  <source src="static/Image/video.mp4" type="video/mp4">
-</video>
-<p style="text-align:center; font-size:15px">Mayabati (Demo)</p>
+
+https://github.com/official-biswadeb941/Mayabati/assets/65611656/6f0383f2-de1b-413d-b095-6ae9c807591e
+
+
 
 </div>
 
