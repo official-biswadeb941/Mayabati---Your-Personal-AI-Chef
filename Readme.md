@@ -3,7 +3,7 @@
 # Mayabati - Your Personal AI Chef
 **Developed by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations)**
 
-![Mayabati Logo](static/Image/Bot.jpg)
+<img src="static/Image/Bot.jpg" alt="Mayabati Logo" style="border-radius: 50%; width: 150px; height: 150px;">
 
 </div>
 ## Overview
