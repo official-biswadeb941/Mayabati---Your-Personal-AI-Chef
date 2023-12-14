@@ -32,9 +32,9 @@
 2. **No Modification:**
    - You may not modify, adapt, reverse engineer, decompile, or disassemble any part of the software.
 
-   ***
-
    **To know more about our License/Terms & Conditions please read the License**
+
+   ***
 
 ## Intellectual Property Notice
 
