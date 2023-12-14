@@ -60,4 +60,6 @@ This project and its components are the intellectual property of Biswadeb Mukher
 
 ## Contact Me
 
-<p style="font-size:18px;">Are you having any problem then<button type="button" onclick="window.location.href='mailto:biswadebmukherjee941@gmail.com';">Contact me.</button> here</p>
+<p style="font-size:18px;">Are you having any questions? Feel free to <a href="mailto:biswadebmukherjee941@gmail.com"><img alt="Contact me" src="https://img.shields.io/badge/Contact%20me-%23f26434.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a> here</p>
+
+
