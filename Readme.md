@@ -34,7 +34,7 @@
 
    ***
 
-   **To know more about our License/Terms & Conditions please read the License (License.md)**
+   **To know more about our License/Terms & Conditions please read the License**
 
 ## Intellectual Property Notice
 
