@@ -9,7 +9,7 @@
 
 ## Overview
 
-Mayabati is a cutting-edge personal AI chef designed to enhance your culinary experience. Crafted by Biswadeb Mukherjee, a leading developer of ParseSphere Innovations, Mayabati brings a range of features to the kitchen:
+Mayabati is a personal AI chef designed for enhancing culinary experience. Crafted by Biswadeb Mukherjee, a leading developer of ParseSphere Innovations, Mayabati brings a range of features to the kitchen:
 
 - **Recipe Recommendations:** Receive personalized recipe suggestions based on your preferences.
 - **Ingredient Guidance:** Get helpful suggestions and substitutions for ingredients.
