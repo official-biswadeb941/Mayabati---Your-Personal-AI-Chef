@@ -15,6 +15,8 @@ Mayabati is a cutting-edge personal AI chef designed to enhance your culinary ex
 - **Ingredient Guidance:** Get helpful suggestions and substitutions for ingredients.
 - **Cooking Tips:** Learn valuable cooking techniques and tips.
 
+Mayabati is your virtual culinary companion, whether you're a seasoned chef or a cooking enthusiast seeking inspiration.
+
 
 <div align="center">
 
@@ -23,8 +25,6 @@ Mayabati is a cutting-edge personal AI chef designed to enhance your culinary ex
 
 </div>
 
-## Under Development
-⚠️ **Please note that Mayabati is currently under active development. Stay tuned for updates and improvements!**
 
 ## No Use License
 
@@ -48,3 +48,10 @@ This project and its components are the intellectual property of [Biswadeb Mukhe
 
 **Note:** Any unauthorized use, reproduction, or distribution of this project without explicit permission is a violation of intellectual property rights and may result in legal action.
 
+   *** 
+
+## We need your support 🙏
+
+⚠️ **Please note that Mayabati is currently under active development. Support the project by sponsoring on [GitHub](https://github.com/sponsors/biswadebmukherjee) or [Buy Me a Coffee](https://www.buymeacoffee.com/biswadeb).**
+
+   ***
