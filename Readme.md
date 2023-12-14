@@ -36,7 +36,7 @@ Mayabati is your virtual culinary companion, whether you're a seasoned chef or a
 2. **No Modification:**
    - You may not modify, adapt, reverse engineer, decompile, or disassemble any part of the software.
 
-   **To know more about our License/Terms & Conditions please read the License (Licence.md)**
+   **To know more about our License/Terms & Conditions please read the License** [No Use Licence](Licence.md)
 
   ***
 
