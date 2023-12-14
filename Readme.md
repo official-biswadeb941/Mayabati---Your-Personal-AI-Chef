@@ -54,7 +54,7 @@ This project and its components are the intellectual property of [Biswadeb Mukhe
 
 ## Sponsor Us [We need your support 🙏]
 
-[![Sponsor on GitHub](https://img.shields.io/github/sponsors/official-biswadeb941?style=social)]
+[![Sponsor on GitHub](https://img.shields.io/github/sponsors/official-biswadeb941?style=social)](https://github.com/sponsors/official-biswadeb941)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue.svg)](https://www.buymeacoffee.com/B.M.O.941)
 
 
