@@ -20,7 +20,7 @@ Mayabati is your virtual culinary companion, whether you're a seasoned chef or a
 
 <div align="center">
 
-(path/to/your/video/file.mp4)
+(static/Image/video.mp4)
 <p style="font-align:center; font-size:15px">Mayabati(Demo)</p>
 
 </div>
@@ -50,10 +50,10 @@ This project and its components are the intellectual property of [Biswadeb Mukhe
 
    *** 
 
-## Sponser Us [We need your support 🙏]
+## Sponsor Us [We need your support 🙏]
 
-[![Sponsor on GitHub](https://img.shields.io/github/sponsors/biswadebmukherjee?style=social)](https://github.com/sponsors/biswadebmukherjee)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue.svg)](https://www.buymeacoffee.com/biswadeb)
+[![Sponsor on GitHub](https://img.shields.io/github/sponsors/biswadebmukherjee?style=social)](https://github.com/sponsors/official-biswadeb941)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue.svg)](https://www.buymeacoffee.com/B.M.O.941)
 
 
    ***
