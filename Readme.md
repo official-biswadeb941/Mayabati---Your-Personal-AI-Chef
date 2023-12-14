@@ -44,7 +44,7 @@ Mayabati is your virtual culinary companion, whether you're a seasoned chef or a
 
 **Copyright © [2023] Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations)**
 
-This project and its components are the intellectual property of [Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations)] and are protected by copyright laws and international treaties. Unauthorized copying, reproduction, or sharing of this project, in whole or in part, is strictly prohibited.
+This project and its components are the intellectual property of Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations) and are protected by copyright laws and international treaties. Unauthorized copying, reproduction, or sharing of this project, in whole or in part, is strictly prohibited.
 
 **Note:** Any unauthorized use, reproduction, or distribution of this project without explicit permission is a violation of intellectual property rights and may result in legal action.
 
