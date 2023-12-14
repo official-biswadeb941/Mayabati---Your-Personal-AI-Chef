@@ -4,4 +4,4 @@ env/
 .env/
 __pycache__/
 .vscode
-app.log/
+app.log
