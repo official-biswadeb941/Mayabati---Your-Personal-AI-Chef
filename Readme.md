@@ -38,7 +38,7 @@ Mayabati is your virtual culinary companion, whether you're a seasoned chef or a
 
    **To know more about our License/Terms & Conditions please read the License**
 
-   ***
+  ***
 
 ## Intellectual Property Notice
 
@@ -50,8 +50,10 @@ This project and its components are the intellectual property of [Biswadeb Mukhe
 
    *** 
 
-## We need your support 🙏
+## Sponser Us [We need your support 🙏]
 
-⚠️ **Please note that Mayabati is currently under active development. Support the project by sponsoring on [GitHub](https://github.com/sponsors/biswadebmukherjee) or [Buy Me a Coffee](https://www.buymeacoffee.com/biswadeb).**
+[![Sponsor on GitHub](https://img.shields.io/github/sponsors/biswadebmukherjee?style=social)](https://github.com/sponsors/biswadebmukherjee)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue.svg)](https://www.buymeacoffee.com/biswadeb)
+
 
    ***
