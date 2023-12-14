@@ -1,4 +1,4 @@
-# [Mayabati - Your Personal AI Chef (Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations))] - Limited Use License [This license was written on 21st November 2023 at 12:35 am and last Modified on 14 December 2023 at 04:12pm.]
+# [Mayabati - Your Personal AI Chef (Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations))] - Limited Use License [This license was written on 21st November 2023 at 12:35 am and last Modified on 14 December 2023 at 09:45pm.]
 
 By using this software, you explicitly agree to the following terms and conditions:
 
