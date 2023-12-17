@@ -189,7 +189,7 @@ def get_response(intents_list, intents_json, user_message):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index1.html')
 
 
 @app.route('/chat', methods=['POST'])
