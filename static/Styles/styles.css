@@ -83,9 +83,13 @@ body {
     font-size: 18px;
 }
 
+/* Style for the bot avatar */
 .avatar {
-    margin-right: 20px;
-}
+    width: 40px; /* Set the width of the avatar */
+    height: 40px; /* Set the height of the avatar */
+    margin-right: 10px; /* Add margin to separate avatar from text */
+    border-radius: 50%; /* Make the avatar circular */
+  }
 
 .avatar img {
     width: 50px;
@@ -169,3 +173,11 @@ body {
     /* Optional: Style the corners of the scrollbar */
     background-color: #fca503; /* Set the color of the scrollbar corners */
 }
+
+.recipe-box {
+    background-color: #f8f8f8; /* Background color */
+    border: 1px solid #ddd; /* Border */
+    padding: 10px; /* Padding */
+    margin-bottom: 10px; /* Margin to separate recipe boxes */
+    border-radius: 8px; /* Border radius for rounded corners */
+  }

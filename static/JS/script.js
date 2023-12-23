@@ -135,25 +135,28 @@ const chatbox = document.getElementById('chatbox');
 let currentIndex = 0;
 
 function displayNextLine() {
-if (currentIndex < responseList.length) {
-  const botDiv = document.createElement('div');
-  botDiv.className = 'bot-message';
-  chatbox.appendChild(botDiv);
+  if (currentIndex < responseList.length) {
+    const botDiv = document.createElement('div');
+    botDiv.className = 'bot-message';
+    chatbox.appendChild(botDiv);
 
-  // Avatar for bot (add this block)
-  const botAvatar = document.createElement('div');
-  botAvatar.className = 'avatar';
-  botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Bot Avatar">';
-  botDiv.appendChild(botAvatar);
+    // Avatar for bot (add this block only for the first line)
+    if (currentIndex === 0) {
+      const botAvatar = document.createElement('div');
+      botAvatar.className = 'avatar';
+      botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Bot Avatar">';
+      botDiv.appendChild(botAvatar);
+    }
 
-  // Typing effect for bot response
-  simulateTyping(responseList[currentIndex], botDiv);
-  currentIndex++;
+    // Typing effect for bot response
+    simulateTyping(responseList[currentIndex], botDiv);
+    currentIndex++;
 
-  // Scroll to the bottom of the chatbox to show the latest message
-  chatbox.scrollTop = chatbox.scrollHeight;
+    // Scroll to the bottom of the chatbox to show the latest message
+    chatbox.scrollTop = chatbox.scrollHeight;
+  }
 }
-}
+
 
 // Start displaying lines one by one
 setInterval(displayNextLine, 1000); // Adjust the interval as needed

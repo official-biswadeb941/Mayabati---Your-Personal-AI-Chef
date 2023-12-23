@@ -1,14 +1,4 @@
-import random
-import json
-import pickle
-import numpy as np
-import nltk
-from nltk.stem import WordNetLemmatizer
-import gensim.models
-import tensorflow as tf
-from keras.layers import Layer, Input, Embedding, Dense, LSTM, Bidirectional, Attention, Flatten, Concatenate
-from keras.models import Model
-from keras.optimizers import SGD
+from imports import *
 
 # Load intents from a JSON file
 intents = json.loads(open('intents.json').read())

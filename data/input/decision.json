@@ -1,0 +1,6085 @@
+[
+  {
+    "recipe_name": "Paneer Taash Kabab",
+    "ingredients": [
+      "Paneer (cottage cheese) sliced into 400 gms.",
+      "Onions sliced 2 nos.",
+      "Sliced cheese 8 nos.",
+      "Any cheese, grated (optional) 1 cup",
+      "Freshly crushed black pepper ½ tsp.",
+      "Fresh cream 1 tbsp",
+      "Hung yoghurt 1/3 cup",
+      "Red chilli powder 2 tsp.",
+      "Coriander powder 1 tsp.",
+      "Cumin powder 1 tsp.",
+      "Ginger/garlic paste 4 tsp.",
+      "Homemade garam masala 1 tsp.",
+      "Mustard oil 2 tbsps.",
+      "Chaat masala to taste.",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Kothimbir Wade",
+    "ingredients": [
+      "Coriander leaves 2 bunches",
+      "Green chillies 4 nos.",
+      "Besan 1 cup",
+      "Jaggery ¼ tsp.",
+      "Soda-bi-carbonate A pinch",
+      "Turmeric powder ½ tsp.",
+      "Oil 2 tbsps.",
+      "Salt to taste",
+      "For Deep-frying: 1 Banana leaf is needed"
+    ]
+  },
+  {
+    "recipe_name": "Stuffed Aloo Tikki",
+    "ingredients": [
+      "4 large potatoes, boiled and mashed",
+      "1/2 cup green peas, boiled and mashed",
+      "1/4 cup paneer (cottage cheese), grated",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger, grated",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon chaat masala",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Medu Vada",
+    "ingredients": [
+      "1 cup urad dal (black gram), soaked for 4-5 hours",
+      "2-3 green chilies, finely chopped",
+      "1 teaspoon black peppercorns, crushed",
+      "1 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "10-12 curry leaves, chopped",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Onion Bhajia",
+    "ingredients": [
+      "2 cups thinly sliced onions",
+      "1 cup gram flour (besan)",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Seekh Kabab",
+    "ingredients": [
+      "500 grams minced meat (chicken, lamb, or beef)",
+      "1 onion, finely chopped",
+      "2 tablespoons ginger-garlic paste",
+      "2 green chilies, finely chopped",
+      "1 teaspoon cumin powder",
+      "1 teaspoon coriander powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "1/2 cup breadcrumbs",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Rice Pakora",
+    "ingredients": [
+      "1 cup cooked rice",
+      "1/2 cup gram flour (besan)",
+      "1/4 cup finely chopped onions",
+      "1/4 cup finely chopped spinach or coriander leaves",
+      "2 green chilies, finely chopped",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Mutton Tikka",
+    "ingredients": [
+      "500 grams mutton, cubed",
+      "1 cup yogurt",
+      "2 tablespoons ginger-garlic paste",
+      "1 tablespoon red chili powder",
+      "1/2 tablespoon turmeric powder",
+      "1 tablespoon garam masala",
+      "1 lemon, juiced",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Crunchy Cutlets",
+    "ingredients": [
+      "2 cups boiled and mashed potatoes",
+      "1/2 cup bread crumbs",
+      "1/4 cup finely chopped carrots",
+      "1/4 cup finely chopped beans",
+      "1/4 cup finely chopped bell peppers",
+      "1/4 cup boiled peas",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger paste",
+      "1 teaspoon chaat masala",
+      "1/2 teaspoon cumin powder",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Corny Potatoes",
+    "ingredients": [
+      "4 potatoes, boiled and diced",
+      "1 cup sweet corn kernels",
+      "1/2 cup chopped onions",
+      "1/4 cup chopped bell peppers",
+      "2 cloves garlic, minced",
+      "1 teaspoon paprika",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon dried oregano",
+      "Salt and pepper to taste",
+      "2 tablespoons olive oil"
+    ]
+  },
+  {
+    "recipe_name": "Peanut and Chana Dal Tikke",
+    "ingredients": [
+      "1 cup chana dal (split chickpeas), soaked for 3-4 hours",
+      "1/2 cup roasted peanuts, coarsely ground",
+      "1/2 cup chopped onions",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger paste",
+      "1 teaspoon chaat masala",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Fried Fish",
+    "ingredients": [
+      "4 fish fillets (any white fish variety)",
+      "1 cup all-purpose flour",
+      "1/2 cup cornflour",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon cumin powder",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Bhel Puri",
+    "ingredients": [
+      "2 cups puffed rice (murmura)",
+      "1/2 cup chopped onions",
+      "1/2 cup chopped tomatoes",
+      "1/4 cup chopped cucumber",
+      "1/4 cup boiled and diced potatoes",
+      "1/4 cup sev (crunchy chickpea noodles)",
+      "2 tablespoons tamarind chutney",
+      "2 tablespoons green chutney",
+      "1 teaspoon chaat masala",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Samosas",
+    "ingredients": [
+      "For the dough:",
+      "2 cups all-purpose flour",
+      "1/4 cup vegetable oil",
+      "1/2 teaspoon salt",
+      "Water for kneading",
+      "For the filling:",
+      "2 potatoes, boiled and mashed",
+      "1/2 cup boiled green peas",
+      "2 tablespoons oil",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon ginger paste",
+      "1 teaspoon garlic paste",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "1 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for deep frying"
+    ]
+  },
+  {
+    "recipe_name": "Haryali Paneer Tikka",
+    "ingredients": [
+      "250 grams paneer (cottage cheese), cubed",
+      "1/2 cup thick yogurt",
+      "1/4 cup fresh coriander leaves",
+      "1/4 cup fresh mint leaves",
+      "2 green chilies",
+      "1 teaspoon ginger-garlic paste",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon chaat masala",
+      "1 tablespoon lemon juice",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Chicken Tikka",
+    "ingredients": [
+      "500 grams boneless chicken, cut into cubes",
+      "1/2 cup thick yogurt",
+      "2 tablespoons ginger-garlic paste",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin powder",
+      "1 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "1 tablespoon lemon juice",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Patra",
+    "ingredients": [
+      "10 colocasia leaves",
+      "1 cup gram flour (besan)",
+      "1/4 cup tamarind pulp",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin powder",
+      "1 teaspoon coriander powder",
+      "1 teaspoon sugar",
+      "Salt to taste",
+      "2 tablespoons oil",
+      "1 teaspoon mustard seeds",
+      "1/2 teaspoon sesame seeds"
+    ]
+  },
+  {
+    "recipe_name": "Khandvi",
+    "ingredients": [
+      "1 cup besan (gram flour)",
+      "1 cup yogurt",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon asafoetida (hing)",
+      "1 teaspoon mustard seeds",
+      "2 green chilies, slit",
+      "10-12 curry leaves",
+      "Salt to taste",
+      "2 tablespoons oil",
+      "2 tablespoons grated coconut",
+      "2 tablespoons chopped cilantro",
+      "2 tablespoons sesame seeds"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Pakora",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cut into cubes",
+      "1 cup gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon ajwain (carom seeds)",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Sabudana Wada",
+    "ingredients": [
+      "1 cup sabudana (sago)",
+      "2 medium-sized potatoes, boiled and mashed",
+      "2 green chilies, finely chopped",
+      "1/2 cup roasted peanuts, coarsely ground",
+      "1 teaspoon cumin seeds",
+      "A pinch of sugar",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Dal Bhajiya",
+    "ingredients": [
+      "1 cup chana dal (split chickpeas), soaked for 3-4 hours",
+      "2-3 green chilies, finely chopped",
+      "1 teaspoon ginger paste",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "10-12 curry leaves, chopped",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Pani Puri",
+    "ingredients": [
+      "For the Puris:",
+      "1 cup semolina (suji)",
+      "1/4 cup all-purpose flour (maida)",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Oil for frying",
+      "For the Pani (Spicy Water):",
+      "1/2 cup mint leaves",
+      "1/2 cup coriander leaves",
+      "2-3 green chilies",
+      "1 small piece of ginger",
+      "1 lemon, juiced",
+      "1 teaspoon roasted cumin powder",
+      "1 teaspoon black salt",
+      "1 teaspoon tamarind paste",
+      "Salt to taste",
+      "For the Filling:",
+      "1 cup boiled and mashed potatoes",
+      "1 cup boiled black chickpeas",
+      "Tamarind chutney",
+      "Green chutney",
+      "Sev (crunchy chickpea noodles)"
+    ]
+  },
+  {
+    "recipe_name": "Bhakar Wadi",
+    "ingredients": [
+      "For the Dough:",
+      "1 cup besan (gram flour)",
+      "1/4 cup all-purpose flour (maida)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "2 tablespoons oil",
+      "For the Filling:",
+      "1/2 cup grated coconut",
+      "1/4 cup sesame seeds",
+      "1/4 cup poppy seeds",
+      "2 tablespoons powdered sugar",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon coriander powder",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Rava Idli",
+    "ingredients": [
+      "1 cup semolina (rava)",
+      "1 cup yogurt",
+      "1/2 cup water",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (split black gram)",
+      "1/2 teaspoon chana dal (split chickpeas)",
+      "1/2 teaspoon grated ginger",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon baking soda",
+      "Salt to taste",
+      "Oil for greasing the idli molds"
+    ]
+  },
+  {
+    "recipe_name": "Fofos Fried Fish Chops",
+    "ingredients": [
+      "500 grams fish fillets, boneless and skinless",
+      "2 potatoes, boiled and mashed",
+      "1 onion, finely chopped",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger-garlic paste",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "1 teaspoon cumin powder",
+      "1 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Bread crumbs for coating",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Shami Kabab",
+    "ingredients": [
+      "500 grams minced meat (beef or mutton)",
+      "1 cup chana dal (split chickpeas), soaked for 3-4 hours",
+      "2 onions, finely chopped",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger paste",
+      "1 teaspoon garlic paste",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "1 teaspoon cumin powder",
+      "1 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Moong Kachori",
+    "ingredients": [
+      "For the Outer Covering:",
+      "1 cup all-purpose flour (maida)",
+      "1/4 cup ghee",
+      "A pinch of salt",
+      "Water for kneading",
+      "For the Filling:",
+      "1/2 cup yellow moong dal (split yellow gram), soaked for 4-5 hours",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon fennel seeds",
+      "1/2 teaspoon ginger paste",
+      "1/2 teaspoon green chili paste",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon dry mango powder (amchur)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Matar Cutlet",
+    "ingredients": [
+      "1 cup green peas, boiled and mashed",
+      "2 potatoes, boiled and mashed",
+      "2 green chilies, finely chopped",
+      "1/2 teaspoon ginger paste",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon chaat masala",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Bread crumbs for coating",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Galouti Kabab",
+    "ingredients": [
+      "500 grams minced meat (beef or mutton)",
+      "2 onions, finely chopped",
+      "2 tablespoons raw papaya paste",
+      "1 tablespoon ginger paste",
+      "1 tablespoon garlic paste",
+      "1 teaspoon red chili powder",
+      "1 teaspoon garam masala",
+      "1/2 teaspoon nutmeg powder",
+      "1/2 teaspoon mace powder",
+      "1/2 teaspoon cardamom powder",
+      "1/2 teaspoon saffron strands, soaked in milk",
+      "Salt to taste",
+      "2 tablespoons ghee",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Malai Seekh",
+    "ingredients": [
+      "500 grams boneless chicken, minced",
+      "1/2 cup fresh cream",
+      "2 tablespoons grated cheese",
+      "2 tablespoons cashew nut paste",
+      "2 tablespoons almond paste",
+      "1 teaspoon ginger-garlic paste",
+      "1/2 teaspoon white pepper powder",
+      "1/2 teaspoon cardamom powder",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Mutton Kabab",
+    "ingredients": [
+      "500 grams minced mutton",
+      "2 onions, finely chopped",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger paste",
+      "1 teaspoon garlic paste",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "1 teaspoon cumin powder",
+      "1 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Khakhra",
+    "ingredients": [
+      "2 cups whole wheat flour",
+      "2 tablespoons gram flour (besan)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon carom seeds (ajwain)",
+      "1/2 teaspoon red chili powder",
+      "1/4 teaspoon turmeric powder",
+      "1/4 teaspoon asafoetida (hing)",
+      "1 teaspoon oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Prawn Pakora",
+    "ingredients": [
+      "250 grams prawns, cleaned and deveined",
+      "1 cup gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon ajwain (carom seeds)",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Mathies",
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "2 tablespoons ghee",
+      "1/2 teaspoon carom seeds (ajwain)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Chewda",
+    "ingredients": [
+      "2 cups poha (flattened rice)",
+      "1/4 cup peanuts",
+      "1/4 cup roasted chana dal (split chickpeas)",
+      "10-12 curry leaves",
+      "2 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1 tablespoon oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Nimki",
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon ajwain (carom seeds)",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Prawn Balls",
+    "ingredients": [
+      "250 grams prawns, cleaned and deveined",
+      "1/2 cup grated coconut",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger-garlic paste",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "1 egg",
+      "Bread crumbs for coating",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Bread Upma",
+    "ingredients": [
+      "4-5 slices of bread, cut into small pieces",
+      "1 onion, finely chopped",
+      "1 tomato, chopped",
+      "2 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "Curry leaves",
+      "Salt to taste",
+      "Oil for cooking"
+    ]
+  },
+  {
+    "recipe_name": "Rice Crispies",
+    "ingredients": [
+      "2 cups rice",
+      "1/2 cup mixed nuts (cashews, almonds, peanuts)",
+      "4-5 dried red chilies",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Ghathia",
+    "ingredients": [
+      "2 cups gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "1/4 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Chakli",
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "1 cup rice flour",
+      "1 teaspoon red chili powder",
+      "1/2 teaspoon asafoetida (hing)",
+      "1/2 teaspoon cumin seeds",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Namak Pare",
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "1/4 cup semolina (rava)",
+      "1/2 teaspoon ajwain (carom seeds)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Chana Vada",
+    "ingredients": [
+      "1 cup chana dal (split chickpeas), soaked for 3-4 hours",
+      "1 onion, finely chopped",
+      "2 green chilies, finely chopped",
+      "1 teaspoon ginger paste",
+      "A handful of curry leaves",
+      "1/2 teaspoon cumin seeds",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Crispy Chicken",
+    "ingredients": [
+      "500 grams chicken pieces, boneless",
+      "1 cup all-purpose flour (maida)",
+      "1/2 cup cornstarch",
+      "1 teaspoon red chili powder",
+      "1 teaspoon garlic powder",
+      "1 teaspoon onion powder",
+      "1/2 teaspoon paprika",
+      "1/2 teaspoon dried oregano",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Tidbits",
+    "ingredients": [
+      "1 cup assorted tidbits (small savory snacks)",
+      "2 tablespoons tamarind chutney",
+      "2 tablespoons mint chutney",
+      "2 tablespoons yogurt",
+      "Chopped fresh coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Nawabi Murgh",
+    "ingredients": [
+      "500 grams chicken pieces, boneless",
+      "1/2 cup yogurt",
+      "2 tablespoons fresh cream",
+      "1/2 teaspoon mace powder",
+      "1/2 teaspoon cardamom powder",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Shahi Murgh Kabab",
+    "ingredients": [
+      "500 grams chicken breasts, boneless",
+      "1/2 cup paneer (cottage cheese), crumbled",
+      "1 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Murgh Malai",
+    "ingredients": [
+      "500 grams chicken pieces, boneless",
+      "1/2 cup fresh cream",
+      "2 tablespoons grated cheese",
+      "1/2 teaspoon white pepper powder",
+      "1/2 teaspoon cardamom powder",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Kastoori Kabab",
+    "ingredients": [
+      "500 grams chicken pieces, boneless",
+      "1/2 cup yogurt",
+      "2 tablespoons cream",
+      "1/2 teaspoon kasuri methi (dried fenugreek leaves)",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Skewers for grilling",
+      "Oil for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Batata Poha",
+    "ingredients": [
+      "2 cups pressed rice (poha)",
+      "2 potatoes, boiled and diced",
+      "1 onion, finely chopped",
+      "2 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "1/4 cup roasted peanuts",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Fresh coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Ragda Pattice",
+    "ingredients": [
+      "For Ragda:",
+      "1 cup dried white peas (vatana), soaked overnight",
+      "1 onion, finely chopped",
+      "1 tomato, finely chopped",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "1 teaspoon cumin-coriander powder",
+      "A pinch of asafoetida (hing)",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "For Pattice:",
+      "4 medium-sized potatoes, boiled and mashed",
+      "1/2 cup bread crumbs",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon chaat masala",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Pav Bhaji",
+    "ingredients": [
+      "4 medium-sized potatoes, boiled and mashed",
+      "1 cup mixed vegetables (carrots, peas, capsicum), boiled and mashed",
+      "1 onion, finely chopped",
+      "1 tomato, finely chopped",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "1 teaspoon pav bhaji masala",
+      "2 tablespoons butter",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Fresh coriander leaves for garnish",
+      "Pav (Indian bread) for serving"
+    ]
+  },
+  {
+    "recipe_name": "Uttapa",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup urad dal (split black gram)",
+      "1/4 cup toor dal (split pigeon pea)",
+      "1/4 cup chana dal (split chickpea)",
+      "1/2 teaspoon fenugreek seeds (methi)",
+      "Salt to taste",
+      "1 onion, finely chopped",
+      "1 tomato, finely chopped",
+      "2 green chilies, chopped",
+      "Fresh coriander leaves, chopped",
+      "Oil for cooking"
+    ]
+  },
+  {
+    "recipe_name": "Dahi Vada",
+    "ingredients": [
+      "1 cup urad dal (split black gram)",
+      "1/2 cup moong dal (split green gram)",
+      "2 cups yogurt (curd)",
+      "1 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "2 green chilies, chopped",
+      "Ginger, grated",
+      "Salt to taste",
+      "Oil for frying",
+      "Tamarind chutney",
+      "Mint chutney"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Omelette",
+    "ingredients": [
+      "2 eggs",
+      "2 tablespoons grated cheese",
+      "1/4 teaspoon black pepper powder",
+      "Salt to taste",
+      "Butter for frying"
+    ]
+  },
+  {
+    "recipe_name": "Nadur Monji",
+    "ingredients": [
+      "10-12 slices of lotus root (nadur)",
+      "1/2 cup rice flour",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Mushroom Bhajia",
+    "ingredients": [
+      "200 grams mushrooms, cleaned and sliced",
+      "1/2 cup gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Shankerpalli",
+    "ingredients": [
+      "1 cup whole wheat flour (atta)",
+      "1/4 cup powdered sugar",
+      "1/2 teaspoon cardamom powder",
+      "A pinch of salt",
+      "2 tablespoons ghee",
+      "Water for kneading",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Nankatai",
+    "ingredients": [
+      "1 cup all-purpose flour (maida)",
+      "1/2 cup gram flour (besan)",
+      "1/2 cup powdered sugar",
+      "1/2 cup ghee",
+      "1/2 teaspoon cardamom powder",
+      "A pinch of baking soda",
+      "Chopped nuts for garnish",
+      "Ghee for greasing"
+    ]
+  },
+  {
+    "recipe_name": "Salami Rolls",
+    "ingredients": [
+      "Salami slices",
+      "Cream cheese or soft cheese spread",
+      "Pickled jalapeño slices (optional)",
+      "Fresh basil leaves",
+      "Toothpicks or skewers"
+    ]
+  },
+  {
+    "recipe_name": "Bonda",
+    "ingredients": [
+      "2 cups boiled and mashed potatoes",
+      "1 cup gram flour (besan)",
+      "2-3 green chilies, finely chopped",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A few curry leaves, chopped",
+      "A small piece of ginger, grated",
+      "Salt to taste",
+      "Oil for deep frying"
+    ]
+  },
+  {
+    "recipe_name": "Mushroom Omelette",
+    "ingredients": [
+      "2 eggs",
+      "1/2 cup mushrooms, sliced",
+      "1/4 cup onion, finely chopped",
+      "1/4 cup bell peppers, finely chopped",
+      "1/4 cup grated cheese (optional)",
+      "2 tablespoons butter",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Masala Idli",
+    "ingredients": [
+      "4-5 leftover idlis, cubed",
+      "1 onion, finely chopped",
+      "1 tomato, finely chopped",
+      "1/2 cup mixed vegetables (peas, carrots, beans), finely chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "A few curry leaves",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Potato Kebab",
+    "ingredients": [
+      "4-5 potatoes, boiled and mashed",
+      "1/2 cup bread crumbs",
+      "1/2 cup grated paneer (cottage cheese)",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon chaat masala",
+      "Salt to taste",
+      "Oil for shallow frying"
+    ]
+  },
+  {
+    "recipe_name": "Khaman Dhokla",
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "1/4 cup semolina (rava)",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon ginger-green chili paste",
+      "1 teaspoon lemon juice",
+      "1 teaspoon sugar",
+      "1 teaspoon fruit salt (eno)",
+      "Salt to taste",
+      "For Tempering:",
+      "2 tablespoons oil",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A few curry leaves",
+      "2-3 green chilies, slit",
+      "2 tablespoons chopped coriander leaves",
+      "Grated coconut for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cauliflower Pakoda",
+    "ingredients": [
+      "1 cup cauliflower florets, blanched",
+      "1 cup gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Water as needed",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Sev",
+    "ingredients": [
+      "2 cups gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon ajwain (carom seeds)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Cire Narkol",
+    "ingredients": [
+      "2 cups freshly grated coconut",
+      "1 cup sugar",
+      "1/2 cup water",
+      "1/4 teaspoon cardamom powder",
+      "A pinch of saffron strands (optional)",
+      "Ghee for greasing"
+    ]
+  },
+  {
+    "recipe_name": "Alur Bora",
+    "ingredients": [
+      "4-5 potatoes, boiled and mashed",
+      "1 onion, finely chopped",
+      "2-3 green chilies, chopped",
+      "A handful of fresh coriander leaves, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Rice Flour Pancakes",
+    "ingredients": [
+      "1 cup rice flour",
+      "1/2 cup grated coconut",
+      "2-3 green chilies, finely chopped",
+      "A few curry leaves, chopped",
+      "1/2 teaspoon cumin seeds",
+      "Salt to taste",
+      "Water as needed",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Cutlet",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), grated",
+      "2 potatoes, boiled and mashed",
+      "1/2 cup bread crumbs",
+      "1/2 cup finely chopped vegetables (carrots, peas, beans)",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon cumin powder",
+      "Salt to taste",
+      "Oil for shallow frying"
+    ]
+  },
+  {
+    "recipe_name": "Sausage & Cheese Balls",
+    "ingredients": [
+      "4-5 sausages, cooked and chopped",
+      "1 cup grated cheddar cheese",
+      "1/2 cup bread crumbs",
+      "1/4 cup milk",
+      "2-3 green chilies, finely chopped",
+      "Salt and pepper to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Neer Dosa",
+    "ingredients": [
+      "1 cup rice flour",
+      "1/4 cup grated coconut",
+      "Salt to taste",
+      "Water as needed",
+      "Oil for greasing"
+    ]
+  },
+  {
+    "recipe_name": "Rava Dosa",
+    "ingredients": [
+      "1 cup rava (semolina)",
+      "1/4 cup rice flour",
+      "1/4 cup all-purpose flour (maida)",
+      "2-3 green chilies, finely chopped",
+      "A few curry leaves, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black peppercorns",
+      "Salt to taste",
+      "Water as needed",
+      "Oil for greasing"
+    ]
+  },
+  {
+    "recipe_name": "Set Dosa",
+    "ingredients": [
+      "2 cups dosa rice",
+      "1/2 cup urad dal (black gram dal)",
+      "1/2 cup poha (flattened rice)",
+      "1/2 cup curd (yogurt)",
+      "1 teaspoon fenugreek seeds",
+      "Salt to taste",
+      "Oil for cooking"
+    ]
+  },
+  {
+    "recipe_name": "Sooji Upma",
+    "ingredients": [
+      "1 cup semolina (sooji or rava)",
+      "2 tablespoons ghee",
+      "1 teaspoon mustard seeds",
+      "1 teaspoon urad dal (black gram dal)",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies, slit",
+      "A few curry leaves",
+      "1/4 cup chopped onion",
+      "1/4 cup chopped mixed vegetables (carrots, peas, beans)",
+      "1/4 cup roasted peanuts",
+      "Salt to taste",
+      "Water as needed"
+    ]
+  },
+  {
+    "recipe_name": "Cheddar Cheese Spread",
+    "ingredients": [
+      "1 cup grated cheddar cheese",
+      "1/4 cup mayonnaise",
+      "1/4 cup cream cheese",
+      "1/4 teaspoon garlic powder",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Pani Puri",
+    "ingredients": [
+      "For Puris:",
+      "1 cup semolina (sooji or rava)",
+      "A pinch of baking soda",
+      "Water as needed",
+      "Oil for deep frying",
+      "For Pani (Spiced Water):",
+      "1/2 cup mint leaves",
+      "1/4 cup coriander leaves",
+      "2-3 green chilies",
+      "1 teaspoon cumin seeds",
+      "1/2 teaspoon black salt",
+      "1/2 teaspoon chaat masala",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "For Filling:",
+      "1 cup cooked chickpeas",
+      "1 cup boiled and mashed potatoes",
+      "1/4 cup finely chopped onions",
+      "1/4 cup tamarind chutney",
+      "Nylon sev for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Scrambled Eggs",
+    "ingredients": [
+      "2 large eggs",
+      "2 tablespoons milk",
+      "Salt and pepper to taste",
+      "1 tablespoon butter"
+    ]
+  },
+  {
+    "recipe_name": "Tuna Sandwich",
+    "ingredients": [
+      "2 slices of bread",
+      "1/2 cup canned tuna, drained",
+      "2 tablespoons mayonnaise",
+      "1 tablespoon pickle relish",
+      "Lettuce leaves and tomato slices for garnish",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Methi Dosa",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup urad dal (black gram dal)",
+      "1/4 cup methi (fenugreek) seeds",
+      "Salt to taste",
+      "Oil for cooking"
+    ]
+  },
+  {
+    "recipe_name": "Prawns Puffs",
+    "ingredients": [
+      "1 sheet of puff pastry, thawed",
+      "1/2 cup cooked prawns, chopped",
+      "1/4 cup finely chopped onions",
+      "1/4 cup finely chopped bell peppers",
+      "1/4 cup mayonnaise",
+      "1/2 teaspoon paprika",
+      "Salt and pepper to taste",
+      "1 egg, beaten (for egg wash)"
+    ]
+  },
+  {
+    "recipe_name": "Chingri Cutlet",
+    "ingredients": [
+      "1/2 cup cooked shrimp (chingri), finely chopped",
+      "2 medium potatoes, boiled and mashed",
+      "1/4 cup finely chopped onions",
+      "2-3 green chilies, finely chopped",
+      "A handful of fresh coriander leaves, chopped",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Batata Vada",
+    "ingredients": [
+      "For Potato Filling:",
+      "4 large potatoes, boiled and mashed",
+      "1 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 green chilies, finely chopped",
+      "A few curry leaves, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1 tablespoon oil",
+      "Salt to taste",
+      "For Batter:",
+      "1 cup gram flour (besan)",
+      "A pinch of baking soda",
+      "A pinch of turmeric powder",
+      "A pinch of red chili powder",
+      "Salt to taste",
+      "Water as needed",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Ham Salad Sandwich",
+    "ingredients": [
+      "4 slices of bread",
+      "4-6 slices of ham",
+      "Lettuce leaves",
+      "1/4 cup mayonnaise",
+      "1/4 cup finely chopped celery",
+      "1/4 cup finely chopped onions",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Bacon Sandwich",
+    "ingredients": [
+      "4 slices of bread",
+      "4 slices of bacon, cooked and crispy",
+      "4 slices of cheddar cheese",
+      "1/4 cup mayonnaise",
+      "Lettuce leaves",
+      "Tomato slices",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Cheesy Chicken",
+    "ingredients": [
+      "2 boneless chicken breasts",
+      "1/2 cup grated cheddar cheese",
+      "1/4 cup grated Parmesan cheese",
+      "1/4 cup mayonnaise",
+      "1/2 teaspoon garlic powder",
+      "1/2 teaspoon paprika",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Liver Spread",
+    "ingredients": [
+      "200 grams chicken liver",
+      "1/4 cup finely chopped onions",
+      "2-3 cloves garlic, minced",
+      "1/4 cup butter",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Misal",
+    "ingredients": [
+      "1 cup sprouted moth beans (matki)",
+      "1/2 cup mixed sprouts (moong, chana, moth)",
+      "1/4 cup chopped onions",
+      "1/4 cup chopped tomatoes",
+      "2-3 green chilies, finely chopped",
+      "1/4 cup farsan (crispy snack mix)",
+      "1/4 cup sev (crispy gram flour noodles)",
+      "1/4 cup tamarind chutney",
+      "1/4 cup cilantro (coriander leaves), chopped",
+      "1/4 cup onion, finely chopped",
+      "1/4 cup lemon juice",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 curry leaves",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Water as needed"
+    ]
+  },
+  {
+    "recipe_name": "Mutton Spread on Biscuits",
+    "ingredients": [
+      "1/2 cup cooked mutton, finely chopped",
+      "2 tablespoons mayonnaise",
+      "1/2 teaspoon mustard sauce",
+      "Salt and pepper to taste",
+      "Biscuits for serving"
+    ]
+  },
+  {
+    "recipe_name": "Potato & Cheese Crispies",
+    "ingredients": [
+      "2 cups mashed potatoes",
+      "1/2 cup grated cheddar cheese",
+      "1/4 cup finely chopped onions",
+      "1/4 cup bread crumbs",
+      "1/4 cup chopped cilantro (coriander leaves)",
+      "1/2 teaspoon paprika",
+      "Salt and pepper to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Bread Pakodas",
+    "ingredients": [
+      "4 slices of bread",
+      "2 large potatoes, boiled and sliced",
+      "1/2 cup besan (gram flour)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "A few curry leaves",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Masala Dosa",
+    "ingredients": [
+      "For Dosa Batter:",
+      "2 cups dosa rice",
+      "1/2 cup urad dal (black gram dal)",
+      "1/2 teaspoon fenugreek seeds",
+      "Salt to taste",
+      "For Masala Filling:",
+      "2 large potatoes, boiled and mashed",
+      "1/2 cup finely chopped onions",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "A few curry leaves",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Oil or ghee for cooking dosa"
+    ]
+  },
+  {
+    "recipe_name": "Fried Seekh Boti",
+    "ingredients": [
+      "1 cup boneless chicken pieces",
+      "1/4 cup yogurt",
+      "1/2 teaspoon ginger-garlic paste",
+      "1/2 teaspoon red chili powder",
+      "1/4 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon lemon juice",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Tikha Ganthai",
+    "ingredients": [
+      "2 cups chickpea flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying",
+      "Water as needed"
+    ]
+  },
+  {
+    "recipe_name": "Kachori",
+    "ingredients": [
+      "For Kachori Dough:",
+      "2 cups all-purpose flour (maida)",
+      "1/4 cup oil or ghee",
+      "Salt to taste",
+      "For Kachori Filling:",
+      "1/2 cup yellow moong dal (split yellow lentils), soaked",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon fennel seeds",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Shrimps on Toast",
+    "ingredients": [
+      "1/2 cup cooked and peeled shrimp",
+      "2 slices of bread",
+      "1/4 cup mayonnaise",
+      "1/2 teaspoon garlic powder",
+      "Salt and pepper to taste",
+      "Butter for toasting"
+    ]
+  },
+  {
+    "recipe_name": "Scrambled Eggs and Onion Sandwich",
+    "ingredients": [
+      "4 slices of bread",
+      "4 large eggs",
+      "1/4 cup finely chopped onions",
+      "2 tablespoons butter",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Masala Vadai",
+    "ingredients": [
+      "1 cup chana dal (split chickpeas)",
+      "2-3 green chilies, finely chopped",
+      "1 small onion, finely chopped",
+      "2 tablespoons rice flour",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "A few curry leaves, chopped",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Steamed Omelette",
+    "ingredients": [
+      "2 large eggs",
+      "1/4 cup chopped onions",
+      "1/4 cup chopped tomatoes",
+      "2-3 green chilies, finely chopped",
+      "2 tablespoons chopped cilantro (coriander leaves)",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Vegetable Seekhs",
+    "ingredients": [
+      "1 cup mixed vegetables (carrots, peas, beans), finely chopped",
+      "1/2 cup paneer (cottage cheese), grated",
+      "1/4 cup besan (gram flour)",
+      "1 teaspoon cumin powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon chaat masala",
+      "Salt to taste",
+      "Wooden skewers, soaked in water"
+    ]
+  },
+  {
+    "recipe_name": "Fish Cutlets",
+    "ingredients": [
+      "250 grams boneless fish fillets, boiled and flaked",
+      "2-3 potatoes, boiled and mashed",
+      "1/4 cup chopped onions",
+      "1/4 cup chopped cilantro (coriander leaves)",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "Bread crumbs for coating",
+      "Oil for frying",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Urad Dosa",
+    "ingredients": [
+      "1 cup urad dal (black gram dal)",
+      "1/4 cup rice",
+      "1/2 teaspoon fenugreek seeds",
+      "Salt to taste",
+      "Oil for cooking dosa"
+    ]
+  },
+  {
+    "recipe_name": "Urad Vada",
+    "ingredients": [
+      "1 cup urad dal (black gram dal)",
+      "2-3 green chilies, finely chopped",
+      "1 small onion, finely chopped",
+      "2 tablespoons chopped cilantro (coriander leaves)",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Potato Bondas",
+    "ingredients": [
+      "2 large potatoes, boiled and mashed",
+      "1/2 cup besan (gram flour)",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida (hing)",
+      "A few curry leaves, chopped",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Dahi Tikki",
+    "ingredients": [
+      "2-3 large potatoes, boiled and mashed",
+      "1/2 cup thick yogurt",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon chaat masala",
+      "A few fresh mint leaves, chopped",
+      "Salt to taste",
+      "Oil for shallow frying"
+    ]
+  },
+  {
+    "recipe_name": "Vada Pav",
+    "ingredients": [
+      "For Batata Vada (Potato Patties):",
+      "4 large potatoes, boiled and mashed",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "A few curry leaves, chopped",
+      "2-3 tablespoons chopped cilantro (coriander leaves)",
+      "Salt to taste",
+      "Oil for frying",
+      "For Pav (Bread Rolls):",
+      "4 pav (soft bread rolls)",
+      "Green chutney and tamarind chutney for spreading",
+      "A few slices of onion and tomato for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sabudana Khichdi",
+    "ingredients": [
+      "1 cup sabudana (tapioca pearls)",
+      "1/2 cup roasted peanuts, coarsely crushed",
+      "2-3 green chilies, finely chopped",
+      "1 teaspoon cumin seeds",
+      "2 tablespoons ghee (clarified butter)",
+      "A few curry leaves",
+      "1/2 teaspoon sugar",
+      "Juice of 1 lemon",
+      "Chopped cilantro (coriander leaves) for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Vegetable Triangles",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, peas, beans), finely chopped",
+      "1/2 cup paneer (cottage cheese), grated",
+      "1/4 cup onions, finely chopped",
+      "1/4 cup bell peppers, finely chopped",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Phyllo pastry sheets",
+      "Butter for brushing"
+    ]
+  },
+  {
+    "recipe_name": "Jacket Frankfurters",
+    "ingredients": [
+      "4 frankfurter sausages",
+      "Potato, boiled and mashed",
+      "Breadcrumbs",
+      "Oil for frying",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Egg Rolls",
+    "ingredients": [
+      "2 eggs",
+      "Salt and pepper to taste",
+      "2 parathas or tortillas",
+      "1/4 cup onions, thinly sliced",
+      "1/4 cup bell peppers, thinly sliced",
+      "1/4 cup lettuce leaves",
+      "2 tablespoons mayonnaise",
+      "2 tablespoons ketchup"
+    ]
+  },
+  {
+    "recipe_name": "French Omelette",
+    "ingredients": [
+      "2 large eggs",
+      "2 tablespoons butter",
+      "Salt and pepper to taste",
+      "Chopped herbs (parsley, chives) for garnish (optional)"
+    ]
+  },
+  {
+    "recipe_name": "Fried Cheese Sandwiches",
+    "ingredients": [
+      "4 slices of bread",
+      "4 slices of cheese",
+      "Butter for spreading",
+      "Salt and pepper to taste",
+      "Ketchup for serving"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Straws",
+    "ingredients": [
+      "1 sheet puff pastry, thawed",
+      "1/2 cup grated cheese (cheddar, parmesan, or your choice)",
+      "1/2 teaspoon paprika",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Prawn Sticks",
+    "ingredients": [
+      "250 grams prawns, peeled and deveined",
+      "2 tablespoons oil",
+      "2 cloves garlic, minced",
+      "1/2 teaspoon paprika",
+      "1/2 teaspoon lemon juice",
+      "Salt and pepper to taste",
+      "Wooden skewers, soaked in water"
+    ]
+  },
+  {
+    "recipe_name": "Sweet Mawa Naan",
+    "ingredients": [
+      "4 naan bread",
+      "1/2 cup mawa (khoya), crumbled",
+      "1/4 cup powdered sugar",
+      "1/4 cup chopped nuts (cashews, almonds, pistachios)",
+      "Ghee for brushing",
+      "Saffron strands for garnish (optional)"
+    ]
+  },
+  {
+    "recipe_name": "Egg Potato Puris",
+    "ingredients": [
+      "For Puris:",
+      "1 cup wheat flour",
+      "Salt to taste",
+      "Water for kneading",
+      "Oil for frying",
+      "For Filling:",
+      "2-3 boiled potatoes, mashed",
+      "2-3 boiled eggs, chopped",
+      "1/4 cup onions, finely chopped",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon chaat masala",
+      "Salt to taste",
+      "Chopped cilantro (coriander leaves) for garnish",
+      "Tamarind chutney for serving"
+    ]
+  },
+  {
+    "recipe_name": "Baked Fish Rolls",
+    "ingredients": [
+      "4 fish fillets (any white fish)",
+      "2-3 potatoes, boiled and mashed",
+      "1/4 cup onions, finely chopped",
+      "1/4 cup bell peppers, finely chopped",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "Breadcrumbs",
+      "Oil for brushing",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Onion Pakodas",
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "1/2 cup grated cheese",
+      "1 onion, thinly sliced",
+      "2-3 green chilies, finely chopped",
+      "A handful of cilantro (coriander leaves), chopped",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Papad Fingers",
+    "ingredients": [
+      "4-6 papads",
+      "1/2 cup grated cheese",
+      "1/4 cup onions, finely chopped",
+      "2-3 green chilies, finely chopped",
+      "A handful of cilantro (coriander leaves), chopped",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Chicken Balls",
+    "ingredients": [
+      "250 grams ground chicken",
+      "1/4 cup breadcrumbs",
+      "1/4 cup onions, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1/2 teaspoon ginger, grated",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Chicken Burgers",
+    "ingredients": [
+      "500 grams ground chicken",
+      "1/4 cup breadcrumbs",
+      "1/4 cup onions, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1/2 teaspoon ginger, grated",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Burger buns",
+      "Lettuce leaves, tomato slices, and mayonnaise for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kheema Samosas",
+    "ingredients": [
+      "For Samosa Dough:",
+      "2 cups all-purpose flour",
+      "4 tablespoons ghee (clarified butter)",
+      "Water for kneading",
+      "Salt to taste",
+      "For Kheema Filling:",
+      "250 grams minced chicken or mutton",
+      "1/4 cup onions, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1/2 teaspoon ginger, grated",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Mutton Potato Chops",
+    "ingredients": [
+      "250 grams minced mutton",
+      "2-3 potatoes, boiled and mashed",
+      "1/4 cup onions, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1/2 teaspoon ginger, grated",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Breadcrumbs",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Pan Rolls",
+    "ingredients": [
+      "For Outer Covering:",
+      "2 cups all-purpose flour",
+      "2 tablespoons ghee (clarified butter)",
+      "Water for kneading",
+      "Salt to taste",
+      "For Filling:",
+      "2-3 boiled potatoes, mashed",
+      "1/4 cup green peas, boiled and mashed",
+      "1/4 cup carrots, boiled and mashed",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Potato Toast",
+    "ingredients": [
+      "4 slices of bread",
+      "2-3 potatoes, boiled and mashed",
+      "1/4 cup onions, finely chopped",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Butter for toasting"
+    ]
+  },
+  {
+    "recipe_name": "Tasty Peanuts",
+    "ingredients": [
+      "1 cup raw peanuts",
+      "2 tablespoons oil",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon chaat masala",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Vegetable Bacon Curls",
+    "ingredients": [
+      "1 large potato, peeled",
+      "4-5 slices of bacon",
+      "Salt and pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Microwave Upma",
+    "ingredients": [
+      "1 cup semolina (suji)",
+      "1/4 cup onions, finely chopped",
+      "1/4 cup mixed vegetables (carrots, peas, beans), finely chopped",
+      "1/4 cup roasted peanuts",
+      "2 tablespoons oil",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 green chilies, finely chopped",
+      "Curry leaves",
+      "Salt to taste",
+      "Water"
+    ]
+  },
+  {
+    "recipe_name": "Mushroom with Bacon",
+    "ingredients": [
+      "250 grams mushrooms, sliced",
+      "4-5 slices of bacon, chopped",
+      "1/4 cup onions, finely chopped",
+      "2-3 cloves garlic, minced",
+      "2 tablespoons butter",
+      "Salt and pepper to taste",
+      "Chopped parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sundance Eggs",
+    "ingredients": [
+      "2 eggs",
+      "1/4 cup grated cheese",
+      "1/4 cup bell peppers, finely chopped",
+      "1/4 cup tomatoes, finely chopped",
+      "2-3 slices of bacon, cooked and crumbled",
+      "Salt and pepper to taste",
+      "Chopped chives for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Crumbed Oven Fried Fish",
+    "ingredients": [
+      "4 fish fillets (any white fish)",
+      "1/2 cup breadcrumbs",
+      "1/4 cup grated Parmesan cheese",
+      "1/2 teaspoon garlic powder",
+      "1/2 teaspoon paprika",
+      "Salt and pepper to taste",
+      "2-3 tablespoons melted butter"
+    ]
+  },
+  {
+    "recipe_name": "Flower Sandwich",
+    "ingredients": [
+      "8 slices of bread",
+      "4-6 slices of cheese",
+      "4-6 slices of ham or turkey (optional)",
+      "Butter for spreading",
+      "Mayonnaise for spreading",
+      "Ketchup or mustard for spreading",
+      "Cucumber slices, tomato slices, and lettuce leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sausage Twist",
+    "ingredients": [
+      "1 sheet of puff pastry",
+      "4-6 sausages",
+      "Mustard for spreading",
+      "Egg wash (1 beaten egg)",
+      "Sesame seeds for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Potato Cheese Balls",
+    "ingredients": [
+      "3-4 potatoes, boiled and mashed",
+      "1/2 cup grated cheese",
+      "2-3 tablespoons cornstarch",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon dried oregano",
+      "Salt and pepper to taste",
+      "Oil for frying"
+    ]
+  },
+  {
+    "recipe_name": "Chicken & Cheese Savoury",
+    "ingredients": [
+      "2 cups cooked chicken, shredded",
+      "1 cup grated cheese",
+      "1/4 cup onions, finely chopped",
+      "2-3 tablespoons mayonnaise",
+      "2-3 tablespoons ketchup",
+      "Salt and pepper to taste",
+      "Bread slices for serving"
+    ]
+  },
+  {
+    "recipe_name": "Baked Tomatoes",
+    "ingredients": [
+      "4-6 large tomatoes",
+      "1/2 cup breadcrumbs",
+      "1/4 cup grated Parmesan cheese",
+      "2-3 cloves garlic, minced",
+      "1/4 cup fresh basil leaves, chopped",
+      "Salt and pepper to taste",
+      "Olive oil for drizzling"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Squares",
+    "ingredients": [
+      "1 cup grated cheese",
+      "1/4 cup onions, finely chopped",
+      "2-3 green chilies, finely chopped",
+      "2 tablespoons fresh coriander leaves, chopped",
+      "Salt and pepper to taste",
+      "Bread slices for serving"
+    ]
+  },
+  {
+    "recipe_name": "Chatpati Tikki",
+    "ingredients": [
+      "2 cups boiled and mashed potatoes",
+      "1/2 cup boiled green peas",
+      "1/4 cup breadcrumbs",
+      "2-3 green chilies, finely chopped",
+      "1 teaspoon cumin seeds",
+      "1/2 teaspoon chaat masala",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Oil for shallow frying"
+    ]
+  },
+  {
+    "recipe_name": "Grilled Lemon Fish",
+    "ingredients": [
+      "4 fish fillets (any white fish)",
+      "Juice of 2 lemons",
+      "2-3 cloves garlic, minced",
+      "2-3 tablespoons olive oil",
+      "1 teaspoon dried oregano",
+      "Salt and pepper to taste",
+      "Lemon wedges for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mushroom Shammi Kababs",
+    "ingredients": [
+      "1 cup mushrooms, finely chopped",
+      "1/2 cup boiled and mashed potatoes",
+      "1/4 cup grated paneer (cottage cheese)",
+      "2-3 green chilies, finely chopped",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Breadcrumbs for coating",
+      "Oil for shallow frying"
+    ]
+  },
+  {
+    "recipe_name": "Punjabi Papadi Chaat",
+    "ingredients": [
+      "2 cups papadi (fried dough wafers)",
+      "1 cup boiled and chopped potatoes",
+      "1/2 cup boiled chickpeas",
+      "1/2 cup chopped onions",
+      "1/2 cup chopped tomatoes",
+      "2-3 tablespoons chopped fresh coriander leaves",
+      "2-3 tablespoons sweet tamarind chutney",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon chaat masala",
+      "1/2 teaspoon cumin powder",
+      "Yogurt for garnish",
+      "Sev (crispy chickpea noodles) for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Spinach Pakodas",
+    "ingredients": [
+      "2 cups spinach leaves, chopped",
+      "1 cup gram flour (besan)",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of baking soda",
+      "Salt to taste",
+      "Water",
+      "Oil for deep frying"
+    ]
+  },
+  {
+    "recipe_name": "Stuffed Dahi Bhallas",
+    "ingredients": [
+      "1 cup urad dal (black gram), soaked",
+      "2 cups yogurt (curd)",
+      "2-3 tablespoons sweet tamarind chutney",
+      "2-3 tablespoons green chutney",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Oil for deep frying"
+    ]
+  },
+  {
+    "recipe_name": "Vegetable & Paneer Delight",
+    "ingredients": [
+      "1 cup paneer (cottage cheese), cubed",
+      "1 cup mixed vegetables (bell peppers, onions, tomatoes), cubed",
+      "1/2 cup yogurt (curd)",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Oil for sautéing"
+    ]
+  },
+  {
+    "recipe_name": "Panchmel Daliche Varan",
+    "ingredients": [
+      "1/4 cup toor dal (split pigeon pea)",
+      "1/4 cup masoor dal (red lentils)",
+      "1/4 cup moong dal (split green gram)",
+      "1/4 cup chana dal (split chickpeas)",
+      "1/4 cup urad dal (black gram)",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1 green chili, chopped",
+      "A pinch of asafoetida (hing)",
+      "2 tablespoons ghee",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Maharashtrian Kadhi",
+    "ingredients": [
+      "1 cup yogurt (curd)",
+      "2 tablespoons besan (gram flour)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 curry leaves",
+      "2-3 green chilies, slit",
+      "1/2 inch ginger, grated",
+      "2 cups water",
+      "Salt to taste",
+      "2 tablespoons oil"
+    ]
+  },
+  {
+    "recipe_name": "Dhabey Di Dal",
+    "ingredients": [
+      "1 cup black gram dal (urad dal)",
+      "1/4 cup Bengal gram dal (chana dal)",
+      "1/4 cup pigeon pea dal (toor dal)",
+      "1/4 cup split green gram dal (moong dal)",
+      "1 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "1 onion, finely chopped",
+      "2 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Lobia",
+    "ingredients": [
+      "1 cup black-eyed peas (lobia), soaked",
+      "1 onion, finely chopped",
+      "1 tomato, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Wateli Dal",
+    "ingredients": [
+      "1 cup toor dal (split pigeon pea)",
+      "1/2 cup masoor dal (red lentils)",
+      "1/2 cup moong dal (split green gram)",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1 tomato, finely chopped",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dal Maharani",
+    "ingredients": [
+      "1 cup black gram dal (urad dal), soaked",
+      "1/4 cup kidney beans (rajma), soaked",
+      "1/4 cup Bengal gram dal (chana dal)",
+      "1/4 cup pigeon pea dal (toor dal)",
+      "1/4 cup split green gram dal (moong dal)",
+      "1 onion, finely chopped",
+      "2 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons butter",
+      "2 tablespoons cream",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Rajasthani Dal",
+    "ingredients": [
+      "1 cup pigeon pea dal (toor dal)",
+      "1/4 cup split green gram dal (moong dal)",
+      "1/4 cup Bengal gram dal (chana dal)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon fenugreek seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 dried red chilies",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1 teaspoon garam masala",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Punj Rattani Dal",
+    "ingredients": [
+      "1/2 cup whole urad dal (black gram), soaked",
+      "1/4 cup kidney beans (rajma), soaked",
+      "1/4 cup black gram dal (urad dal), split and soaked",
+      "1/4 cup Bengal gram dal (chana dal)",
+      "1/4 cup split green gram dal (moong dal)",
+      "1/4 cup pigeon pea dal (toor dal)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon fenugreek seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 dried red chilies",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1 teaspoon garam masala",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Bheendi Gavar Dal",
+    "ingredients": [
+      "1/2 cup pigeon pea dal (toor dal)",
+      "1/2 cup split green gram dal (moong dal)",
+      "1/2 cup okra (bheendi), chopped",
+      "1/2 cup cluster beans (gavar), chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Gram Dal",
+    "ingredients": [
+      "1 cup chana dal (gram dal)",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Katachi Aamti",
+    "ingredients": [
+      "1 cup chana dal (split chickpeas), soaked",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato Rasam",
+    "ingredients": [
+      "2-3 ripe tomatoes, chopped",
+      "1/2 cup toor dal (split pigeon pea)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 dried red chilies",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon black pepper powder",
+      "2-3 curry leaves",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Gujarati Kadhi",
+    "ingredients": [
+      "1 cup yogurt (curd)",
+      "2 tablespoons besan (gram flour)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 curry leaves",
+      "2-3 green chilies, slit",
+      "1/2 inch ginger, grated",
+      "2 cups water",
+      "Salt to taste",
+      "2 tablespoons oil"
+    ]
+  },
+  {
+    "recipe_name": "Cholar Dal/Bengal Gram Dal",
+    "ingredients": [
+      "1 cup chana dal (Bengal gram dal), soaked",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Yellow Dal Fry",
+    "ingredients": [
+      "1 cup toor dal (split pigeon pea)",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Palak Masoor Dal",
+    "ingredients": [
+      "1 cup masoor dal (red lentils)",
+      "1 bunch spinach (palak), chopped",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dal Pakhtooni",
+    "ingredients": [
+      "1 cup masoor dal (red lentils)",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dal Makhani",
+    "ingredients": [
+      "1/2 cup black gram dal (urad dal), soaked",
+      "1/4 cup kidney beans (rajma), soaked",
+      "1/4 cup Bengal gram dal (chana dal)",
+      "1/4 cup split green gram dal (moong dal)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "2 tablespoons butter",
+      "2 tablespoons cream",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Rajmah Rasmisa",
+    "ingredients": [
+      "1 cup kidney beans (rajma), soaked",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tomatoes, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sambhar",
+    "ingredients": [
+      "1/2 cup toor dal (split pigeon pea)",
+      "1/2 cup mixed vegetables (carrots, beans, drumsticks, etc.), chopped",
+      "1/2 teaspoon turmeric powder",
+      "1 teaspoon cumin seeds",
+      "1 teaspoon mustard seeds",
+      "A pinch of asafoetida (hing)",
+      "2-3 dried red chilies",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, slit",
+      "1/2 teaspoon tamarind paste",
+      "1 tablespoon sambhar powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sprouted Moong Khichdi",
+    "ingredients": [
+      "1 cup sprouted moong (green gram)",
+      "1/2 cup rice",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1-2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Puliyodharai",
+    "ingredients": [
+      "1 cup rice",
+      "2 tablespoons tamarind paste",
+      "2-3 tablespoons puliyodharai powder (available in stores)",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (black gram)",
+      "1/2 teaspoon chana dal (Bengal gram dal)",
+      "A pinch of asafoetida (hing)",
+      "2-3 dried red chilies",
+      "10-12 curry leaves",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Fodnicha Bhaat",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "2-3 dried red chilies",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Carrot & Pea Pulao",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup carrots, diced",
+      "1/2 cup green peas",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato Soya Pulao",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup soya granules",
+      "2 tomatoes, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Moong Ring Pulao",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup split green gram dal (moong dal)",
+      "1/2 cup onion rings",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Methi Corn Pulao",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup fresh methi (fenugreek) leaves, chopped",
+      "1/2 cup corn kernels",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Microwave Coconut Rice",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup grated coconut",
+      "2-3 green chilies",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (black gram)",
+      "1/2 teaspoon chana dal (Bengal gram dal)",
+      "A pinch of asafoetida (hing)",
+      "2-3 curry leaves",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Fried Savoury Rice",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Peas Paneer Pulao",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup peas",
+      "1/2 cup paneer (cottage cheese), cubed",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tri Colour Rice",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup carrots, grated",
+      "1/2 cup peas",
+      "1/2 cup beetroot, grated",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Zarda",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup sugar",
+      "1/4 cup ghee",
+      "1/4 cup mixed dry fruits (cashews, almonds, raisins)",
+      "1/2 teaspoon cardamom powder",
+      "A pinch of saffron strands soaked in warm milk",
+      "2-3 drops orange food color (optional)",
+      "Water for cooking rice",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Pineapple Pullao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup pineapple chunks",
+      "1/4 cup cashews",
+      "1/4 cup raisins",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Coconut Tomato Pullao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup grated coconut",
+      "2 tomatoes, finely chopped",
+      "1/4 cup cashews",
+      "1/4 cup chopped coriander leaves",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "2-3 dried red chilies",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Cashew Rice",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup cashews",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Onion Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "2 onions, thinly sliced",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Tuvar Dal ni Khichdi",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup split pigeon pea (tuvar dal)",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Parsi Prawn Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup prawns, cleaned and deveined",
+      "1 onion, thinly sliced",
+      "2 tomatoes, finely chopped",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tropical Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed tropical fruits (pineapple, mango, papaya), diced",
+      "1/4 cup cashews",
+      "1/4 cup raisins",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Steamed Rice",
+    "ingredients": [
+      "1 cup rice",
+      "2 cups water",
+      "A pinch of salt"
+    ]
+  },
+  {
+    "recipe_name": "Vegetable Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Goan Tisyra Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup prawns, cleaned and deveined",
+      "1/2 cup grated coconut",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Nawabi Biriyani",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup chicken pieces (or meat of your choice)",
+      "1/2 cup yogurt (curd)",
+      "2 onions, thinly sliced",
+      "2 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons ghee",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Bengali Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (potatoes, carrots, peas), chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "A pinch of asafoetida (hing)",
+      "2-3 tablespoons raisins",
+      "2-3 tablespoons cashews",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Pudina Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup fresh mint leaves",
+      "2-3 green chilies",
+      "2-3 cloves garlic",
+      "1-inch ginger",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 tablespoons ghee",
+      "2-3 cups water",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Spicy Festive Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 tablespoons raisins",
+      "2-3 tablespoons cashews",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mixed Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "1/2 cup paneer (cottage cheese), cubed",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 tablespoons cashews",
+      "2-3 tablespoons raisins",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kathal Biriyani",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup jackfruit (kathal) pieces",
+      "1/2 cup yogurt (curd)",
+      "2 onions, thinly sliced",
+      "2 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons ghee",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Minced Meat Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup minced meat (chicken, lamb, or beef)",
+      "1/2 cup yogurt (curd)",
+      "2 onions, thinly sliced",
+      "2 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons ghee",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Khichuri",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup split yellow lentils (moong dal)",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2-3 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 potatoes, diced",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Moti Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "1/2 cup paneer (cottage cheese) cubes",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 tablespoons raisins",
+      "2-3 tablespoons cashews",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Khichda",
+    "ingredients": [
+      "1 cup wheat berries",
+      "1/2 cup rice",
+      "1/2 cup split green gram (moong dal)",
+      "1/2 cup split yellow lentils (moong dal)",
+      "1/2 cup meat (chicken, mutton, or beef), cubed",
+      "2-3 onions, thinly sliced",
+      "2-3 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 tablespoons ghee",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Chopped cilantro and mint leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tamarind Rice",
+    "ingredients": [
+      "1 cup rice",
+      "2 tablespoons tamarind pulp",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (black gram)",
+      "1/2 teaspoon chana dal (split chickpeas)",
+      "2-3 dried red chilies",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon turmeric powder",
+      "10-12 curry leaves",
+      "2-3 tablespoons peanuts",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Veg Hyderabadi Biriyani",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "2 onions, thinly sliced",
+      "2 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons yogurt (curd)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Dhan Dar Ne Colmi No Patio",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup toor dal (split pigeon peas)",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2-3 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2-3 tomatoes, finely chopped",
+      "2-3 tablespoons tamarind pulp",
+      "2-3 tablespoons jaggery (gur)",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Methi Wara Chawar",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup fresh methi (fenugreek) leaves, chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2-3 tablespoons peanuts",
+      "2-3 tablespoons grated coconut",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Masale Bhath",
+    "ingredients": [
+      "1 cup rice",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "A pinch of asafoetida (hing)",
+      "2-3 tablespoons mixed vegetables (carrots, peas)",
+      "2-3 tablespoons grated coconut",
+      "2-3 tablespoons roasted peanuts",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Spicy Sambhar Rice",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup toor dal (split pigeon peas)",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon sambhar powder",
+      "10-12 curry leaves",
+      "2-3 tablespoons tamarind pulp",
+      "2-3 tablespoons grated coconut",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Coconut Rice",
+    "ingredients": [
+      "1 cup rice",
+      "2-3 tablespoons grated coconut",
+      "2-3 tablespoons roasted peanuts",
+      "2-3 green chilies, chopped",
+      "2-3 tablespoons oil",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (black gram)",
+      "1/2 teaspoon chana dal (split chickpeas)",
+      "10-12 curry leaves",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sindhi Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "2 onions, thinly sliced",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons yogurt (curd)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2-3 tablespoons fried onions",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Peas Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup green peas",
+      "1/2 cup onions, thinly sliced",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "1-inch cinnamon stick",
+      "2-3 green cardamom pods",
+      "2-3 bay leaves",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Masala Khichdi",
+    "ingredients": [
+      "1 cup rice",
+      "1/2 cup split yellow lentils (moong dal)",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2-3 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tamatar Pulav",
+    "ingredients": [
+      "1 cup basmati rice",
+      "2-3 tomatoes, finely chopped",
+      "1/2 cup onions, thinly sliced",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Curd Rice",
+    "ingredients": [
+      "1 cup cooked rice",
+      "1/2 cup yogurt (curd)",
+      "2-3 tablespoons milk",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (black gram)",
+      "1/2 teaspoon chana dal (split chickpeas)",
+      "2-3 green chilies, chopped",
+      "10-12 curry leaves",
+      "2-3 tablespoons grated coconut",
+      "2-3 tablespoons pomegranate seeds (optional)",
+      "2-3 tablespoons coriander leaves, chopped",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Jeera Rice",
+    "ingredients": [
+      "1 cup basmati rice",
+      "2 tablespoons ghee",
+      "1 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Prawn Pulao",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup prawns, cleaned and deveined",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons yogurt (curd)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Chicken Biriyani",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup chicken, cut into pieces",
+      "2-3 onions, thinly sliced",
+      "2-3 tomatoes, finely chopped",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons yogurt (curd)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Vegetable Biriyani",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup mixed vegetables (carrots, beans, peas), chopped",
+      "2-3 onions, thinly sliced",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons ghee",
+      "1/2 teaspoon cumin seeds",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 tablespoons yogurt (curd)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "A few saffron strands soaked in warm milk",
+      "Chopped cilantro and mint leaves for garnish",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Lemon Rice",
+    "ingredients": [
+      "1 cup cooked rice",
+      "2-3 tablespoons lemon juice",
+      "2-3 tablespoons oil",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon urad dal (black gram)",
+      "1/2 teaspoon chana dal (split chickpeas)",
+      "2-3 dried red chilies",
+      "A pinch of asafoetida (hing)",
+      "10-12 curry leaves",
+      "2-3 tablespoons roasted peanuts",
+      "2-3 tablespoons grated coconut",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Aloo Gobi Tahri",
+    "ingredients": [
+      "1 cup basmati rice",
+      "1/2 cup cauliflower (gobi), florets",
+      "1/2 cup potatoes (aloo), diced",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2-3 cloves",
+      "2-3 green cardamom pods",
+      "1-inch cinnamon stick",
+      "2-3 bay leaves",
+      "2-3 cups water",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Celestial Vegetable Soup",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, beans, peas, corn)",
+      "1/2 cup cabbage, shredded",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1 tablespoon oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato Rasam",
+    "ingredients": [
+      "4 ripe tomatoes, chopped",
+      "1/2 cup toor dal (split pigeon peas)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "2-3 dry red chilies",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida (hing)",
+      "8-10 curry leaves",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 tablespoons tamarind paste",
+      "2 cups water",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato Saar",
+    "ingredients": [
+      "4 ripe tomatoes, chopped",
+      "1/2 cup coconut, grated",
+      "2-3 dry red chilies",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "2-3 curry leaves",
+      "1 tablespoon oil",
+      "A pinch of asafoetida (hing)",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon sugar",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Matar Ka Shorba",
+    "ingredients": [
+      "1 cup green peas",
+      "1/2 cup onions, finely chopped",
+      "1/2 cup tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "1 tablespoon oil",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato Cabbage Soup",
+    "ingredients": [
+      "2 cups cabbage, shredded",
+      "1 cup tomatoes, chopped",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tri Colour Soup",
+    "ingredients": [
+      "1/2 cup carrots, chopped",
+      "1/2 cup peas",
+      "1/2 cup sweet corn kernels",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Microwave Mushroom & Almond Soup",
+    "ingredients": [
+      "2 cups mushrooms, sliced",
+      "1/2 cup almonds, blanched and peeled",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Pumpkin Soup",
+    "ingredients": [
+      "2 cups pumpkin, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped chives for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Crab Soup",
+    "ingredients": [
+      "2 cups crab meat, cleaned and chopped",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "4 cups fish or seafood broth",
+      "Salt to taste",
+      "Chopped parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mutton Paya",
+    "ingredients": [
+      "2 pounds mutton trotters (paya), cleaned",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "6 cups water",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cream of Spinach Soup",
+    "ingredients": [
+      "2 cups fresh spinach leaves",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup heavy cream",
+      "2 tablespoons butter",
+      "Salt and pepper to taste",
+      "Grated Parmesan cheese for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Baby Onion Soup",
+    "ingredients": [
+      "2 cups baby onions, peeled",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "1 tablespoon butter",
+      "1/2 teaspoon thyme",
+      "Salt and pepper to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mutton Stew",
+    "ingredients": [
+      "2 pounds mutton, cubed",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 potatoes, diced",
+      "2 carrots, sliced",
+      "2 cups vegetable broth",
+      "1/2 cup coconut milk",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon turmeric powder",
+      "Salt and pepper to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cream of Corn Soup",
+    "ingredients": [
+      "2 cups corn kernels",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup heavy cream",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped chives for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Red Pumpkin Soup",
+    "ingredients": [
+      "2 cups red pumpkin, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup carrots, diced",
+      "2 cups vegetable broth",
+      "1/2 cup coconut milk",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon cinnamon powder",
+      "1/2 teaspoon nutmeg powder",
+      "Salt and pepper to taste",
+      "Toasted pumpkin seeds for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato & Paneer Soup",
+    "ingredients": [
+      "2 cups tomatoes, chopped",
+      "1/2 cup paneer (Indian cottage cheese), diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "1/2 teaspoon sugar",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Soup with Vegetables",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, beans, peas, corn)",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "Salt and pepper to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Chicken Soup with Cucumber",
+    "ingredients": [
+      "2 cups chicken, cooked and shredded",
+      "1/2 cup cucumber, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 cups chicken broth",
+      "1/2 cup yogurt",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped mint leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Ice Cucumber Soup",
+    "ingredients": [
+      "2 cucumbers, peeled and diced",
+      "1/2 cup yogurt",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon mint leaves",
+      "Salt to taste",
+      "Ice cubes for serving"
+    ]
+  },
+  {
+    "recipe_name": "Fresh Mushroom Soup",
+    "ingredients": [
+      "2 cups mushrooms, sliced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "Salt and pepper to taste",
+      "Chopped fresh thyme for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cold Chicken Tomato Soup",
+    "ingredients": [
+      "2 cups cooked chicken, shredded",
+      "1 cup tomatoes, chopped",
+      "1/2 cup cucumber, chopped",
+      "1/2 cup bell peppers (red and green), chopped",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "2-3 tablespoons tomato ketchup",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon paprika",
+      "1/2 teaspoon black pepper powder",
+      "2 cups chicken broth",
+      "1/2 cup yogurt",
+      "Salt to taste",
+      "Fresh basil leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Green Peas Soup",
+    "ingredients": [
+      "2 cups green peas",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped fresh mint leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Carrot Soup",
+    "ingredients": [
+      "2 cups carrots, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Potato & Cheese Soup",
+    "ingredients": [
+      "2 cups potatoes, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "1/2 cup cheddar cheese, grated",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped chives for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cream of Mushroom Soup",
+    "ingredients": [
+      "2 cups mushrooms, sliced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup heavy cream",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped fresh thyme for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Curry Soup",
+    "ingredients": [
+      "2 cups potatoes, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup carrots, diced",
+      "2 cups vegetable broth",
+      "1/2 cup coconut milk",
+      "2 tablespoons curry powder",
+      "2 tablespoons oil",
+      "Salt and pepper to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Prawn Soup",
+    "ingredients": [
+      "2 cups prawns, peeled and deveined",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 cups seafood broth",
+      "1/2 cup coconut milk",
+      "2 tablespoons oil",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon black pepper powder",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Carrot & Coriander Soup",
+    "ingredients": [
+      "2 cups carrots, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "2 cups vegetable broth",
+      "1/2 cup fresh coriander leaves, chopped",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Lentil Soup",
+    "ingredients": [
+      "1 cup dried red lentils, rinsed",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup carrots, diced",
+      "1/2 cup celery, diced",
+      "2 cups vegetable broth",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon paprika",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons oil",
+      "Salt and pepper to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mixed Veg. Soup",
+    "ingredients": [
+      "1/2 cup carrots, diced",
+      "1/2 cup beans, chopped",
+      "1/2 cup peas",
+      "1/2 cup sweet corn kernels",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon turmeric powder",
+      "1 tablespoon oil",
+      "4 cups vegetable broth",
+      "Salt to taste",
+      "Chopped coriander leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Spinach Soup",
+    "ingredients": [
+      "2 cups fresh spinach leaves",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "Salt and white pepper to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Caldo Verde",
+    "ingredients": [
+      "2 cups kale, finely chopped",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "2 cups vegetable broth",
+      "1/2 cup chorizo sausage, sliced",
+      "2 tablespoons olive oil",
+      "Salt and black pepper to taste"
+    ]
+  },
+  {
+    "recipe_name": "Kheera ka Soup",
+    "ingredients": [
+      "2 cucumbers, peeled and diced",
+      "1/2 cup yogurt",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon mint leaves",
+      "Salt to taste",
+      "Ice cubes for serving"
+    ]
+  },
+  {
+    "recipe_name": "Tamatar ka Shorba",
+    "ingredients": [
+      "2 cups tomatoes, chopped",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup fresh coriander leaves, chopped",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon black pepper powder",
+      "1/2 teaspoon garam masala",
+      "2 cups vegetable broth",
+      "1/2 cup yogurt",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mulligatawny Soup",
+    "ingredients": [
+      "2 cups chicken, cooked and shredded",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup carrots, diced",
+      "1/2 cup apples, diced",
+      "1/2 cup red lentils, rinsed",
+      "2 tablespoons curry powder",
+      "2 tablespoons butter",
+      "4 cups chicken broth",
+      "1/2 cup coconut milk",
+      "Salt and pepper to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Chicken Shorba",
+    "ingredients": [
+      "2 cups chicken, bone-in pieces",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "2 cups chicken broth",
+      "1/2 cup yogurt",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon turmeric powder",
+      "Salt and pepper to taste",
+      "Chopped fresh mint leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dal Shorba",
+    "ingredients": [
+      "1 cup yellow lentils, rinsed",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons ghee",
+      "4 cups water",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Yogurt Stew",
+    "ingredients": [
+      "2 cups yogurt",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1/2 cup potatoes, diced",
+      "1/2 cup carrots, diced",
+      "1/2 cup green beans, chopped",
+      "1/2 cup peas",
+      "2 tablespoons oil",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Doodhi Paneer Ka Salan",
+    "ingredients": [
+      "1 cup doodhi (bottle gourd), diced",
+      "1 cup paneer (cottage cheese), cubed",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "1/2 cup yogurt",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Baghare Baingan",
+    "ingredients": [
+      "10 small brinjals (eggplants), slit",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "1/2 cup tamarind extract",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Adraki Mushroom",
+    "ingredients": [
+      "2 cups mushrooms, sliced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Peshawari Chana",
+    "ingredients": [
+      "2 cups chickpeas (chana), cooked",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "1/2 cup tomato puree",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Malai Kofta",
+    "ingredients": [
+      "For Koftas:",
+      "2 cups paneer (cottage cheese), grated",
+      "1/2 cup potatoes, boiled and mashed",
+      "1/2 cup mixed vegetables (carrots, peas, beans), finely chopped",
+      "2 tablespoons corn flour",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for frying",
+      "For Gravy:",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup tomato puree",
+      "1/2 cup cashew paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Punjabi Kadhi",
+    "ingredients": [
+      "1 cup yogurt",
+      "1/2 cup besan (gram flour)",
+      "1/2 cup onions, finely chopped",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon fenugreek seeds",
+      "1/2 teaspoon asafoetida",
+      "2 tablespoons oil",
+      "4 cups water",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kadhai Paneer",
+    "ingredients": [
+      "2 cups paneer (cottage cheese), cubed",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup tomato puree",
+      "1/2 cup bell peppers (red and green), diced",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Gobhi Mussalam",
+    "ingredients": [
+      "1 small cauliflower (gobhi), whole",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup tomato puree",
+      "1/2 cup yogurt",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Aloo Dumwale",
+    "ingredients": [
+      "2 cups potatoes, diced",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup tomato puree",
+      "1/2 cup yogurt",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Stuffed Baingan",
+    "ingredients": [
+      "10 small brinjals (eggplants)",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup peanuts, roasted and ground",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Palak Paneer",
+    "ingredients": [
+      "250 grams paneer (cottage cheese), cubed",
+      "250 grams fresh spinach (palak)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Fresh cream for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Baingan Bharta",
+    "ingredients": [
+      "2 large eggplants (baingan)",
+      "2 onions, finely chopped",
+      "2 tomatoes, chopped",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon coriander powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Stuffed Bhindi",
+    "ingredients": [
+      "250 grams okra (bhindi)",
+      "2 tablespoons besan (gram flour)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Palak Aloo",
+    "ingredients": [
+      "2 cups chopped spinach (palak)",
+      "2 large potatoes, peeled and diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Pasanda",
+    "ingredients": [
+      "250 grams paneer (cottage cheese), sliced into thick pieces",
+      "1/2 cup yogurt",
+      "1/2 cup cashew nuts, soaked and ground into a paste",
+      "1/2 cup tomato puree",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Navaratan Korma",
+    "ingredients": [
+      "1 cup mixed vegetables (carrots, beans, peas, etc.), boiled",
+      "1/2 cup paneer (cottage cheese), cubed",
+      "1/2 cup cashew nuts, soaked and ground into a paste",
+      "1/2 cup yogurt",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dahi Baingan",
+    "ingredients": [
+      "500 grams small eggplants (baingan)",
+      "2 cups yogurt",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Moglai Potatoes",
+    "ingredients": [
+      "4 large potatoes, boiled and diced",
+      "1/2 cup onions, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 cup yogurt",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Stuffed Tomatoes",
+    "ingredients": [
+      "6 large tomatoes",
+      "1/2 cup paneer (cottage cheese), crumbled",
+      "1/2 cup boiled and mashed potatoes",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Tandoori Gobi",
+    "ingredients": [
+      "1 medium cauliflower (gobi), cut into florets",
+      "1/2 cup yogurt",
+      "1 tablespoon ginger-garlic paste",
+      "1 tablespoon tandoori masala",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Lemon wedges and mint leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cauliflower Peas Curry",
+    "ingredients": [
+      "1 medium cauliflower, cut into florets",
+      "1 cup green peas",
+      "2 onions, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mixed Bitter Vegetable Curry",
+    "ingredients": [
+      "2 cups mixed bitter vegetables (e.g., bitter gourd, bitter melon), sliced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Potatoes in Poppy Seeds",
+    "ingredients": [
+      "4 potatoes, boiled and diced",
+      "2 tablespoons poppy seeds",
+      "1/2 cup yogurt",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Shahi Curry",
+    "ingredients": [
+      "1 cup mixed vegetables (carrots, beans, peas, etc.), boiled",
+      "1/2 cup paneer (cottage cheese), cubed",
+      "1/2 cup cashew nuts, soaked and ground into a paste",
+      "1/2 cup tomato puree",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Baked Vegetable Potpourri",
+    "ingredients": [
+      "2 cups mixed vegetables (e.g., potatoes, carrots, bell peppers), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sindhi Kadhi",
+    "ingredients": [
+      "1/2 cup gram flour (besan)",
+      "1/2 cup yogurt",
+      "2 tablespoons tamarind pulp",
+      "1 onion, finely chopped",
+      "1 potato, diced",
+      "1 carrot, sliced",
+      "1/2 cup drumsticks, cut into pieces",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon fenugreek seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon cumin seeds",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mirchi ka Salan",
+    "ingredients": [
+      "6-8 long green chilies",
+      "1/2 cup peanuts, roasted and ground",
+      "1/2 cup sesame seeds, roasted and ground",
+      "1/2 cup tamarind pulp",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon fenugreek seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sarso ka Saag",
+    "ingredients": [
+      "2 bunches mustard greens (sarso)",
+      "1 bunch spinach (palak)",
+      "1/2 cup maize flour (makki ka atta)",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Amritsari Aloo",
+    "ingredients": [
+      "4 large potatoes, boiled and diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Methi Corn Malai",
+    "ingredients": [
+      "1 cup fresh fenugreek leaves (methi), chopped",
+      "1 cup sweet corn kernels",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Bharli Waangi",
+    "ingredients": [
+      "10 small brinjals (eggplants)",
+      "1/2 cup onions, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup peanuts, roasted and ground",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Aluchi Bhaji",
+    "ingredients": [
+      "2 cups colocasia leaves (arbi ke patte), chopped",
+      "1/2 cup grated coconut",
+      "1/2 cup roasted gram flour (besan)",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Dal Palak",
+    "ingredients": [
+      "1 cup split yellow lentils (moong dal)",
+      "2 cups chopped spinach (palak)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Capsicum",
+    "ingredients": [
+      "250 grams paneer (cottage cheese), cubed",
+      "2 bell peppers (capsicum), cut into strips",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Matar Paneer",
+    "ingredients": [
+      "1 cup paneer (cottage cheese), cubed",
+      "1 cup green peas (matar)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Chole",
+    "ingredients": [
+      "1 cup chickpeas (chole), soaked and boiled",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Avial",
+    "ingredients": [
+      "1 cup mixed vegetables (carrots, beans, drumsticks, etc.), diced",
+      "1/2 cup grated coconut",
+      "1/2 cup yogurt",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies",
+      "1/2 teaspoon turmeric powder",
+      "A few curry leaves",
+      "2 tablespoons coconut oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Sourac",
+    "ingredients": [
+      "1 cup colocasia leaves (arbi ke patte), chopped",
+      "1/2 cup grated coconut",
+      "1/2 cup roasted gram flour (besan)",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Malai Korma",
+    "ingredients": [
+      "1 cup mixed vegetables (carrots, beans, peas, etc.), boiled",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Undhiyo",
+    "ingredients": [
+      "2 cups mixed vegetables (e.g., potatoes, yam, brinjal, peas), diced",
+      "1/2 cup grated coconut",
+      "1/2 cup roasted gram flour (besan)",
+      "2-3 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Gatte Ki Sabzi",
+    "ingredients": [
+      "For Gatte (Dumplings):",
+      "1 cup gram flour (besan)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida (hing)",
+      "Salt to taste",
+      "2 tablespoons yogurt",
+      "2 tablespoons oil",
+      "For Gravy:",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Begun Bhaja",
+    "ingredients": [
+      "2 large eggplants (brinjals), sliced",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "2 tablespoons oil"
+    ]
+  },
+  {
+    "recipe_name": "Alupulkofi",
+    "ingredients": [
+      "1 cauliflower, cut into florets",
+      "2 potatoes, diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Labra",
+    "ingredients": [
+      "2 cups mixed vegetables (potatoes, pumpkin, eggplant, beans, etc.), diced",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "2-3 green chilies, chopped",
+      "2 tablespoons mustard oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Mughlai Arbi",
+    "ingredients": [
+      "500 grams arbi (taro root), boiled and peeled",
+      "1/2 cup yogurt",
+      "1/2 cup cream",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kandhari Kofta Curry",
+    "ingredients": [
+      "For Koftas:",
+      "2 large potatoes, boiled and mashed",
+      "1/2 cup paneer (cottage cheese), grated",
+      "2 tablespoons corn flour",
+      "1/2 teaspoon red chili powder",
+      "Salt to taste",
+      "Oil for frying",
+      "For Curry:",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kesar Gobi",
+    "ingredients": [
+      "1 cauliflower, cut into florets",
+      "1/2 cup yogurt",
+      "1/2 teaspoon saffron strands soaked in warm milk",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Arbi Masala",
+    "ingredients": [
+      "500 grams arbi (taro root), boiled and peeled",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Bhindi Bharvan",
+    "ingredients": [
+      "250 grams okra (bhindi)",
+      "1/2 cup roasted gram flour (besan)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Nadur Palak",
+    "ingredients": [
+      "2 cups lotus stem (nadur), sliced",
+      "1 bunch spinach (palak)",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Butter Masala",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "2 tomatoes, chopped",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons butter",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mushroom & Cheese Bake",
+    "ingredients": [
+      "200 grams mushrooms, sliced",
+      "1 cup grated cheese (any variety)",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "1/2 cup cream",
+      "1/2 teaspoon dried oregano",
+      "1/2 teaspoon dried basil",
+      "1/2 teaspoon red chili flakes",
+      "2 tablespoons butter",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Capsicum & Paneer Delight",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "2 bell peppers (capsicum), cut into strips",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Matar Lajawab",
+    "ingredients": [
+      "2 cups green peas (matar)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Creamed Diced Carrots with Green Pepper",
+    "ingredients": [
+      "2 cups diced carrots",
+      "1 green bell pepper, diced",
+      "1/2 cup heavy cream",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "1/2 teaspoon dried thyme",
+      "1/2 teaspoon dried rosemary",
+      "Salt and black pepper to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Matar Methi Malai",
+    "ingredients": [
+      "2 cups green peas (matar)",
+      "1 cup fresh fenugreek leaves (methi), chopped",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Veg. Jalfarezi",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, bell peppers, beans, etc.), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Raw Banana Curry",
+    "ingredients": [
+      "2 raw bananas, peeled and sliced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sai Bhaji",
+    "ingredients": [
+      "1 cup spinach (palak), chopped",
+      "1/2 cup mustard greens (sarson), chopped",
+      "1/2 cup dill leaves (shepu), chopped",
+      "1/2 cup fenugreek leaves (methi), chopped",
+      "1/2 cup chana dal (split chickpeas), soaked",
+      "1/2 cup moong dal (split green gram), soaked",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Stuffed Potatoes",
+    "ingredients": [
+      "4 large potatoes",
+      "1/2 cup paneer (cottage cheese), grated",
+      "1/2 cup boiled and mashed peas",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "White Pumpkin Curry",
+    "ingredients": [
+      "2 cups white pumpkin, diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Chholar Ghugni",
+    "ingredients": [
+      "2 cups dried yellow peas (chholar dal), soaked",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sweet & Sour Baked Beans",
+    "ingredients": [
+      "2 cups canned baked beans",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup ketchup",
+      "1/4 cup brown sugar",
+      "1/4 cup vinegar",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Matar Mushroom Masala",
+    "ingredients": [
+      "2 cups mushrooms, sliced",
+      "1 cup green peas (matar)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Jalfrezi",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 bell pepper (capsicum), cut into strips",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cottage Cheese in Yellow Gravy",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Pineapple Pachadi",
+    "ingredients": [
+      "1 cup pineapple chunks",
+      "1/2 cup grated coconut",
+      "1/2 cup yogurt",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida",
+      "1 tablespoon oil",
+      "Salt to taste",
+      "Curry leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Makhani",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons butter",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Matar Masala",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 cup green peas (matar)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Shahi Paneer",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons ghee",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Veg Makhanwala",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, beans, peas, etc.), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons butter",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Gobhi Korma",
+    "ingredients": [
+      "1 medium cauliflower, cut into florets",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup yogurt",
+      "1/2 cup cashew nut paste",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Alu Potal Rasa",
+    "ingredients": [
+      "2 potatoes, diced",
+      "2 pointed gourds (potol or parwal), sliced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons mustard oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Alu Beans Bhaja",
+    "ingredients": [
+      "2 potatoes, thinly sliced",
+      "1 cup green beans, chopped",
+      "1 onion, finely chopped",
+      "2 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Bhendi Besara",
+    "ingredients": [
+      "2 cups okra (bhindi), sliced",
+      "1/2 cup mustard seeds paste",
+      "1/2 cup yogurt",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons mustard oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Methi Sag",
+    "ingredients": [
+      "2 cups fresh fenugreek leaves (methi), chopped",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Hara Alu",
+    "ingredients": [
+      "2 cups baby potatoes, boiled and peeled",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mixed Stuffed Vegetables",
+    "ingredients": [
+      "2 cups mixed vegetables (bell peppers, tomatoes, etc.)",
+      "1/2 cup paneer (cottage cheese), grated",
+      "1/2 cup boiled and mashed potatoes",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Karela Bhindi Masala",
+    "ingredients": [
+      "2 bitter gourds (karela), sliced",
+      "1 cup okra (bhindi), chopped",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dahi Batete nu Shak",
+    "ingredients": [
+      "2 cups potatoes, diced",
+      "1 cup yogurt",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tomato Bhaji",
+    "ingredients": [
+      "4 tomatoes, chopped",
+      "1 onion, finely chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Paneer Korma",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup yogurt",
+      "1/2 cup cashew nut paste",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Drumstick Masala",
+    "ingredients": [
+      "2 cups drumstick pieces",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Onion Bhaji",
+    "ingredients": [
+      "2 onions, thinly sliced",
+      "1 cup chickpea flour (besan)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "A pinch of asafoetida",
+      "Oil for deep frying",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Tinda Burta",
+    "ingredients": [
+      "4-5 tinda (Indian round gourd), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Peas Kofta Curry",
+    "ingredients": [
+      "2 cups green peas, boiled and mashed",
+      "1/2 cup paneer (cottage cheese), grated",
+      "1/2 cup chickpea flour (besan)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup yogurt",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Dhum Gohbi",
+    "ingredients": [
+      "1 cauliflower, cut into florets",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup yogurt",
+      "1/2 cup cashew nut paste",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Zunka",
+    "ingredients": [
+      "1 cup chickpea flour (besan)",
+      "1 onion, finely chopped",
+      "2-3 green chilies, chopped",
+      "2 cloves garlic, minced",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "A pinch of asafoetida",
+      "2 tablespoons oil",
+      "Chopped fresh cilantro for garnish",
+      "Water as needed",
+      "Salt to taste"
+    ]
+  },
+  {
+    "recipe_name": "Vatana Bhaji",
+    "ingredients": [
+      "2 cups green peas (vatana)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Sambhar Potatoes",
+    "ingredients": [
+      "2 potatoes, diced",
+      "1 cup toor dal (split pigeon peas)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon sambhar masala",
+      "A pinch of asafoetida",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Chickpea & Aubergine Casserole",
+    "ingredients": [
+      "1 cup chickpeas, cooked",
+      "1 eggplant (aubergine), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Potato Flair",
+    "ingredients": [
+      "4-5 potatoes, diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Onion & Cheese Pie",
+    "ingredients": [
+      "2 cups onions, thinly sliced",
+      "1 cup grated cheese",
+      "1 cup milk",
+      "2 eggs",
+      "1 cup all-purpose flour",
+      "2 tablespoons butter",
+      "1/2 teaspoon baking powder",
+      "Salt to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tangy Veggies",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, beans, peas, etc.), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup tamarind pulp",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Shahi Cheese",
+    "ingredients": [
+      "200 grams cheese, cubed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Bird's Nest",
+    "ingredients": [
+      "4 large potatoes, grated",
+      "1 onion, finely chopped",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Oil for deep frying",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cabbage Dal Koshimbir",
+    "ingredients": [
+      "2 cups cabbage, finely shredded",
+      "1/2 cup chana dal (split chickpeas), cooked",
+      "1/2 cup yogurt",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "2-3 green chilies, chopped",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Ball Curry",
+    "ingredients": [
+      "200 grams cheese, grated",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup cream",
+      "1/2 cup milk",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Papaya Thoran",
+    "ingredients": [
+      "2 cups raw papaya, grated",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh curry leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cabbage Thoran",
+    "ingredients": [
+      "2 cups cabbage, finely shredded",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh curry leaves for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Microwave Kadhai Paneer",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 bell pepper (capsicum), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Microwave Bhendi Masala",
+    "ingredients": [
+      "250 grams okra (bhindi), chopped",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Tandoori Paneer in Green Masala",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 cup coriander leaves, chopped",
+      "1/2 cup mint leaves, chopped",
+      "2-3 green chilies",
+      "1-inch ginger",
+      "2 cloves garlic",
+      "1/2 cup yogurt",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon coriander powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Lemon wedges for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Guncha-o-Bahar",
+    "ingredients": [
+      "2 cups mixed vegetables (carrots, beans, peas, etc.), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Khum Hara Dhania",
+    "ingredients": [
+      "2 cups green beans (haricots verts), chopped",
+      "1 cup grated coconut",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "2-3 green chilies",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Mushroom Chilifry",
+    "ingredients": [
+      "200 grams mushrooms, sliced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Malai Mushroom Matar",
+    "ingredients": [
+      "200 grams mushrooms, sliced",
+      "1 cup green peas (matar)",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Broccoli Kofta",
+    "ingredients": [
+      "2 cups broccoli florets, steamed and mashed",
+      "1 cup boiled potatoes, mashed",
+      "1/2 cup grated cheese",
+      "1/2 cup gram flour (besan)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Oil for frying",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Cheese Macaroni",
+    "ingredients": [
+      "2 cups macaroni pasta",
+      "1 cup grated cheese",
+      "1/2 cup milk",
+      "2 tablespoons butter",
+      "1/2 teaspoon black pepper powder",
+      "Salt to taste",
+      "Chopped fresh parsley for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Shahi Paneer",
+    "ingredients": [
+      "200 grams paneer (cottage cheese), cubed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup cashew nut paste",
+      "1/2 cup cream",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Baby Corn Korma",
+    "ingredients": [
+      "200 grams baby corn, chopped",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "1/2 cup coconut milk",
+      "1/2 cup yogurt",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Corn Capsicum Masala",
+    "ingredients": [
+      "1 cup corn kernels, boiled",
+      "1 bell pepper (capsicum), diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kathal Masala",
+    "ingredients": [
+      "200 grams jackfruit (kathal), chopped",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Methi Kofta in Spinach Gravy",
+    "ingredients": [
+      "For Koftas:",
+      "1 cup fenugreek leaves (methi), chopped",
+      "1/2 cup gram flour (besan)",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "Salt to taste",
+      "Oil for frying",
+      "For Gravy:",
+      "2 cups spinach leaves, blanched and pureed",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kabuli Chana Chaat",
+    "ingredients": [
+      "1 cup chickpeas (kabuli chana), boiled",
+      "1 onion, finely chopped",
+      "1 tomato, chopped",
+      "1 cucumber, chopped",
+      "1/2 cup boiled and diced potatoes",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon chaat masala",
+      "1/2 teaspoon cumin powder",
+      "1/2 teaspoon red chili powder",
+      "Juice of 1 lemon",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Kabuli Chana Gravy",
+    "ingredients": [
+      "1 cup chickpeas (kabuli chana), boiled",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Pittla",
+    "ingredients": [
+      "1 cup gram flour (besan)",
+      "2-3 cups water",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon mustard seeds",
+      "1/2 teaspoon turmeric powder",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh coriander for garnish"
+    ]
+  },
+  {
+    "recipe_name": "Potato Kara Kari",
+    "ingredients": [
+      "2 cups potatoes, diced",
+      "1 onion, finely chopped",
+      "2 tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2-3 green chilies, chopped",
+      "1/2 teaspoon cumin seeds",
+      "1/2 teaspoon turmeric powder",
+      "1/2 teaspoon red chili powder",
+      "1/2 teaspoon garam masala",
+      "2 tablespoons oil",
+      "Salt to taste",
+      "Chopped fresh cilantro for garnish"
+    ]
+  }
+]

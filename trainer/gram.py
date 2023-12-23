@@ -1,8 +1,4 @@
-import json
-import nltk
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from gensim.models import Word2Vec
+from imports import *
 
 # Load the JSON file containing the corpus
 with open('gram.json', 'r') as json_file:

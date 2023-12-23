@@ -32,7 +32,7 @@ Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee (Lead Developer of 
 |
 ├── secret.py                          # Cryptographic Hashing Algorithm through which the app is accessible
 |
-├── voice.py                           # Code for controlling the bot on voice
+├── decision.py                        # So that bot can think and take hardcore decision just like human
 |
 ├── License.md                         # Contain the license instructions about this project
 |
