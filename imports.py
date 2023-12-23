@@ -42,4 +42,21 @@ from keras.optimizers import SGD
 from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 import numpy as np
+from fuzzysearch import find_near_matches
+from flask import Flask, request, jsonify, render_template
+from flask.logging import default_handler
+from logging.handlers import RotatingFileHandler
+import logging
+import sys
+import platform
+import json
+import pickle
+from difflib import SequenceMatcher
+import random
+from nltk import word_tokenize, WordNetLemmatizer
+from nltk.corpus import stopwords
+import numpy as np
+from keras.models import load_model
+from concurrent.futures import ThreadPoolExecutor
+
 

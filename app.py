@@ -1,10 +1,5 @@
 from imports import *
 
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-
-
 # Initialize Flask app
 app = Flask(__name__)
 
@@ -29,6 +24,25 @@ app.logger.disabled = True
 conversation_history = []
 recipe_data = []
 
+# Load model and data once during initialization
+model = load_model('data/output/attention.model')
+intents = json.loads(open('data/input/intents.json').read())
+words = pickle.load(open('data/output/words.pkl', 'rb'))
+classes = pickle.load(open('data/output/classes.pkl', 'rb'))
+
+# Initialize WordNet Lemmatizer for text processing
+lemmatizer = WordNetLemmatizer()
+
+# Reuse objects whenever possible
+stop_words = set(stopwords.words('english'))
+
+# Convert recipe names to a set for faster membership checks
+recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['recipes'])
+
+# Read file contents once during initialization
+intents_data = open('data/input/intents.json').read()
+intents = json.loads(intents_data)
+
 
 def preprocess_input(input_text):
     # Convert to lowercase
@@ -36,32 +50,18 @@ def preprocess_input(input_text):
     # Tokenize the input text
     tokens = word_tokenize(input_text)
     # Remove stopwords (optional)
-    stop_words = set(stopwords.words('english'))
     tokens = [word for word in tokens if word not in stop_words]
     # Lemmatize tokens
-    lemmatizer = WordNetLemmatizer()
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
     # Reconstruct the preprocessed text
     preprocessed_text = ' '.join(tokens)
     return preprocessed_text
 
 
-# Initialize WordNet Lemmatizer for text processing
-lemmatizer = WordNetLemmatizer()
-# Load intent data from 'intents.json' and parse it as a JSON object
-intents = json.loads(open('data/input/intents.json').read())
-# Load preprocessed word data from 'words.pkl' and deserialize it
-words = pickle.load(open('data/output/words.pkl', 'rb'))
-# Load preprocessed class data from 'classes.pkl' and deserialize it
-classes = pickle.load(open('data/output/classes.pkl', 'rb'))
-# Load a pre-trained deep learning model from 'attention.model'
-model = load_model('data/output/attention.model')
-
-
 #Functions to clear up noisy data from dataset
-def clean_up_sentence (sentence):
-    sentence_words = nltk.word_tokenize (sentence)
-    sentence_words = [lemmatizer.lemmatize (word) for word in sentence_words]
+def clean_up_sentence(sentence):
+    sentence_words = nltk.word_tokenize(sentence)
+    sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
     return sentence_words
 
 
@@ -69,13 +69,13 @@ def clean_up_sentence (sentence):
 # where each element corresponds to a word in a predefined vocabulary. If a word from
 # the vocabulary is present in the input sentence, the corresponding element in the
 # binary vector is set to 1; otherwise, it remains 0.
-def bag_of_words (sentence): 
-    sentence_words = clean_up_sentence (sentence)
-    bag = [0] * len (words)
+def bag_of_words(sentence):
+    sentence_words = clean_up_sentence(sentence)
+    bag = [0] * len(words)
     for w in sentence_words:
-        for i, word in enumerate (words):
+        for i, word in enumerate(words):
             if word == w:
-               bag[i] = 1
+                bag[i] = 1
     return np.array(bag)
 
 
@@ -109,11 +109,10 @@ def similar(a, b):
 
 def get_closest_recipe_names(user_message):
     user_message = user_message.lower()  # Convert to lowercase for case-insensitive matching
-    recipe_names = [recipe['recipe_name'].lower() for recipe in intents['recipes']]
     # Define a similarity threshold (adjust as needed)
     similarity_threshold = 0.5
     best_matches = []
-    for recipe_name in recipe_names:
+    for recipe_name in recipe_names_set:
         similarity = similar(user_message, recipe_name)
         if similarity >= similarity_threshold:
             best_matches.append(recipe_name)
@@ -126,14 +125,15 @@ def get_closest_recipe_names(user_message):
         if synonym in user_message:
             best_matches.append(canonical)  # Add canonical form
     return best_matches
-    
+
 
 def get_recipe_details(recipe_name):
     if recipe_name in recipe_data:
         ingredients = recipe_data[recipe_name]["ingredients"]
         methods = recipe_data[recipe_name]["methods"]
         recipe_details = {
-            "text": f"Here's the recipe for {recipe_name}:\n\nIngredients:\n" + "\n".join(ingredients) + "\n\nMethods:\n" + "\n".join(methods),
+            "text": f"Here's the recipe for {recipe_name}:\n\nIngredients:\n" + "\n".join(
+                ingredients) + "\n\nMethods:\n" + "\n".join(methods),
             "is_recipe": True
         }
         print("Recipe details:", recipe_details)  # Add this line
@@ -232,4 +232,3 @@ if __name__ == '__main__':
     print(important_message)  # Print important message
 
     app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
-
