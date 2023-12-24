@@ -29,6 +29,7 @@ model = load_model('data/output/attention.model')
 intents = json.loads(open('data/input/intents.json').read())
 words = pickle.load(open('data/output/words.pkl', 'rb'))
 classes = pickle.load(open('data/output/classes.pkl', 'rb'))
+nlp = spacy.load("en_core_web_sm")
 
 # Initialize WordNet Lemmatizer for text processing
 lemmatizer = WordNetLemmatizer()
