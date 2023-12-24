@@ -2,10 +2,7 @@ from imports import *
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)  # Enable Cross-Origin Resource Sharing
-socketio = SocketIO(app)
-# Initialize the SentimentIntensityAnalyzer
-sia = SentimentIntensityAnalyzer()
+
 
 # Set a secret key for authentication
 app.config['SECRET_KEY'] = generate_secret_key()
@@ -28,8 +25,7 @@ app.logger.disabled = True
 conversation_history = []
 recipe_data = []
 
-nltk.data.path.append("C:\\Users\\offic\\AppData\\Roaming\\nltk_data")
-# Load model and data once during initialization
+
 model = load_model('data/output/Attention/attention.model')
 intents = json.loads(open('data/input/intents.json').read())
 words = pickle.load(open('data/output/Attention/words.pkl', 'rb'))
@@ -193,22 +189,6 @@ def get_response(intents_list, intents_json, user_message):
         print("Using fallback response.")  # Add this line
     return response
 
-@socketio.on('user_message')
-def handle_user_message(message):
-    user_message = message['message']
-    # Perform sentiment analysis
-    sentiment_score = sia.polarity_scores(user_message)['compound']
-    sentiment = 'positive' if sentiment_score >= 0 else 'negative'
-    # Example: If sentiment is positive, respond positively; otherwise, respond negatively
-    if sentiment == 'positive':
-        bot_message = "That sounds great! 😊"
-    else:
-        bot_message = "I'm sorry to hear that. 😔"
-    # Update conversation history
-    conversation_history.append({'user': user_message, 'bot': bot_message})
-    # Emit the response to the 'bot_message' channel
-    socketio.emit('bot_message', {'message': bot_message, 'history': conversation_history})
-
 
 @app.route('/')
 def index():
@@ -256,4 +236,4 @@ if __name__ == '__main__':
     app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
-    socketio.run(app, debug=True, use_reloader=False)
+    app.run(debug=True, threaded=True)

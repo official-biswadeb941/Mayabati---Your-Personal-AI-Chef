@@ -10003,6 +10003,80 @@
       "Add tomatoes and spices. Cook until the mixture thickens.",
       "Add boiled eggs and vermicelli. Mix well and serve hot."
     ]
+  },
+  {
+    "recipe_name": "Chicken Kandhari",
+    "patterns": ["Chicken Kandhari"],
+    "ingredients": [
+      "Chicken",
+      "Red Chilies",
+      "Spices (for marinade)",
+      "Oil",
+      "Additional spices and seasonings"
+    ],
+    "methods": [
+      "Marinate the chicken in a spicy red chili-based marinade.",
+      "Cook the marinated chicken with additional spices and seasonings.",
+      "Serve hot."
+    ]
+  },
+  {
+    "recipe_name": "Kofta",
+    "patterns": ["Kofta"],
+    "ingredients": [
+      "Ground Meat (Chicken, Beef, Lamb, or a combination)",
+      "Seasonings",
+      "Curry or Grilling ingredients"
+    ],
+    "methods": [
+      "Prepare meatballs from ground meat and seasonings.",
+      "Cook the meatballs in a curry or as grilled kebabs.",
+      "Serve hot."
+    ]
+  },
+  {
+    "recipe_name": "Kozhi Ishtew",
+    "patterns": ["Kozhi Ishtew"],
+    "ingredients": [
+      "Chicken",
+      "Coconut Milk",
+      "Spices",
+      "Vegetables (optional)"
+    ],
+    "methods": [
+      "Cook chicken in a coconut milk base with spices.",
+      "Optionally, add vegetables.",
+      "Serve the creamy stew hot."
+    ]
+  },
+  {
+    "recipe_name": "Kolhapuri Chicken",
+    "patterns": ["Kolhapuri Chicken"],
+    "ingredients": [
+      "Chicken",
+      "Kolhapuri Masala",
+      "Spices",
+      "Oil"
+    ],
+    "methods": [
+      "Cook chicken with Kolhapuri Masala and spices.",
+      "Use oil for cooking.",
+      "Serve the spicy and aromatic chicken hot."
+    ]
+  },
+  {
+    "recipe_name": "Chicken with Mint",
+    "patterns": ["Chicken with Mint"],
+    "ingredients": [
+      "Chicken",
+      "Mint",
+      "Other Spices and Seasonings"
+    ],
+    "methods": [
+      "Cook chicken with mint as a primary flavoring agent.",
+      "Add other spices and seasonings.",
+      "Serve the mint-flavored chicken hot."
+    ]
   }
 
 

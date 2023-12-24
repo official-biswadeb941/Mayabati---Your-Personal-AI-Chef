@@ -171,15 +171,12 @@ blinkCursor(cursorElement);
 document.addEventListener('DOMContentLoaded', function () {
   // Connect to the Socket.IO server
   var socket = io.connect('http://' + document.domain + ':' + location.port);
-
   // Event listener for the form submission
-  document.getElementById('chat-form').addEventListener('submit', function (e) {
+  document.getElementById('user_input').addEventListener('submit', function (e) {
       e.preventDefault();
       var userMessage = document.getElementById('user-message').value;
-
       // Emit the user message to the server
       socket.emit('user_message', { 'message': userMessage });
-
       // Clear the input field
       document.getElementById('user-message').value = '';
   });
