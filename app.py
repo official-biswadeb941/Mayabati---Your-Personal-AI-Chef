@@ -2,6 +2,10 @@ from imports import *
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)  # Enable Cross-Origin Resource Sharing
+socketio = SocketIO(app)
+# Initialize the SentimentIntensityAnalyzer
+sia = SentimentIntensityAnalyzer()
 
 # Set a secret key for authentication
 app.config['SECRET_KEY'] = generate_secret_key()
@@ -24,6 +28,7 @@ app.logger.disabled = True
 conversation_history = []
 recipe_data = []
 
+nltk.data.path.append("C:\\Users\\offic\\AppData\\Roaming\\nltk_data")
 # Load model and data once during initialization
 model = load_model('data/output/Attention/attention.model')
 intents = json.loads(open('data/input/intents.json').read())
@@ -188,6 +193,22 @@ def get_response(intents_list, intents_json, user_message):
         print("Using fallback response.")  # Add this line
     return response
 
+@socketio.on('user_message')
+def handle_user_message(message):
+    user_message = message['message']
+    # Perform sentiment analysis
+    sentiment_score = sia.polarity_scores(user_message)['compound']
+    sentiment = 'positive' if sentiment_score >= 0 else 'negative'
+    # Example: If sentiment is positive, respond positively; otherwise, respond negatively
+    if sentiment == 'positive':
+        bot_message = "That sounds great! 😊"
+    else:
+        bot_message = "I'm sorry to hear that. 😔"
+    # Update conversation history
+    conversation_history.append({'user': user_message, 'bot': bot_message})
+    # Emit the response to the 'bot_message' channel
+    socketio.emit('bot_message', {'message': bot_message, 'history': conversation_history})
+
 
 @app.route('/')
 def index():
@@ -197,6 +218,9 @@ def index():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json.get('message')
+    # Sentiment analysis
+    sentiment = analyze_sentiment(user_message)
+    print(f"Sentiment: {sentiment}")
     conversation_history.append({'user': user_message, 'bot': None})
     keyword_for_recipe = 'recipe'
     if keyword_for_recipe in user_message.lower():
@@ -218,9 +242,8 @@ def chat():
             bot_message = get_recipe_details(recipe_name)
         else:
             bot_message = get_response(ints, intents, user_message)
-
     conversation_history[-1]['bot'] = bot_message
-    return jsonify({'message': bot_message, 'history': conversation_history})
+    return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
 
 # Main entry point
 if __name__ == '__main__':
@@ -233,4 +256,4 @@ if __name__ == '__main__':
     app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
-    app.run(debug=True, port=5000, host='0.0.0.0', threaded=True)
+    socketio.run(app, debug=True, use_reloader=False)

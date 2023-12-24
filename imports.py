@@ -28,3 +28,7 @@ import gensim.models
 from concurrent.futures import ThreadPoolExecutor
 from fuzzywuzzy import process, fuzz
 import spacy
+from flask_cors import CORS
+from extensions.sentiments import  analyze_sentiment
+from flask_socketio import SocketIO
+from nltk.sentiment import SentimentIntensityAnalyzer

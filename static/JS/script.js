@@ -168,21 +168,33 @@ cursorElement.innerHTML = '|';
 document.querySelector('.type_msg').appendChild(cursorElement);
 blinkCursor(cursorElement);
 
+document.addEventListener('DOMContentLoaded', function () {
+  // Connect to the Socket.IO server
+  var socket = io.connect('http://' + document.domain + ':' + location.port);
 
-window.addEventListener('load', function () {
-  // Hide the preloader when the page is fully loaded
-  const preloader = document.querySelector('.cyclic-preloader');
-  preloader.style.display = 'none';
+  // Event listener for the form submission
+  document.getElementById('chat-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var userMessage = document.getElementById('user-message').value;
+
+      // Emit the user message to the server
+      socket.emit('user_message', { 'message': userMessage });
+
+      // Clear the input field
+      document.getElementById('user-message').value = '';
+  });
+
+  // Event listener for receiving bot messages from the server
+  socket.on('bot_message', function (data) {
+      // Update the chat history with the bot's response
+      // (You may need to adjust this based on your specific frontend structure)
+      var chatHistoryElement = document.getElementById('chat-history');
+      var newMessage = document.createElement('p');
+      newMessage.textContent = 'User: ' + data['history'][data['history'].length - 2]['user'] +
+                              '\nBot: ' + data['history'][data['history'].length - 1]['bot'];
+      chatHistoryElement.appendChild(newMessage);
+  });
 });
 
-var botHtml = '<div class="d-flex justify-content-start mb-4">' +
-  '<div class="img_cont_msg">' +
-  '<img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png" class="rounded-circle user_img_msg">' +
-  '<span class="message-indicator">🤖</span>' + // Add the indicator here
-  '</div>' +
-  '<div class="msg_cotainer">' + data +
-  '</div>' +
-  '</div>';
-$("#messageFormeight").append($.parseHTML(botHtml));
 
 
