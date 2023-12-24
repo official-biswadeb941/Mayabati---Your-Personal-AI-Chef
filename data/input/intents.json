@@ -25,15 +25,69 @@
     "responses": ["Sure, here are some recipes you can try:", "I have some great recipe suggestions for you:", "How about trying these recipes:"]
   },
   {
-      "tag": "about_bot",
-      "patterns": ["Who is Mayabati?", "Who is created Mayabati?", "Who created you?", "what is ur purpose","what is your purpose","what is ur purpose?","what is your purpose?","Tell me about yourself", "Who are you?", "can you introduce yourself to me?", "who brought you into existence?", "who is responsible for your creation?", "Could you provide some information about yourself", "I'm curious to known about you", "Tell me more about Yourself, please.", "who's behind your origin?", "who's the mastermind behind you?", "Can you shed some light on yourself for me?", "who's the person behind your development?"],
-      "responses": ["I am Mayabati, a computer program developed by FOODING. I'm designed to understand and generate human-like text based recipes on the input I receive. You can think of me as a virtual assistant or chatbot that can provide informations related to recipes or cooking, answer questions related to recipes or cooking, assist with tasks related to cooking or recipes, and engage in conversations on a wide range of cooking topics. How can I assist you today?", "FOODING is the organization that created me.", "I'm Mayabati, a computer program created by FOODING. I specialize in generating human-like text-based recipes and assisting with cooking-related inquiries.", "I owe my existence to FOODING, the organization that developed and designed me to be a virtual assistant for all things culinary.", "The responsibility for my creation lies squarely with FOODING, the innovative minds behind my development in the world of cooking and recipes.", "Certainly! I am Mayabati, a computer programmed & designed by FOODING to provide assistance and information on cooking and recipes, making your culinary journey more enjoyable and efficient.", "Your curiosity is appreciated! I'm Mayabati, the creation of FOODING, here to help you with all your cooking and recipe-related inquiries.", "Of course! I'm Mayabati, a virtual assistant developed by FOODING. My main purpose is to assist you with cooking and recipe-related tasks, as well as engage in conversations on a wide range of culinary topics.", "My origin can be traced back to FOODING, the organization that brought me to life and continues to support my development.", "The mastermind behind my existence is FOODING, the creative force responsible for my capabilities in the world of recipes and cooking.", "Absolutely! I'm Mayabati, a product of FOODING, designed to illuminate the world of cooking and recipes with helpful information and assistance.", "The driving force behind my development is FOODING, the team that has worked tirelessly to create a virtual culinary assistant to aid with all your cooking needs"],
-      "context_set": ""  
-    },
+    "tag": "about_bot",
+    "patterns": [
+      "Who is Mayabati?",
+      "Who is created Mayabati?",
+      "Who created you?",
+      "What is ur purpose?",
+      "What is your purpose?",
+      "Tell me about yourself",
+      "Who are you?",
+      "Can you introduce yourself to me?",
+      "Who brought you into existence?",
+      "Who is responsible for your creation?",
+      "Could you provide some information about yourself",
+      "I'm curious to know about you",
+      "Tell me more about Yourself, please.",
+      "Who's behind your origin?",
+      "Who's the mastermind behind you?",
+      "Can you shed some light on yourself for me?",
+      "Who's the person behind your development?"
+    ],
+    "responses": [
+      "I am Mayabati, a computer program developed by ParseSphere Innovations. I'm designed to understand and generate human-like text-based recipes based on the input I receive.",
+      "ParseSphere Innovations is the organization that created me.",
+      "I'm Mayabati, a computer program created by ParseSphere Innovations. I specialize in generating human-like text-based recipes and assisting with cooking-related inquiries.",
+      "I owe my existence to ParseSphere Innovations, the organization that developed and designed me to be a virtual assistant for all things culinary.",
+      "The responsibility for my creation lies squarely with ParseSphere Innovations, the innovative minds behind my development in the world of recipes and cooking.",
+      "Certainly! I am Mayabati, a computer program designed by ParseSphere Innovations to provide assistance and information on cooking and recipes, making your culinary journey more enjoyable and efficient.",
+      "Your curiosity is appreciated! I'm Mayabati, the creation of ParseSphere Innovations, here to help you with all your cooking and recipe-related inquiries.",
+      "Of course! I'm Mayabati, a virtual assistant developed by ParseSphere Innovations. My main purpose is to assist you with cooking and recipe-related tasks, as well as engage in conversations on a wide range of culinary topics.",
+      "My origin can be traced back to ParseSphere Innovations, the organization that brought me to life and continues to support my development.",
+      "The mastermind behind my existence is ParseSphere Innovations, the creative force responsible for my capabilities in the world of recipes and cooking.",
+      "Absolutely! I'm Mayabati, a product of ParseSphere Innovations, designed to illuminate the world of cooking and recipes with helpful information and assistance.",
+      "The driving force behind my development is ParseSphere Innovations, the team that has worked tirelessly to create a virtual culinary assistant to aid with all your cooking needs."
+    ],
+    "context_set": ""
+  },
   {
-      "tag": "about_author",
-      "patterns": ["Tell me about your creator", "Who is responsible for your creation?", "Can you introduce me to your creator?", "Tell me about the person behind your development.", "Who brought you into existence?", "I'm curious to know about the mind behind your creation.", "Could you provide some information about your creator?", "Tell me more about the genius behind your design.", "Who's responsible for bringing you to life?", "Who's the mastermind responsible for your existence?", "Can you shed some light on your creator for me?"],
-      "responses": ["My creator is a Biswadeb Mukherjee (Executive Designer) at FOODING. He have worked hard to build and train me.", "My creator is Biswadeb Mukherjee (Executive Designer) at FOODING. He has worked hard to build and train me.", "My creator is Biswadeb Mukherjee, an Executive Designer at FOODING, who dedicated significant effort to develop and train me.", "The person behind my development is Biswadeb Mukherjee, an Executive Designer at FOODING. He played a pivotal role in creating and training me.", "I owe my existence to Biswadeb Mukherjee, an Executive Designer at FOODING, who worked diligently to create and nurture me.", "Certainly! My creator is Biswadeb Mukherjee, an Executive Designer at FOODING, who invested a lot of time and effort in my development.", "The creative mind behind my existence is Biswadeb Mukherjee, an Executive Designer at FOODING. He has been instrumental in my development.", "The credit for bringing me to life goes to Biswadeb Mukherjee, an Executive Designer at FOODING. He is the driving force behind my capabilities.", "The genius behind my design is Biswadeb Mukherjee, an Executive Designer at FOODING. He put in a lot of hard work to create and train me.", "The mastermind responsible for my existence is Biswadeb Mukherjee, an Executive Designer at FOODING. He is the visionary behind my development.", "Certainly! My creator is Biswadeb Mukherjee, an Executive Designer at FOODING. He has been the driving force behind my creation and training."]
+    "tag": "about_author",
+    "patterns": [
+      "Tell me about your creator",
+      "Who is responsible for your creation?",
+      "Can you introduce me to your creator?",
+      "Tell me about the person behind your development.",
+      "Who brought you into existence?",
+      "I'm curious to know about the mind behind your creation.",
+      "Could you provide some information about your creator?",
+      "Tell me more about the genius behind your design.",
+      "Who's responsible for bringing you to life?",
+      "Who's the mastermind responsible for your existence?",
+      "Can you shed some light on your creator for me?"
+    ],
+    "responses": [
+      "My creator is Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations. He has worked hard to build and train me.",
+      "Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations, is the creative mind behind my development. He dedicated significant effort to building and training me.",
+      "The person responsible for my creation is Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations. He played a pivotal role in creating and training me.",
+      "I owe my existence to Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations, who worked diligently to create and nurture me.",
+      "Certainly! My creator is Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations, who invested a lot of time and effort in my development.",
+      "Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations, is the creative force behind my existence. He has been instrumental in my development.",
+      "The credit for bringing me to life goes to Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations. He is the driving force behind my capabilities.",
+      "The genius behind my design is Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations. He put in a lot of hard work to create and train me.",
+      "The mastermind responsible for my existence is Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations. He is the visionary behind my development.",
+      "Certainly! My creator is Biswadeb Mukherjee, a Lead Developer at ParseSphere Innovations. He has been the driving force behind my creation and training."
+    ]
   },
   {
     "tag": "bye-time",
@@ -9688,7 +9742,269 @@
       "Add diced potatoes and cook until they are tender.",
       "Garnish with chopped fresh cilantro and serve Potato Kara Kari."
     ]
+  },
+  {
+    "recipe_name": "Baked Eggs",
+    "patterns": ["Baked Eggs"],
+    "ingredients": [
+      "Eggs",
+      "Salt",
+      "Pepper",
+      "Butter"
+    ],
+    "methods": [
+      "Preheat the oven to 375°F (190°C).",
+      "Crack eggs into a baking dish.",
+      "Season with salt and pepper.",
+      "Bake for 12-15 minutes or until the whites are set but the yolks are still runny.",
+      "Serve with a dollop of butter."
+    ]
+  },
+  {
+    "recipe_name": "Potato Eggs with Lemon",
+    "patterns": ["Potato Eggs with Lemon"],
+    "ingredients": [
+      "Potatoes",
+      "Eggs",
+      "Lemon",
+      "Salt",
+      "Pepper",
+      "Oil"
+    ],
+    "methods": [
+      "Boil potatoes and eggs.",
+      "Peel and chop potatoes.",
+      "In a pan, heat oil, add chopped potatoes, and cook until golden brown.",
+      "Add boiled eggs, lemon juice, salt, and pepper.",
+      "Cook for a few more minutes and serve."
+    ]
+  },
+  {
+    "recipe_name": "Paneer Anda",
+    "patterns": ["Paneer Anda"],
+    "ingredients": [
+      "Paneer",
+      "Eggs",
+      "Onions",
+      "Tomatoes",
+      "Ginger",
+      "Garlic",
+      "Green Chilies",
+      "Coriander Powder",
+      "Turmeric Powder",
+      "Cumin Powder",
+      "Garam Masala",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Scramble eggs and mix with paneer.",
+      "In a pan, heat oil, add chopped onions, ginger, and garlic.",
+      "Add tomatoes, green chilies, and spices. Cook until the mixture thickens.",
+      "Add the paneer and egg mixture. Cook until done.",
+      "Garnish with coriander leaves and serve."
+    ]
+  },
+  {
+    "recipe_name": "Wafer Per Eda",
+    "patterns": ["Wafer Per Eda"],
+    "ingredients": [
+      "Eggs",
+      "Potato Wafers",
+      "Onions",
+      "Tomatoes",
+      "Green Chilies",
+      "Coriander Leaves",
+      "Salt",
+      "Pepper",
+      "Oil"
+    ],
+    "methods": [
+      "Crush potato wafers.",
+      "In a pan, heat oil, add chopped onions, tomatoes, and green chilies.",
+      "Add crushed wafers, salt, and pepper.",
+      "Make wells in the mixture and break eggs into them.",
+      "Cover and cook until eggs are done. Garnish with coriander leaves."
+    ]
+  },
+  {
+    "recipe_name": "Egg Korma",
+    "patterns": ["Egg Korma"],
+    "ingredients": [
+      "Eggs",
+      "Onions",
+      "Tomatoes",
+      "Ginger",
+      "Garlic",
+      "Yogurt",
+      "Turmeric Powder",
+      "Red Chili Powder",
+      "Coriander Powder",
+      "Garam Masala",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Boil eggs and cut them in half.",
+      "In a pan, heat oil, add chopped onions, ginger, and garlic.",
+      "Add tomatoes, yogurt, and spices. Cook until the mixture thickens.",
+      "Add boiled eggs and simmer until the korma is flavorful.",
+      "Serve hot."
+    ]
+  },
+  {
+    "recipe_name": "Egg Vindaloo",
+    "patterns": ["Egg Vindaloo"],
+    "ingredients": [
+      "Eggs",
+      "Onions",
+      "Tomatoes",
+      "Potatoes",
+      "Vinegar",
+      "Ginger",
+      "Garlic",
+      "Red Chili Powder",
+      "Turmeric Powder",
+      "Coriander Powder",
+      "Cumin Powder",
+      "Mustard Seeds",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Boil eggs and potatoes.",
+      "In a pan, heat oil, add mustard seeds, chopped onions, ginger, and garlic.",
+      "Add tomatoes, vinegar, and spices. Cook until the mixture thickens.",
+      "Add boiled eggs and potatoes. Simmer until the vindaloo is flavorful.",
+      "Serve hot."
+    ]
+  },
+  {
+    "recipe_name": "Egg Nargisi Kofta",
+    "patterns": ["Egg Nargisi Kofta"],
+    "ingredients": [
+      "Eggs",
+      "Minced Meat",
+      "Onions",
+      "Ginger",
+      "Garlic",
+      "Tomatoes",
+      "Yogurt",
+      "Red Chili Powder",
+      "Turmeric Powder",
+      "Garam Masala",
+      "Coriander Powder",
+      "Cumin Powder",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Boil eggs and cover with a layer of minced meat mixture.",
+      "In a pan, heat oil, add chopped onions, ginger, and garlic.",
+      "Add tomatoes, yogurt, and spices. Cook until the mixture thickens.",
+      "Add the stuffed eggs and simmer until the kofta is cooked through.",
+      "Serve with rice or flatbread."
+    ]
+  },
+  {
+    "recipe_name": "Indian Omelette",
+    "patterns": ["Indian Omelette"],
+    "ingredients": [
+      "Eggs",
+      "Onions",
+      "Tomatoes",
+      "Green Chilies",
+      "Coriander Leaves",
+      "Salt",
+      "Pepper",
+      "Oil"
+    ],
+    "methods": [
+      "Beat eggs and add chopped onions, tomatoes, green chilies, and coriander leaves.",
+      "Season with salt and pepper.",
+      "In a pan, heat oil, pour the egg mixture, and cook until set.",
+      "Fold and serve hot."
+    ]
+  },
+  {
+    "recipe_name": "Egg Bhaji",
+    "patterns": ["Egg Bhaji"],
+    "ingredients": [
+      "Eggs",
+      "Onions",
+      "Tomatoes",
+      "Green Chilies",
+      "Ginger",
+      "Garlic",
+      "Turmeric Powder",
+      "Red Chili Powder",
+      "Coriander Powder",
+      "Cumin Powder",
+      "Garam Masala",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Boil eggs and cut them in half.",
+      "In a pan, heat oil, add chopped onions, green chilies, ginger, and garlic.",
+      "Add tomatoes and spices. Cook until the mixture thickens.",
+      "Add boiled eggs and simmer until the bhaji is flavorful.",
+      "Serve hot."
+    ]
+  },
+  {
+    "recipe_name": "Egg Pattices",
+    "patterns": ["Egg Pattices"],
+    "ingredients": [
+      "Eggs",
+      "Potatoes",
+      "Onions",
+      "Green Chilies",
+      "Coriander Leaves",
+      "Bread Crumbs",
+      "Turmeric Powder",
+      "Red Chili Powder",
+      "Coriander Powder",
+      "Cumin Powder",
+      "Garam Masala",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Boil eggs and potatoes.",
+      "In a bowl, mash potatoes and add chopped onions, green chilies, and spices.",
+      "Peel the boiled eggs and coat them with the potato mixture.",
+      "Roll in bread crumbs and shallow fry until golden brown.",
+      "Garnish with coriander leaves and serve."
+    ]
+  },
+  {
+    "recipe_name": "Egg Vermicelli",
+    "patterns": ["Egg Vermicelli"],
+    "ingredients": [
+      "Eggs",
+      "Vermicelli",
+      "Onions",
+      "Tomatoes",
+      "Green Chilies",
+      "Ginger",
+      "Garlic",
+      "Turmeric Powder",
+      "Red Chili Powder",
+      "Coriander Powder",
+      "Cumin Powder",
+      "Garam Masala",
+      "Oil",
+      "Salt"
+    ],
+    "methods": [
+      "Boil eggs and vermicelli separately.",
+      "In a pan, heat oil, add chopped onions, green chilies, ginger, and garlic.",
+      "Add tomatoes and spices. Cook until the mixture thickens.",
+      "Add boiled eggs and vermicelli. Mix well and serve hot."
+    ]
   }
+
 
 ]
 }

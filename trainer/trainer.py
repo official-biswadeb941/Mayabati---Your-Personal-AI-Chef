@@ -80,6 +80,6 @@ model = Model(inputs=[input_layer], outputs=[output_layer])
 sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-model.fit(train_x, train_y, epochs=3000, batch_size=20)
-model.save('attention.model')
+model.fit(train_x, train_y, epochs=100, batch_size=124)
+model.save('data/output/Attention/attention.model')
 print("Done")
