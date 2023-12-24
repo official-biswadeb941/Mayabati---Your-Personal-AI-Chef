@@ -27,8 +27,8 @@ recipe_data = []
 # Load model and data once during initialization
 model = load_model('data/output/Attention/attention.model')
 intents = json.loads(open('data/input/intents.json').read())
-words = pickle.load(open('data/output/words.pkl', 'rb'))
-classes = pickle.load(open('data/output/classes.pkl', 'rb'))
+words = pickle.load(open('data/output/Attention/words.pkl', 'rb'))
+classes = pickle.load(open('data/output/Attention/classes.pkl', 'rb'))
 
 # Initialize WordNet Lemmatizer for text processing
 lemmatizer = WordNetLemmatizer()

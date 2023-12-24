@@ -12,11 +12,11 @@ import gensim.models
 lemmatizer = WordNetLemmatizer()
 
 # Load pre-trained Word2Vec model
-w2v_model = gensim.models.Word2Vec.load("gram.model")
+w2v_model = gensim.models.Word2Vec.load("data/output/gram.model")
 
 # Define your classes and documents based on your dataset
 # For example, assuming you have an intents.json file as in your initial code:
-intents = json.loads(open('intents.json').read())
+intents = json.loads(open('data/input/intents.json').read())
 
 words = []
 classes = []
@@ -36,8 +36,8 @@ words = sorted(set(words))
 
 classes = sorted(set(classes))
 
-pickle.dump(words, open('words.pkl', 'wb'))
-pickle.dump(classes, open('classes.pkl', 'wb'))
+pickle.dump(words, open('data/output/Attention/words.pkl', 'wb'))
+pickle.dump(classes, open('data/output/Attention/classes.pkl', 'wb'))
 
 training = []
 output_empty = [0] * len(classes)
@@ -80,6 +80,6 @@ model = Model(inputs=[input_layer], outputs=[output_layer])
 sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-model.fit(train_x, train_y, epochs=100, batch_size=124)
+model.fit(train_x, train_y, epochs=500, batch_size=200)
 model.save('data/output/Attention/attention.model')
 print("Done")

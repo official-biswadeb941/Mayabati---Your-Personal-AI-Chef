@@ -3,7 +3,7 @@ from logging.handlers import RotatingFileHandler
 import sys 
 import os
 import platform
-from secret import generate_secret_key
+from extensions.secret import generate_secret_key
 import random
 import json
 import pickle
