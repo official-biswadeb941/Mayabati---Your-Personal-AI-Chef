@@ -94,13 +94,17 @@ def format_recipe(recipe):
 
 def extract_recipe_name(user_message):
     user_message = user_message.lower()
-    for intent in intents['recipes']:
-        if 'patterns' in intent:
-            for pattern in intent['patterns']:
-                if pattern.lower() in user_message:
-                    print("Found recipe name:", intent['recipe_name'])  # Add this line
-                    return intent['recipe_name']
-    return None  # Return None if no recipe name is found
+    best_match, similarity = process.extractOne(user_message, recipe_names_set, scorer=fuzz.ratio)
+
+    # Define a similarity threshold (adjust as needed)
+    similarity_threshold = 80  # Adjust as needed (percentage similarity)
+
+    if similarity >= similarity_threshold:
+        print(f"Found recipe name ({similarity}% match): {best_match}")
+        return best_match
+    else:
+        print("No exact match found, using fallback.")  # Add this line
+        return None
 
 
 def similar(a, b):
@@ -209,13 +213,25 @@ def chat():
         else:
             bot_message = "I couldn't find any recipe suggestions."
     else:
-        ints = predict_class(user_message)
-        tag = ints[0]['intent']
-        if tag == 'recipe_details':
-            recipe_name = extract_recipe_name(user_message)
-            bot_message = get_recipe_details(recipe_name)
+        # Use fuzzy matching to extract a possibly misspelled recipe name
+        recipe_name = extract_recipe_name(user_message)
+        if recipe_name:
+            print("Recipe name extracted:", recipe_name)
+            # Check if the recipe name matches any recipe in the dataset
+            for recipe in intents['recipes']:
+                if recipe['recipe_name'].lower() == recipe_name.lower():
+                    # Return the recipe details as a response
+                    print("Found matching recipe in dataset.")
+                    bot_message = format_recipe(recipe)
+                    break
+            else:
+                # If no matching recipe found, return a message
+                bot_message = "I'm sorry, I couldn't find the recipe you're looking for."
+                print("No matching recipe found in the dataset.")
         else:
-            bot_message = get_response(ints, intents, user_message)
+            # Handle the case where no valid recipe name is extracted
+            bot_message = "I'm sorry, I couldn't understand the recipe name in your message."
+            print("No valid recipe name extracted.")  # Add this line
 
     conversation_history[-1]['bot'] = bot_message
     return jsonify({'message': bot_message, 'history': conversation_history})
