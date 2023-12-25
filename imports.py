@@ -1,3 +1,4 @@
+from gevent import monkey
 import logging
 from logging.handlers import RotatingFileHandler
 import sys 
@@ -30,5 +31,5 @@ from fuzzywuzzy import process, fuzz
 import spacy
 from flask_cors import CORS
 from extensions.sentiments import  analyze_sentiment
-from flask_socketio import SocketIO
+from flask_socketio import SocketIO, emit
 from nltk.sentiment import SentimentIntensityAnalyzer
