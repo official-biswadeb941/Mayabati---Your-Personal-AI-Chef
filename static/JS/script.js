@@ -1,51 +1,72 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var messages = document.querySelectorAll(".message");
   var logoContainer = document.querySelector('.logo-container');
+  var messageInput = document.getElementById('user_input');
+  var cursorElement = createCursorElement();
 
-  // Select the target node
-  var targetNode = document.getElementById('chatbox'); // Replace 'chatbox' with the actual ID of your chatbox element
-
-  // Create an observer instance
-  var observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-      if (mutation.type === 'childList') {
-        var addedNodes = mutation.addedNodes;
-        addedNodes.forEach(function (node) {
-          // Check if the added node is a message
-          if (node.classList.contains('message')) {
-            var label = node.querySelector(".message-text-label");
-            if (label) {
-              label.style.display = "inline";
-              hideLogoContainer();
-            }
-          }
-        });
-      }
-    });
+  // WebRTC
+  const socket = io.connect('http://' + document.domain + ':' + location.port);
+  socket.on('connect', function () {
+    console.log('Socket.io connected');
   });
 
-  // Configuration of the observer
-  var config = { childList: true };
+  const peer = new SimplePeer({ initiator: location.hash === '#init' });
 
-  // Start observing the target node for configured mutations
-  observer.observe(targetNode, config);
+  peer.on('data', function (data) {
+    const message = data.toString();
+    displayBotResponse(message);
+  });
+
+  peer.on('iceConnectionStateChange', handleICEConnectionStateChange);
+
+  messageInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      hideLogoContainer();
+      sendMessageIfNotEmpty();
+    }
+  });
+
+  observeNewMessages();
+  blinkCursor(cursorElement);
+  function createCursorElement() {
+    const cursorElement = document.createElement('span');
+    cursorElement.className = 'cursor';
+    cursorElement.innerHTML = '|';
+    document.querySelector('.type_msg').appendChild(cursorElement);
+    return cursorElement;
+  }
 
   function hideLogoContainer() {
     logoContainer.style.display = 'none';
     document.removeEventListener('keydown', hideLogoContainer);
   }
 
-  document.addEventListener('keydown', function (event) {
-    if (event.keyCode === 13) { // Check for Enter key
-      hideLogoContainer();
-      sendMessageIfNotEmpty();
-    }
-  });
+  function observeNewMessages() {
+    var targetNode = document.getElementById('chatbox');
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (mutation.type === 'childList') {
+          var addedNodes = mutation.addedNodes;
+          addedNodes.forEach(function (node) {
+            if (node.classList.contains('message')) {
+              var label = node.querySelector(".message-text-label");
+              if (label) {
+                label.style.display = "inline";
+                hideLogoContainer();
+              }
+            }
+          });
+        }
+      });
+    });
+
+    var config = { childList: true };
+    observer.observe(targetNode, config);
+  }
 
   function simulateTyping(message, element) {
-    // Simulate typing effect
     let index = 0;
-    const typingSpeed = 25; // Adjust typing speed as needed
+    const typingSpeed = 25;
     function type() {
       if (index < message.length) {
         element.innerHTML += message.charAt(index);
@@ -56,69 +77,28 @@ document.addEventListener("DOMContentLoaded", function () {
     type();
   }
 
-  function toggleSendButton(inputField) {
-    // Function to toggle the "Send" button based on input field content
-    const sendButton = document.getElementById('sendButton');
-    if (inputField.value.trim() !== '') {
-      sendButton.removeAttribute('disabled');
-      sendButton.classList.add('active'); // Add the 'active' class for green color highlight
-    } else {
-      sendButton.setAttribute('disabled', 'disabled');
-      sendButton.classList.remove('active'); // Remove the 'active' class
-    }
-  }
-
-  function blinkCursor(cursorElement) {
-    // Simulate blinking cursor
-    setInterval(function () {
-      if (cursorElement.style.display === 'none') {
-        cursorElement.style.display = 'inline';
-      } else {
-        cursorElement.style.display = 'none';
-      }
-    }, 500); // Adjust blinking speed as needed
-  }
-
   function sendMessageIfNotEmpty() {
-    // Function to send a message if the input is not empty
-    const userMessage = document.getElementById('user_input').value.trim();
+    const userMessage = messageInput.value.trim();
     if (userMessage !== '') {
-      sendMessage();
+      sendMessage(userMessage);
     }
   }
 
-  function sendMessage() {
-    // Modify the sendMessage() function to only send non-empty messages
-    const userMessage = document.getElementById('user_input').value.trim();
+  function sendMessage(userMessage) {
+    messageInput.value = '';
+    const userDiv = createMessageDiv('user-message');
+    const userAvatar = createAvatar('https://cdn-icons-png.flaticon.com/512/6596/6596121.png');
+    userDiv.appendChild(userAvatar);
+    simulateTyping(userMessage, userDiv);
 
-    if (userMessage !== '') {
-      document.getElementById('user_input').value = '';
-
-      // Append user's message to the chatbox with typing effect and user avatar
-      const userDiv = document.createElement('div');
-      userDiv.className = 'user-message';
-      document.getElementById('chatbox').appendChild(userDiv);
-
-      // Avatar for user
-      const userAvatar = document.createElement('div');
-      userAvatar.className = 'avatar';
-      userAvatar.innerHTML = '<img src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png" alt=" User Avatar">';
-      userDiv.appendChild(userAvatar);
-
-      // Typing effect for user message
-      simulateTyping(userMessage, userDiv);
-    }
-
-    // Send the user's message to the server for processing
     fetch('/chat', {
       method: 'POST',
       body: JSON.stringify({ message: userMessage }),
       headers: { 'Content-Type': 'application/json' },
     })
-    .then((response) => response.json())
-    .then((data) => {
+    .then(response => response.json())
+    .then(data => {
       const botResponse = data.message;
-
       if (Array.isArray(botResponse)) {
         displayBotResponseSequentially(botResponse);
       } else {
@@ -127,62 +107,66 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  function createMessageDiv(className) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = className;
+    document.getElementById('chatbox').appendChild(messageDiv);
+    return messageDiv;
+  }
+
+  function createAvatar(src) {
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+    avatar.innerHTML = `<img src="${src}" alt="User Avatar">`;
+    return avatar;
+  }
+
   function displayBotResponse(response) {
-    // Function to display bot's response
-    const botDiv = document.createElement('div');
-    botDiv.className = 'bot-message';
-    document.getElementById('chatbox').appendChild(botDiv);
-
-    // Avatar for bot
-    const botAvatar = document.createElement('div');
-    botAvatar.className = 'avatar';
-    botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="  Bot Avatar">';
+    const botDiv = createMessageDiv('bot-message');
+    const botAvatar = createAvatar('https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg');
     botDiv.appendChild(botAvatar);
-
-    // Typing effect for bot response
     simulateTyping(response, botDiv);
-
-    // Scroll to the bottom of the chatbox to show the latest message
     document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
   }
 
   function displayBotResponseSequentially(responseList) {
-    // Function to display bot's response sequentially
     const chatbox = document.getElementById('chatbox');
     let currentIndex = 0;
-
     function displayNextLine() {
       if (currentIndex < responseList.length) {
-        const botDiv = document.createElement('div');
-        botDiv.className = 'bot-message';
-        chatbox.appendChild(botDiv);
-
-        // Avatar for bot (add this block only for the first line)
+        const botDiv = createMessageDiv('bot-message');
+        // Display avatar only during the first line
         if (currentIndex === 0) {
-          const botAvatar = document.createElement('div');
-          botAvatar.className = 'avatar';
-          botAvatar.innerHTML = '<img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Bot Avatar">';
+          const botAvatar = createAvatar('https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg');
           botDiv.appendChild(botAvatar);
         }
-
-        // Typing effect for bot response
         simulateTyping(responseList[currentIndex], botDiv);
         currentIndex++;
-
-        // Scroll to the bottom of the chatbox to show the latest message
         chatbox.scrollTop = chatbox.scrollHeight;
+      } else {
+        // Stop the interval after all lines are displayed
+        clearInterval(intervalId);
       }
     }
-
-    // Start displaying lines one by one
-    setInterval(displayNextLine, 1000); // Adjust the interval as needed
+    // Set interval to display the next line every 1000 milliseconds
+    const intervalId = setInterval(displayNextLine, 1000);
+  }
+  
+  function blinkCursor(cursorElement) {
+    setInterval(function () {
+      cursorElement.style.display = (cursorElement.style.display === 'none') ? 'inline' : 'none';
+    }, 500);
   }
 
-  const cursorElement = document.createElement('span');
-  cursorElement.className = 'cursor';
-  cursorElement.innerHTML = '|';
-  document.querySelector('.type_msg').appendChild(cursorElement);
-  blinkCursor(cursorElement);
+  function handleICEConnectionStateChange() {
+    if (peer.iceConnectionState === 'connected') {
+      sendWebRTCData('Hello, WebRTC!');
+    }
+  }
 
+  function sendWebRTCData(message) {
+    if (peer && peer.iceConnectionState === 'connected') {
+      peer.send(message);
+    }
+  }
 });
-

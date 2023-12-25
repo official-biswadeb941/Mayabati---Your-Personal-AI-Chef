@@ -2,6 +2,9 @@ from imports import *
 
 # Initialize Flask app
 app = Flask(__name__)
+# Initialize SocketIO
+socketio = SocketIO(app, cors_allowed_origins="*")
+CORS(app)
 
 
 # Set a secret key for authentication
@@ -189,6 +192,23 @@ def get_response(intents_list, intents_json, user_message):
         print("Using fallback response.")  # Add this line
     return response
 
+@socketio.on('signal')
+def handle_signal(data):
+    emit('signal', data, broadcast=True)
+
+def handle_message():
+    user_message = request.json.get('message')
+    # Broadcast the user's message to all connected clients
+    send('message from server', f"Bot: You said - '{user_message}'", broadcast=True)
+    return {'message': 'Message received successfully!'}
+
+@socketio.on('connect')
+def handle_connect():
+    print('Client connected')
+
+@socketio.on('disconnect')
+def handle_disconnect():
+    print('Client disconnected')
 
 @app.route('/')
 def index():
@@ -236,4 +256,4 @@ if __name__ == '__main__':
     app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
-    app.run(debug=True, threaded=True)
+    socketio.run(app, debug=True, use_reloader=False)
