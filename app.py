@@ -4,14 +4,13 @@ from imports import *
 app = Flask(__name__)
 # Initialize SocketIO
 socketio = SocketIO(app, cors_allowed_origins="*")
-CORS(app)
 
 # Generate a secret key for symmetric encryption (replace with proper key management)
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
 
 # Set a secret key for authentication
-app.config['SECRET_KEY'] = generate_secret_key()
+app.config['SECRET_KEY'] = "your_secret_key"  # Replace with a proper secret key
 
 # Configure Flask app to use file-based logging only
 log_handler = RotatingFileHandler('app.log', maxBytes=10000, backupCount=1)
@@ -29,11 +28,24 @@ app.logger.disabled = True
 conversation_history = []
 recipe_data = []
 
+# Paths to data and models
+input_data_path = 'data/input'
+output_data_path = 'data/output'
 
-model = load_model('data/output/Attention/attention.model')
-intents = json.loads(open('data/input/intents.json').read())
-words = pickle.load(open('data/output/Attention/words.pkl', 'rb'))
-classes = pickle.load(open('data/output/Attention/classes.pkl', 'rb'))
+# Load intents data from the input directory
+intents_data_path = os.path.join(input_data_path, 'intents.json')
+intents = json.loads(open(intents_data_path).read())
+
+# Load the model from the output directory
+model_path = os.path.join(output_data_path, 'Attention', 'attention.model')
+# Assuming load_model is implemented elsewhere
+model = load_model(model_path)
+
+# Load words and classes from the output directory
+words_path = os.path.join(output_data_path, 'Attention', 'words.pkl')
+classes_path = os.path.join(output_data_path, 'Attention', 'classes.pkl')
+words = pickle.load(open(words_path, 'rb'))
+classes = pickle.load(open(classes_path, 'rb'))
 
 # Initialize WordNet Lemmatizer for text processing
 lemmatizer = WordNetLemmatizer()
@@ -41,6 +53,18 @@ lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 # Convert recipe names to a set for faster membership checks
 recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['recipes'])
+
+# API endpoint to serve files from the input directory
+@app.route('/api/get_input_file/<filename>', methods=['GET'])
+def get_input_file(filename):
+    file_path = os.path.join(input_data_path, filename)
+    return send_file(file_path, as_attachment=True)
+
+# API endpoint to serve files from the output directory
+@app.route('/api/get_output_file/<path:filename>', methods=['GET'])
+def get_output_file(filename):
+    file_path = os.path.join(output_data_path, filename)
+    return send_file(file_path, as_attachment=True)
 
 # Read file contents once during initialization
 intents_data = open('data/input/intents.json').read()
