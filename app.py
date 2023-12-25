@@ -6,6 +6,9 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
 
+# Generate a secret key for symmetric encryption (replace with proper key management)
+symmetric_key = Fernet.generate_key()
+cipher_suite = Fernet(symmetric_key)
 
 # Set a secret key for authentication
 app.config['SECRET_KEY'] = generate_secret_key()
@@ -17,10 +20,8 @@ app.logger.addHandler(log_handler)
 
 # Disable console logging for Flask
 app.logger.removeHandler(default_handler := logging.StreamHandler(sys.stdout))
-
 # Redirect all messages to the log file
 logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-
 # Disable Flask default logger, preventing messages from being printed to the console
 app.logger.disabled = True
 
@@ -36,10 +37,8 @@ classes = pickle.load(open('data/output/Attention/classes.pkl', 'rb'))
 
 # Initialize WordNet Lemmatizer for text processing
 lemmatizer = WordNetLemmatizer()
-
 # Reuse objects whenever possible
 stop_words = set(stopwords.words('english'))
-
 # Convert recipe names to a set for faster membership checks
 recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['recipes'])
 
@@ -47,6 +46,10 @@ recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['reci
 intents_data = open('data/input/intents.json').read()
 intents = json.loads(intents_data)
 
+def secure_hash_message(message):
+    # Hash the message using SHA-512
+    hashed_message = hashlib.sha512(message.encode()).hexdigest()
+    return hashed_message
 
 def preprocess_input(input_text):
     # Convert to lowercase
@@ -87,12 +90,10 @@ def format_recipe(recipe):
     recipe_name = recipe.get('recipe_name', '')
     ingredients = recipe.get('ingredients', [])
     methods = recipe.get('methods', [])
-
     formatted_recipe_details = [f"Recipe: {recipe_name}", "Ingredients:"]
     formatted_recipe_details.extend(ingredients)
     formatted_recipe_details.append("Methods:")
     formatted_recipe_details.extend(methods)
-
     return formatted_recipe_details
 
 
@@ -194,12 +195,22 @@ def get_response(intents_list, intents_json, user_message):
 
 @socketio.on('signal')
 def handle_signal(data):
-    emit('signal', data, broadcast=True)
+    # Encrypt the message before broadcasting
+    encrypted_message = cipher_suite.encrypt(data['message'].encode())
+    emit('signal', {'message': encrypted_message}, broadcast=True)
+    # Log encryption information
+    app.logger.info(f"Encrypted message: {data['message']}")
 
 def handle_message():
     user_message = request.json.get('message')
-    # Broadcast the user's message to all connected clients
-    send('message from server', f"Bot: You said - '{user_message}'", broadcast=True)
+    # Encrypt the user message for secure communication
+    encrypted_user_message = cipher_suite.encrypt(user_message.encode())
+    # Broadcast the encrypted user message to all connected clients
+    send('message from server', f"Bot: You said - '{encrypted_user_message.decode()}'", broadcast=True)
+    # Decrypt the message for application logic (not shown here)
+    decrypted_user_message = cipher_suite.decrypt(encrypted_user_message).decode()
+    # Log encryption information
+    app.logger.info(f"Decrypted message: {decrypted_user_message}")
     return {'message': 'Message received successfully!'}
 
 @socketio.on('connect')
@@ -250,7 +261,6 @@ if __name__ == '__main__':
     # Print system information at startup
     system_info = f"System: {platform.system()} {platform.release()} {platform.machine()}"
     app.logger.info(system_info)  # Log system information
-
     # Run the app with the secret key
     important_message = "Important: Application started with secret key."
     app.logger.info(important_message)  # Log important message

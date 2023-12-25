@@ -33,3 +33,5 @@ from flask_cors import CORS
 from extensions.sentiments import  analyze_sentiment
 from flask_socketio import SocketIO, emit, send
 from nltk.sentiment import SentimentIntensityAnalyzer
+import hashlib
+from cryptography.fernet import Fernet
