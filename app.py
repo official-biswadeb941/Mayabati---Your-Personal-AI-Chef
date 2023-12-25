@@ -4,13 +4,14 @@ from imports import *
 app = Flask(__name__)
 # Initialize SocketIO
 socketio = SocketIO(app, cors_allowed_origins="*")
+CORS(app)
 
 # Generate a secret key for symmetric encryption (replace with proper key management)
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
 
 # Set a secret key for authentication
-app.config['SECRET_KEY'] = "your_secret_key"  # Replace with a proper secret key
+app.config['SECRET_KEY'] = generate_secret_key()
 
 # Configure Flask app to use file-based logging only
 log_handler = RotatingFileHandler('app.log', maxBytes=10000, backupCount=1)
@@ -66,9 +67,6 @@ def get_output_file(filename):
     file_path = os.path.join(output_data_path, filename)
     return send_file(file_path, as_attachment=True)
 
-# Read file contents once during initialization
-intents_data = open('data/input/intents.json').read()
-intents = json.loads(intents_data)
 
 def secure_hash_message(message):
     # Hash the message using SHA-512
