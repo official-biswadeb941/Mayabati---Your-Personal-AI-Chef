@@ -1,0 +1,59 @@
+/* mobile.css */
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        overflow: hidden; /* Prevent body from scrolling */
+        background: url('https://r4.wallpaperflare.com/wallpaper/524/228/970/life-interior-home-room-wallpaper-79a0780dd1da4d5bb6a7e8cfc061665d.jpg') center/cover no-repeat;
+    }
+
+    .card {
+        max-height: calc(100vh - 185px); /* Adjust max height for a shorter card */
+        margin-bottom: 10px; /* Add a smaller margin between the card and the card footer */
+        background-color: #b8870bd3;
+    }
+
+    .card-footer {
+        bottom: 0;
+        height: auto;
+        padding: 10px;
+    }
+
+    .user-message,
+    .bot-message {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* Adjusted margin-top for smaller screens */
+    }
+
+    .logo img {
+        width: 80px; /* Adjusted width of the logo for smaller screens */
+        height: auto;
+        margin-bottom: 5px; /* Adjusted margin-bottom for smaller screens */
+        border-radius: 50px;
+    }
+
+    .logo h1 {
+        font-size: 18px; /* Adjusted font size for smaller screens */
+        margin: 6px;
+        color: #000000; /* Set the desired color for the text */
+        text-align: center; /* Center text horizontally */
+    }
+
+    .text {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        font-weight: bold;
+        text-align: center; /* Center text horizontally */
+        color: white;
+    }
+}
