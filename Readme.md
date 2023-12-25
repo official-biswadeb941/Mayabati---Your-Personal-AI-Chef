@@ -52,6 +52,8 @@ This project and its components are the intellectual property of Biswadeb Mukher
 
 ## Sponsor Us [We need your support 🙏]
 
+We are always working hard to take Mayabati to advance level & this repository is always getting updated when major updates are available. All we need is your support for us. 
+
 [![Sponsor on GitHub](https://img.shields.io/github/sponsors/official-biswadeb941?style=social)](https://github.com/sponsors/official-biswadeb941)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-blue.svg)](https://www.buymeacoffee.com/B.M.O.941)
 
