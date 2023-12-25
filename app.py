@@ -67,6 +67,9 @@ def get_output_file(filename):
     file_path = os.path.join(output_data_path, filename)
     return send_file(file_path, as_attachment=True)
 
+# Read file contents once during initialization
+intents_data_path = os.path.join(input_data_path, 'intents.json')
+intents = json.loads(open(intents_data_path).read())
 
 def secure_hash_message(message):
     # Hash the message using SHA-512
