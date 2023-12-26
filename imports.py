@@ -38,3 +38,9 @@ from cryptography.fernet import Fernet
 from flask_sslify import SSLify
 import os
 import ssl
+import nltk
+from nltk import pos_tag, word_tokenize
+from nltk.corpus import wordnet
+from spacy import displacy
+import re
+from spacy.matcher import Matcher
