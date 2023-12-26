@@ -14,10 +14,10 @@ body {
     max-height: calc(100vh - 160px);
     padding: 20px;
     margin-bottom: 80px;
-    border-radius: 40px;
     border-color: #cd8305;
     border-width: 5px;
-    box-shadow: 0 10px 20px #ff620092;;
+    box-shadow: 0 10px 20px #ff620092;
+    background-color: #b8870ba0;
 }
 
 .card-footer {
@@ -33,7 +33,7 @@ body {
 }
 
 .card-footer #user_input {
-    width: 100%;
+    width: 60%;
     padding: 10px;
     border: 1px solid #000000;
     border-radius: 8px;
@@ -146,8 +146,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-    color: white;
-
+    color: rgb(0, 0, 0);
 }
 
 #user_input::placeholder {
@@ -175,10 +174,3 @@ body {
     background-color: #fca503; /* Set the color of the scrollbar corners */
 }
 
-.recipe-box {
-    background-color: #f8f8f8; /* Background color */
-    border: 1px solid #ddd; /* Border */
-    padding: 10px; /* Padding */
-    margin-bottom: 10px; /* Margin to separate recipe boxes */
-    border-radius: 8px; /* Border radius for rounded corners */
-  }

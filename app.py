@@ -6,6 +6,7 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
 
+
 # Generate a secret key for symmetric encryption (replace with proper key management)
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
@@ -291,4 +292,4 @@ if __name__ == '__main__':
     app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
-    socketio.run(app, debug=True, use_reloader=False)
+    socketio.run(app, debug=True, host='0.0.0.0', port=5000, use_reloader=False)
