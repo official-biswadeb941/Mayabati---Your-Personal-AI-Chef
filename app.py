@@ -6,37 +6,6 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
-# Load spaCy model
-nlp = spacy.load('en_core_web_sm')
-
-# Add this code after the imports
-quantity_patterns = [
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["glass", "glasses", "cup", "cups"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["teaspoon", "teaspoons", "tsp", "tsp."]}}, {"OP": "?"}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["tablespoon", "tablespoons", "tbsp", "tbsp."]}}, {"OP": "?"}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["ounce", "ounces", "oz", "oz."]}}, {"OP": "?"}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["pound", "pounds", "lb", "lb."]}}, {"OP": "?"}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["gram", "grams", "g", "g."]}}, {"OP": "?"}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["kilogram", "kilograms", "kg", "kg."]}}, {"OP": "?"}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["pinch", "pinches"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["dash", "dashes"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["slice", "slices"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["piece", "pieces"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["package", "packages"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["handful", "handfuls"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["bunch", "bunches"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["can", "cans"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["bottle", "bottles"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["cupcake", "cupcakes"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["tablespoonful", "tablespoonfuls"]}}]},
-    {"label": "QUANTITY", "pattern": [{"POS": {"in": ["CD"]}}, {"LOWER": {"in": ["teaspoonful", "teaspoonfuls"]}}]},
-    # Add more patterns as needed
-]
-
-
 # Generate a secret key for symmetric encryption (replace with proper key management)
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
@@ -112,44 +81,13 @@ def preprocess_input(input_text):
     input_text = input_text.lower()
     # Tokenize the input text
     tokens = word_tokenize(input_text)
-    # Perform POS tagging
-    pos_tags = pos_tag(tokens)
-    # Remove stopwords
-    tokens = [word for word, pos in pos_tags if word.lower() not in stop_words]
-    # Lemmatize tokens using WordNet lemmatizer
-    tokens = [lemmatizer.lemmatize(word, get_wordnet_pos(pos)) for word, pos in pos_tags]
-    # Perform named entity recognition (NER) using spaCy
-    doc = nlp(' '.join(tokens))
-    # Extract named entities from the document
-    ner_entities = [ent.text for ent in doc.ents]
-    # Add custom quantity patterns
-    matcher = Matcher(nlp.vocab)
-    matcher.add("quantity", None, quantity_patterns)
-    matches = matcher(doc)
-    for match_id, start, end in matches:
-        span = doc[start:end]
-        # Add the recognized quantity to the list of named entities
-        ner_entities.append(span.text)
-    # Combine tokens from POS, NER, and lemmatization
-    final_tokens = set(tokens + ner_entities)
+    # Remove stopwords (optional)
+    tokens = [word for word in tokens if word not in stop_words]
+    # Lemmatize tokens
+    tokens = [lemmatizer.lemmatize(word) for word in tokens]
     # Reconstruct the preprocessed text
-    preprocessed_text = ' '.join(final_tokens)
+    preprocessed_text = ' '.join(tokens)
     return preprocessed_text
-
-def get_wordnet_pos(treebank_tag):
-    tag_dict = {
-        'N': wordnet.NOUN,
-        'V': wordnet.VERB,
-        'R': wordnet.ADV,
-        'J': wordnet.ADJ
-    }
-    # Default to noun for unknown tags
-    return tag_dict.get(treebank_tag[0], wordnet.NOUN)
-# Example usage:
-treebank_tags = ['JJ', 'VB', 'NN', 'RB', 'MD']
-for tag in treebank_tags:
-    wordnet_pos = get_wordnet_pos(tag)
-    print(f"{tag} => {wordnet_pos}")
 
 
 #Functions to clear up noisy data from dataset
@@ -266,30 +204,18 @@ def get_response(intents_list, intents_json, user_message):
         response = "I'm sorry, I couldn't find the recipe you're looking for."
         print("No matching recipe found in the dataset.")  # Add this line
     else:
-        # Check if the user's message contains a quantity and a food item
-        quantities = re.findall(r'\b\d+\s*\.*\d*\s*(?:glass|glasses|cup|cups|teaspoon|teaspoons|tsp|tsp\.|tablespoon|tablespoons|tbsp|tbsp\.|ounce|ounces|oz|oz\.|pound|pounds|lb|lb\.|gram|grams|g|g\.|kilogram|kilograms|kg|kg\.)?\b', user_message)
-        food_items = re.findall(r'\b(?:cake|flour)\b', user_message, flags=re.IGNORECASE)
-        if quantities and food_items:
-            # Extracted quantity and food item from the user's message
-            quantity = quantities[0]
-            food_item = food_items[0]
-            # Add your logic here to determine the amount of the food item based on the recipe
-            # For simplicity, let's assume a static response
-            response = f"For a {recipe_name}, you typically need {quantity} of {food_item}."
-            print("Processed user query for quantity of food item.")  # Add this line
-        else:
-            # Continue with the existing response logic based on predicted intents
-            tag = intents_list[0]['intent']
-            list_of_intents = intents_json['intents']
-            response = None
-            for i in list_of_intents:
-                if i['tag'] == tag:
-                    response = random.choice(i['responses'])
-                    break
-            # If no matching intent found, use a fallback response
-            if not response:
-                response = "Hi there, how can I help?"
-            print("Using fallback response.")  # Add this line
+        # Continue with the existing response logic based on predicted intents
+        tag = intents_list[0]['intent']
+        list_of_intents = intents_json['intents']
+        response = None
+        for i in list_of_intents:
+            if i['tag'] == tag:
+                response = random.choice(i['responses'])
+                break
+        # If no matching intent found, use a fallback response
+        if not response:
+            response = "Hi there, how can I help?"
+        print("Using fallback response.")  # Add this line
     return response
 
 @socketio.on('signal')
@@ -331,9 +257,6 @@ def chat():
     # Sentiment analysis
     sentiment = analyze_sentiment(user_message)
     print(f"Sentiment: {sentiment}")
-    pos_tags = pos_tag(word_tokenize(user_message))
-    print("POS Tags:", pos_tags)
-    preprocessed_message = preprocess_input(user_message)
     conversation_history.append({'user': user_message, 'bot': None})
     keyword_for_recipe = 'recipe'
     if keyword_for_recipe in user_message.lower():
@@ -356,7 +279,7 @@ def chat():
         else:
             bot_message = get_response(ints, intents, user_message)
     conversation_history[-1]['bot'] = bot_message
-    return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment, 'preprocessed_message': preprocess_input})
+    return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
 
 # Main entry point
 if __name__ == '__main__':
@@ -368,4 +291,4 @@ if __name__ == '__main__':
     app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
-    socketio.run(app, debug=True, host='0.0.0.0', port=5000, use_reloader=False)
+    socketio.run(app, debug=True, host='192.168.43.186', port=1000, use_reloader=False)
