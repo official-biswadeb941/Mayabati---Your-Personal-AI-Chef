@@ -81,5 +81,5 @@ sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
 model.fit(train_x, train_y, epochs=500, batch_size=200)
-model.save('data/output/Attention/attention.model')
+model.save('data/output/Attention/Rasika.model')
 print("Done")
