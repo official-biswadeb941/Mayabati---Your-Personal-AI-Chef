@@ -10,6 +10,9 @@ CORS(app)
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
 
+# Load the spaCy model
+nlp = spacy.load("en_core_web_sm")
+
 # Set a secret key for authentication
 app.config['SECRET_KEY'] = generate_secret_key()
 
@@ -79,12 +82,17 @@ def secure_hash_message(message):
 def preprocess_input(input_text):
     # Convert to lowercase
     input_text = input_text.lower()
+    # Use spaCy for entity recognition
+    doc = nlp(input_text)
+    entities = [ent.text for ent in doc.ents]
     # Tokenize the input text
     tokens = word_tokenize(input_text)
     # Remove stopwords (optional)
     tokens = [word for word in tokens if word not in stop_words]
     # Lemmatize tokens
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
+    # Add recognized entities to the lemmatized tokens
+    tokens.extend(entities)
     # Reconstruct the preprocessed text
     preprocessed_text = ' '.join(tokens)
     return preprocessed_text

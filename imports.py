@@ -41,6 +41,7 @@ import ssl
 import nltk
 from nltk import pos_tag, word_tokenize
 from nltk.corpus import wordnet
+import spacy
 from spacy import displacy
 import re
 from spacy.matcher import Matcher
