@@ -79,11 +79,13 @@ def secure_hash_message(message):
     hashed_message = hashlib.sha512(message.encode()).hexdigest()
     return hashed_message
 
+# Update the preprocess_input function to include POS tags
 def preprocess_input(input_text):
-    # Convert to lowercase
     input_text = input_text.lower()
-    # Use spaCy for entity recognition
     doc = nlp(input_text)
+    # Extract POS tags
+    pos_tags = [token.pos_ for token in doc]
+    # Extract entities
     entities = [ent.text for ent in doc.ents]
     # Tokenize the input text
     tokens = word_tokenize(input_text)
@@ -91,12 +93,12 @@ def preprocess_input(input_text):
     tokens = [word for word in tokens if word not in stop_words]
     # Lemmatize tokens
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
-    # Add recognized entities to the lemmatized tokens
+    # Add recognized entities and POS tags to the lemmatized tokens
     tokens.extend(entities)
+    tokens.extend(pos_tags)
     # Reconstruct the preprocessed text
     preprocessed_text = ' '.join(tokens)
     return preprocessed_text
-
 
 #Functions to clear up noisy data from dataset
 def clean_up_sentence(sentence):
@@ -109,14 +111,24 @@ def clean_up_sentence(sentence):
 # where each element corresponds to a word in a predefined vocabulary. If a word from
 # the vocabulary is present in the input sentence, the corresponding element in the
 # binary vector is set to 1; otherwise, it remains 0.
+# Update the bag_of_words function to include POS features
 def bag_of_words(sentence):
     sentence_words = clean_up_sentence(sentence)
+    pos_tags = pos_tags_in_sentence(sentence)  # New function to extract POS tags
+    sentence_words.extend(pos_tags)
     bag = [0] * len(words)
     for w in sentence_words:
         for i, word in enumerate(words):
             if word == w:
                 bag[i] = 1
     return np.array(bag)
+
+# New function to extract POS tags from a sentence
+def pos_tags_in_sentence(sentence):
+    doc = nlp(sentence.lower())
+    pos_tags = [token.pos_ for token in doc]
+    print(f"POS Tags: {pos_tags}")  # Add this line for debugging
+    return pos_tags
 
 
 def format_recipe(recipe):
@@ -182,11 +194,13 @@ def get_recipe_details(recipe_name):
         return {"text": "I'm sorry, I couldn't find the recipe you're looking for.", "is_recipe": False}
 
 
+# Update the predict_class function to use a dynamic threshold
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    ERROR_THRESHOLD = 0.4  # Adjust the threshold as needed
-    results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
+    # Calculate the dynamic threshold based on the maximum confidence score
+    dynamic_threshold = max(res)
+    results = [[i, r] for i, r in enumerate(res) if r > dynamic_threshold]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     if not results:
@@ -197,34 +211,45 @@ def predict_class(sentence):
     return return_list
 
 
+# Update the get_response function to consider POS features
 def get_response(intents_list, intents_json, user_message):
     # Extract the recipe name from the user's message
     recipe_name = extract_recipe_name(user_message)
     if recipe_name:
-        print("Recipe name extracted:", recipe_name)  # Add this line
         # Check if the recipe name matches any recipe in the dataset
         for recipe in intents_json['recipes']:
             if recipe['recipe_name'].lower() == recipe_name.lower():
-                # Return the recipe details as a response
-                print("Found matching recipe in dataset.")  # Add this line
                 return format_recipe(recipe)
-        # If no matching recipe found, return a message
         response = "I'm sorry, I couldn't find the recipe you're looking for."
-        print("No matching recipe found in the dataset.")  # Add this line
     else:
         # Continue with the existing response logic based on predicted intents
         tag = intents_list[0]['intent']
-        list_of_intents = intents_json['intents']
-        response = None
-        for i in list_of_intents:
-            if i['tag'] == tag:
-                response = random.choice(i['responses'])
-                break
-        # If no matching intent found, use a fallback response
-        if not response:
-            response = "Hi there, how can I help?"
-        print("Using fallback response.")  # Add this line
-    return response
+        pos_tags = pos_tags_in_sentence(user_message)  # Extract POS tags
+        user_message_with_pos = user_message + ' ' + ' '.join(pos_tags)
+        ints = predict_class(user_message_with_pos)
+        # Extracted POS features
+        extracted_pos_features = ', '.join(pos_tags)
+        print(f"Extracted POS features: {extracted_pos_features}")  # Add this line for debugging
+        # Check if the top predicted intent is related to recipe details
+        if tag == 'recipe_details':
+            recipe_name = extract_recipe_name(user_message)
+            bot_message = get_recipe_details(recipe_name)
+        else:
+            # Continue with the existing response logic based on predicted intents
+            list_of_intents = intents_json['intents']
+            response = None
+            for i in list_of_intents:
+                if i['tag'] == tag:
+                    response = random.choice(i['responses'])
+                    break
+            # If no matching intent found, use a fallback response
+            if not response:
+                response = "Hi there, how can I help?"
+            print("Using fallback response.")  # Add this line for debugging
+            bot_message = response
+        # Log the predicted intent and response
+        app.logger.info(f"Predicted Intent: {tag}, Response: {bot_message}")  # Add this line
+    return bot_message
 
 @socketio.on('signal')
 def handle_signal(data):
@@ -265,6 +290,9 @@ def chat():
     # Sentiment analysis
     sentiment = analyze_sentiment(user_message)
     print(f"Sentiment: {sentiment}")
+    # Extract POS tags for debugging
+    pos_tags = pos_tags_in_sentence(user_message)
+    print(f"POS Tags: {pos_tags}")  # Add this line for debugging
     conversation_history.append({'user': user_message, 'bot': None})
     keyword_for_recipe = 'recipe'
     if keyword_for_recipe in user_message.lower():
@@ -286,8 +314,12 @@ def chat():
             bot_message = get_recipe_details(recipe_name)
         else:
             bot_message = get_response(ints, intents, user_message)
+            # Extract POS tags again for debugging within the get_response function
+            pos_tags = pos_tags_in_sentence(user_message)
+            print(f"POS Tags within get_response: {pos_tags}")  # Add this line for debugging
     conversation_history[-1]['bot'] = bot_message
     return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
+
 
 # Main entry point
 if __name__ == '__main__':
