@@ -2,7 +2,6 @@ from gevent import monkey
 import logging
 from logging.handlers import RotatingFileHandler
 import sys 
-import os
 import platform
 from extensions.secret import generate_secret_key
 import random

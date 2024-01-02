@@ -16,18 +16,6 @@ nlp = spacy.load("en_core_web_sm")
 # Set a secret key for authentication
 app.config['SECRET_KEY'] = generate_secret_key()
 
-# Configure Flask app to use file-based logging only
-log_handler = RotatingFileHandler('app.log', maxBytes=10000, backupCount=1)
-log_handler.setLevel(logging.INFO)
-app.logger.addHandler(log_handler)
-
-# Disable console logging for Flask
-app.logger.removeHandler(default_handler := logging.StreamHandler(sys.stdout))
-# Redirect all messages to the log file
-logging.basicConfig(filename='app.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-# Disable Flask default logger, preventing messages from being printed to the console
-app.logger.disabled = True
-
 # Initialize conversation history to keep track of user-bot interactions
 conversation_history = []
 recipe_data = []
@@ -74,11 +62,6 @@ def get_output_file(filename):
 intents_data_path = os.path.join(input_data_path, 'intents.json')
 intents = json.loads(open(intents_data_path).read())
 
-def secure_hash_message(message):
-    # Hash the message using SHA-512
-    hashed_message = hashlib.sha512(message.encode()).hexdigest()
-    return hashed_message
-
 # Update the preprocess_input function to include POS tags
 def preprocess_input(input_text):
     input_text = input_text.lower()
@@ -100,12 +83,11 @@ def preprocess_input(input_text):
     preprocessed_text = ' '.join(tokens)
     return preprocessed_text
 
-#Functions to clear up noisy data from dataset
+# Functions to clear up noisy data from dataset
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word) for word in sentence_words]
     return sentence_words
-
 
 # The 'bag_of_words' function converts a sentence into a binary vector representation,
 # where each element corresponds to a word in a predefined vocabulary. If a word from
@@ -129,7 +111,6 @@ def pos_tags_in_sentence(sentence):
     pos_tags = [token.pos_ for token in doc]
     print(f"POS Tags: {pos_tags}")  # Add this line for debugging
     return pos_tags
-
 
 def format_recipe(recipe):
     recipe_name = recipe.get('recipe_name', '')
@@ -323,12 +304,8 @@ def chat():
 
 # Main entry point
 if __name__ == '__main__':
-    # Print system information at startup
-    system_info = f"System: {platform.system()} {platform.release()} {platform.machine()}"
-    app.logger.info(system_info)  # Log system information
     # Run the app with the secret key
     important_message = "Important: Application started with secret key."
-    app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
     socketio.run(app, debug=True, host='0.0.0.0', port=1000, use_reloader=False)
