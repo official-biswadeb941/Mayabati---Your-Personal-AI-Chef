@@ -8,3 +8,6 @@ app.log
 .nyc_output
 node_modules
 package-lock.json
+nltk
+script.py
+spacy

@@ -299,4 +299,4 @@ if __name__ == '__main__':
     app.logger.info(important_message)  # Log important message
     print(important_message)  # Print important message
 
-    socketio.run(app, debug=True, host='192.168.43.186', port=1000, use_reloader=False)
+    socketio.run(app, debug=True, host='0.0.0.0', port=1000, use_reloader=False)
