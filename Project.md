@@ -1,4 +1,4 @@
-Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovation.)]
+Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations.)]
 │
 ├── data/
 │   ├── input/

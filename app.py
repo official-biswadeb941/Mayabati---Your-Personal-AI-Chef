@@ -175,24 +175,25 @@ def get_recipe_details(recipe_name):
         return {"text": "I'm sorry, I couldn't find the recipe you're looking for.", "is_recipe": False}
 
 
-# Update the predict_class function to use a dynamic threshold
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    # Calculate the dynamic threshold based on the maximum confidence score
-    dynamic_threshold = max(res)
+    # Calculate the dynamic threshold as a percentage of the maximum confidence score
+    threshold_percentage = 80  # Adjust as needed
+    dynamic_threshold = max(res) * (threshold_percentage / 100)
+    print(f"Dynamic Threshold: {dynamic_threshold}")
     results = [[i, r] for i, r in enumerate(res) if r > dynamic_threshold]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     if not results:
         # If no intent is above the threshold, use a fallback response
         return_list.append({'intent': 'fallback', 'probability': '1'})
+        print("Fallback triggered due to no intent above threshold.")  # Add this line for debugging
     for r in results:
         return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
     return return_list
 
 
-# Update the get_response function to consider POS features
 def get_response(intents_list, intents_json, user_message):
     # Extract the recipe name from the user's message
     recipe_name = extract_recipe_name(user_message)
@@ -230,7 +231,7 @@ def get_response(intents_list, intents_json, user_message):
             bot_message = response
         # Log the predicted intent and response
         app.logger.info(f"Predicted Intent: {tag}, Response: {bot_message}")  # Add this line
-    return bot_message
+    return bot_message 
 
 @socketio.on('signal')
 def handle_signal(data):
@@ -305,7 +306,8 @@ def chat():
 # Main entry point
 if __name__ == '__main__':
     # Run the app with the secret key
-    important_message = "Important: Application started with secret key."
-    print(important_message)  # Print important message
+    Important_message = "Important: Application started with secret key."
+    print(Important_message)  # Print important message
 
-    socketio.run(app, debug=True, host='0.0.0.0', port=1000, use_reloader=False)
+    socketio.run(app, debug=True, host='0.0.0.0', port=1000, use_reloader=False) 
+    

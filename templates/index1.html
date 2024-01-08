@@ -24,7 +24,7 @@
         </script>
         <script src="{{ url_for('static', filename='JS/highlight.min.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/highlightjs-copy.min.js') }}"></script>
-        <script>window.conversation_id = `{{chat_id}}`</script>
+        <script>window.conversation_history = `{{chat_id}}`</script>
         <title>ChatGPT</title>
     </head>
     <body>
@@ -60,12 +60,15 @@
                     </button>
                 </div>
                 <div class="box" id="messages">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Logo">
-                            <h1><b>Mayabati - Your Personal Chef</b></h1>
-                            <h1><b>So what do you want to cook today?</b></h1>
+                    <div id="chatbox" class="card flex-grow-1">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Logo">
+                                <h1><b>Mayabati - Your Personal Chef</b></h1>
+                                <h1><b>So what do you want to cook today?</b></h1>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="user-input">

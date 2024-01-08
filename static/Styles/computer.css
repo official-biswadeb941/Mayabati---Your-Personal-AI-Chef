@@ -11,7 +11,7 @@ body {
 
 .card {
     overflow-y: auto;
-    max-height: calc(100vh - 175px);
+    max-height: calc(100vh - 190px);
     padding: 20px;
     margin-bottom: 80px;
     border-color: #cd8305;
@@ -22,7 +22,7 @@ body {
 
 .card-footer {
     position: fixed;
-    bottom: 30px;
+    bottom: 10px;
     width: 100%;
     height: 15%;
     left: 50%;

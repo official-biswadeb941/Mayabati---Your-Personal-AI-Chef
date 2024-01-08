@@ -45,7 +45,7 @@ const handle_ask = async () => {
 
   if (message.length > 0) {
     message_input.value = ``;
-    await ask_flask(message);
+    await ask_gpt(message);
   }
 };
 
@@ -58,81 +58,122 @@ const remove_cancel_button = async () => {
   }, 300);
 };
 
-
-const ask_flask = async (message) => {
+const ask_gpt = async (message) => {
   try {
-    const response = await fetch(`/chat`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ message: message }),
-    });
+    message_input.value = ``;
+    message_input.innerHTML = ``;
+    message_input.innerText = ``;
 
-    if (!response.ok) {
-      throw new Error(`Request failed with status: ${response.status}`);
-    }
+    add_conversation(window.cconversation_history, message.substr(0, 20));
+    window.scrollTo(0, 0);
+    window.controller = new AbortController();
 
-    const data = await response.json();
+    const jailbreak = document.getElementById("jailbreak");
+    const model = document.getElementById("model");
+    prompt_lock = true;
+    window.text = ``;
+    window.token = message_id();
 
-    // Add the user's message to the message box
+    stop_generating.classList.remove(`stop_generating-hidden`);
+
     message_box.innerHTML += `
       <div class="message">
         <div class="user">
-          ${user_image} <i class="fa-regular fa-phone-arrow-up-right"></i>
+          ${user_image}
+          <i class="fa-regular fa-phone-arrow-up-right"></i>
         </div>
-        <div class="content" id="user_${window.token}">
+        <div class="content" id="user_${window.token}"> 
           ${format(message)}
         </div>
       </div>
     `;
-    message_box.scrollTop = message_box.scrollHeight;
 
-    // Add the Flask response to the message box
+    message_box.scrollTop = message_box.scrollHeight;
+    window.scrollTo(0, 0);
+    await new Promise((r) => setTimeout(r, 500));
+    window.scrollTo(0, 0);
+
     message_box.innerHTML += `
       <div class="message">
         <div class="user">
           ${gpt_image} <i class="fa-regular fa-phone-arrow-down-left"></i>
         </div>
-        <div class="content">
-          ${format(data.message)} <!-- Assuming your Flask response has a 'message' property -->
+        <div class="content" id="gpt_${window.token}">
+          <div id="cursor"></div>
         </div>
       </div>
     `;
 
-    // Scroll to the bottom to show the latest message
     message_box.scrollTop = message_box.scrollHeight;
+    window.scrollTo(0, 0);
+    await new Promise((r) => setTimeout(r, 1000));
+    window.scrollTo(0, 0);
 
-  } catch (error) {
-    console.error('Error connecting to Flask:', error.message);
-    // Handle the error, show a message to the user, etc.
+    const response = await fetch("/chat", {
+      method: "POST",
+      signal: window.controller.signal,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        message: message,
+        model: model.options[model.selectedIndex].value,
+        jailbreak: jailbreak.options[jailbreak.selectedIndex].value,
+      }),
+    });
+
+    const result = await response.json();
+
+    const text = result.response;
+
+    document.getElementById(`gpt_${window.token}`).innerHTML = markdown.render(text);
+    document.querySelectorAll(`code`).forEach((el) => {
+      hljs.highlightElement(el);
+    });
+
+    window.scrollTo(0, 0);
+    message_box.scrollTo({ top: message_box.scrollHeight, behavior: "auto" });
+
+    add_message(window.cconversation_history, "user", message);
+    add_message(window.cconversation_history, "assistant", text);
+
+    message_box.scrollTop = message_box.scrollHeight;
+    await remove_cancel_button();
+    prompt_lock = false;
+
+    await load_conversations(20, 0);
+    window.scrollTo(0, 0);
+  } catch (e) {
+    add_message(window.cconversation_history, "user", message);
+  
+    message_box.scrollTop = message_box.scrollHeight;
+    await remove_cancel_button();
+    prompt_lock = false;
+  
+    await load_conversations(20, 0);
+  
+    console.error(e);
+  
+    let cursorDiv = document.getElementById(`cursor`);
+    if (cursorDiv) cursorDiv.parentNode.removeChild(cursorDiv);
+  
+    if (e.name !== `AbortError`) {
+      let error_message = `Oops! Something went wrong. Please try again or reload the page.`;
+  
+      // Log the detailed error information to the console
+      console.error("Error details:", e);
+  
+      document.getElementById(`gpt_${window.token}`).innerHTML = error_message;
+      add_message(window.cconversation_history, "assistant", error_message);
+    } else {
+      document.getElementById(`gpt_${window.token}`).innerHTML += ` [Aborted]`;
+      add_message(window.cconversation_history, "assistant", text + ` [Aborted]`);
+    }
+  
+    window.scrollTo(0, 0);
   }
 };
-
-// Function to handle asking GPT
-const handleAsk = async () => {
-  message_input.style.height = `80px`;
-  message_input.focus();
-
-  window.scrollTo(0, 0);
-  let message = message_input.value;
-
-  if (message.length > 0) {
-    message_input.value = ``;
-
-    // Call ask_flask instead of ask_gpt
-    await ask_flask(message);
-  }
-};
-
-// Example usage when the "Ask" button is clicked
-send_button.addEventListener('click', async () => {
-  console.log('clicked send');
-  if (prompt_lock) return;
-  await handleAsk();
-});
-
-
 
 const clear_conversations = async () => {
   const elements = box_conversations.childNodes;
@@ -159,61 +200,61 @@ const clear_conversation = async () => {
   }
 };
 
-const show_option = async (conversation_id) => {
-  const conv = document.getElementById(`conv-${conversation_id}`);
-  const yes = document.getElementById(`yes-${conversation_id}`);
-  const not = document.getElementById(`not-${conversation_id}`);
+const show_option = async (cconversation_history) => {
+  const conv = document.getElementById(`conv-${cconversation_history}`);
+  const yes = document.getElementById(`yes-${cconversation_history}`);
+  const not = document.getElementById(`not-${cconversation_history}`);
 
   conv.style.display = "none";
   yes.style.display = "block";
   not.style.display = "block"; 
 }
 
-const hide_option = async (conversation_id) => {
-  const conv = document.getElementById(`conv-${conversation_id}`);
-  const yes = document.getElementById(`yes-${conversation_id}`);
-  const not = document.getElementById(`not-${conversation_id}`);
+const hide_option = async (cconversation_history) => {
+  const conv = document.getElementById(`conv-${cconversation_history}`);
+  const yes = document.getElementById(`yes-${cconversation_history}`);
+  const not = document.getElementById(`not-${cconversation_history}`);
 
   conv.style.display = "block";
   yes.style.display = "none";
   not.style.display = "none"; 
 }
 
-const delete_conversation = async (conversation_id) => {
-  localStorage.removeItem(`conversation:${conversation_id}`);
+const delete_conversation = async (cconversation_history) => {
+  localStorage.removeItem(`conversation:${cconversation_history}`);
 
-  const conversation = document.getElementById(`convo-${conversation_id}`);
+  const conversation = document.getElementById(`convo-${cconversation_history}`);
     conversation.remove();
 
-  if (window.conversation_id == conversation_id) {
+  if (window.cconversation_history == cconversation_history) {
     await new_conversation();
   }
 
   await load_conversations(20, 0, true);
 };
 
-const set_conversation = async (conversation_id) => {
-  history.pushState({}, null, `/chat/${conversation_id}`);
-  window.conversation_id = conversation_id;
+const set_conversation = async (cconversation_history) => {
+  history.pushState({}, null, `/chat/${cconversation_history}`);
+  window.cconversation_history = cconversation_history;
 
   await clear_conversation();
-  await load_conversation(conversation_id);
+  await load_conversation(cconversation_history);
   await load_conversations(20, 0, true);
 };
 
 const new_conversation = async () => {
   history.pushState({}, null, `/chat/`);
-  window.conversation_id = uuid();
+  window.cconversation_history = uuid();
 
   await clear_conversation();
   await load_conversations(20, 0, true);
 };
 
-const load_conversation = async (conversation_id) => {
+const load_conversation = async (cconversation_history) => {
   let conversation = await JSON.parse(
-    localStorage.getItem(`conversation:${conversation_id}`)
+    localStorage.getItem(`conversation:${cconversation_history}`)
   );
-  console.log(conversation, conversation_id);
+  console.log(conversation, cconversation_history);
 
   for (item of conversation.items) {
     message_box.innerHTML += `
@@ -248,19 +289,19 @@ const load_conversation = async (conversation_id) => {
   }, 500);
 };
 
-const get_conversation = async (conversation_id) => {
+const get_conversation = async (cconversation_history) => {
   let conversation = await JSON.parse(
-    localStorage.getItem(`conversation:${conversation_id}`)
+    localStorage.getItem(`conversation:${cconversation_history}`)
   );
   return conversation.items;
 };
 
-const add_conversation = async (conversation_id, title) => {
-  if (localStorage.getItem(`conversation:${conversation_id}`) == null) {
+const add_conversation = async (cconversation_history, title) => {
+  if (localStorage.getItem(`conversation:${cconversation_history}`) == null) {
     localStorage.setItem(
-      `conversation:${conversation_id}`,
+      `conversation:${cconversation_history}`,
       JSON.stringify({
-        id: conversation_id,
+        id: cconversation_history,
         title: title,
         items: [],
       })
@@ -268,9 +309,9 @@ const add_conversation = async (conversation_id, title) => {
   }
 };
 
-const add_message = async (conversation_id, role, content) => {
+const add_message = async (cconversation_history, role, content) => {
   before_adding = JSON.parse(
-    localStorage.getItem(`conversation:${conversation_id}`)
+    localStorage.getItem(`conversation:${cconversation_history}`)
   );
 
   before_adding.items.push({
@@ -279,7 +320,7 @@ const add_message = async (conversation_id, role, content) => {
   });
 
   localStorage.setItem(
-    `conversation:${conversation_id}`,
+    `conversation:${cconversation_history}`,
     JSON.stringify(before_adding)
   ); // update conversation
 };
@@ -320,7 +361,7 @@ const load_conversations = async (limit, offset, loader) => {
 
 document.getElementById(`cancelButton`).addEventListener(`click`, async () => {
   window.controller.abort();
-  console.log(`aborted ${window.conversation_id}`);
+  console.log(`aborted ${window.cconversation_history}`);
 });
 
 function h2a(str1) {
@@ -372,7 +413,7 @@ window.onload = async () => {
 
   if (!window.location.href.endsWith(`#`)) {
     if (/\/chat\/.+/.test(window.location.href)) {
-      await load_conversation(window.conversation_id);
+      await load_conversation(window.cconversation_history);
     }
   }
 
@@ -380,6 +421,7 @@ message_input.addEventListener(`keydown`, async (evt) => {
     if (prompt_lock) return;
     if (evt.keyCode === 13 && !evt.shiftKey) {
         evt.preventDefault();
+        console.log('pressed enter');
         await handle_ask();
     } else {
       message_input.style.removeProperty("height");
@@ -475,20 +517,21 @@ colorThemes.forEach((themeOption) => {
 
 document.onload = setTheme();
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Get elements
-  var logoContainer = document.querySelector('.logo-container');
-  var messageInput = document.getElementById('message-input');
-
-  // Function to hide logo container
-  function hideLogoContainer() {
-      logoContainer.style.display = 'none';
-  }
-
-  // Event listener for Enter key press
-  messageInput.addEventListener('keydown', function (event) {
-      if (event.key === 'Enter') {
-          hideLogoContainer();
+function observeNewMessages() {
+  var targetNode = document.getElementById('chatbox');
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === 'childList') {
+        var addedNodes = mutation.addedNodes;
+        addedNodes.forEach(function (node) {
+          if (node.classList.contains('message')) {
+            var label = node.querySelector(".message-text-label");
+            if (label) {
+              label.style.display = "inline";
+              hideLogoContainer();
+            }
+          }
+        });
       }
-  });
-});
+    });
+  })};

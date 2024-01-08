@@ -8,7 +8,7 @@
     }
 
     .card {
-        max-height: calc(100vh - 160px); /* Adjust max height for a shorter card */
+        max-height: calc(100vh - 180px); /* Adjust max height for a shorter card */
         margin-bottom: 10px; /* Add a smaller margin between the card and the card footer */
         background-color: #e624f8d3;
         border-color: #6d0477;
