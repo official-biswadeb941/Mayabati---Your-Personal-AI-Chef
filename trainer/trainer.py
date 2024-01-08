@@ -11,11 +11,9 @@ import gensim.models
 
 lemmatizer = WordNetLemmatizer()
 
-# Load pre-trained Word2Vec model
 w2v_model = gensim.models.Word2Vec.load("data/output/gram.model")
 
-# Define your classes and documents based on your dataset
-# For example, assuming you have an intents.json file as in your initial code:
+
 intents = json.loads(open('data/input/intents.json').read())
 
 words = []
@@ -59,24 +57,19 @@ random.shuffle(training)
 train_x = np.array([item[0] for item in training])
 train_y = np.array([item[1] for item in training])
 
-# Attention Mechanism
 input_layer = Input(shape=(len(train_x[0]),))
 embedding_layer = Embedding(input_dim=len(words), output_dim=100)(input_layer)
-# First Attention Mechanism
 lstm_layer = Bidirectional(LSTM(130, return_sequences=True))(embedding_layer)
 attention1 = Attention()([lstm_layer, lstm_layer])
 attention1 = Flatten()(attention1)
-# Second Attention Mechanism
 lstm_layer2 = Bidirectional(LSTM(130, return_sequences=True))(lstm_layer)
 attention2 = Attention()([lstm_layer2, lstm_layer2])
 attention2 = Flatten()(attention2)
-# Concatenate both attention outputs
 concatenated_attention = Concatenate()([attention1, attention2])
 output_layer = Dense(len(train_y[0]), activation='softmax')(concatenated_attention)
 
 model = Model(inputs=[input_layer], outputs=[output_layer])
 
-# Define the optimizer with learning rate (lr) instead of decay
 sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 

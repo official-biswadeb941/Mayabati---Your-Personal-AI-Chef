@@ -25,6 +25,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.layers import Input, Embedding, LSTM, Dense, concatenate, Bidirectional, Attention, Flatten, Concatenate
 from keras.optimizers import Adam, SGD
 import gensim.models
+from gensim.models import Word2Vec
 from concurrent.futures import ThreadPoolExecutor
 from fuzzywuzzy import process, fuzz
 import spacy
