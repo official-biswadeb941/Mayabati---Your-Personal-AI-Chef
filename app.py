@@ -1,8 +1,7 @@
 from imports import *
 
-
 app = Flask(__name__)
-socketio: SocketIO = SocketIO(app, cors_allowed_origins="*")
+socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
 
 symmetric_key = Fernet.generate_key()
@@ -207,17 +206,11 @@ def handle_message():
 
 @socketio.on('connect')
 def handle_connect():
-    username = request.sid
-    room = username
-    join_room(room)
-    emit('message', {'message': f'User {username} has joined the room.'}, room=room)
+    print('Client connected')
 
 @socketio.on('disconnect')
 def handle_disconnect():
-    username = request.sid
-    room = username
-    leave_room(room)
-    emit('message', {'message': f'User {username} has left the room.'}, room=room)
+    print('Client disconnected')
 
 @app.route('/')
 def index():
@@ -228,13 +221,10 @@ def index():
 def chat():
     user_message = request.json.get('message')
     sentiment = analyze_sentiment(user_message)
-    username = request.sid  # Using socket ID as the username
-    room = username
     print(f"Sentiment: {sentiment}")
     pos_tags = pos_tags_in_sentence(user_message)
     print(f"POS Tags: {pos_tags}") 
-    conversation_history.append({'user': username, 'message': user_message, 'bot': bot_message, 'sentiment': sentiment})
-    socketio.emit('message', {'message': bot_message, 'history': conversation_history, 'sentiment': sentiment}, room=room)
+    conversation_history.append({'user': user_message, 'bot': None})
     keyword_for_recipe = 'recipe'
     if keyword_for_recipe in user_message.lower():
         suggestions = get_closest_recipe_names(user_message)

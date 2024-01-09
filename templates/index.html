@@ -14,6 +14,7 @@
 </head>
 
 <body class="d-flex flex-column">
+    <div id="content-container"></div>
     <div id="chatbox" class="card flex-grow-1">
         <div class="logo-container">
             <div class="logo">
@@ -22,14 +23,14 @@
                 <h1><b>So what do you want to cook today?</b></h1>
             </div>
         </div>
-
-                <div class="message bot-message">
+        <!-- Bot messages (stacking upwards) -->
+        <div class="message bot-message">
             <div class="avatar">
 
             </div>
             <div class="message-text"><b></b></div>
         </div>
-      
+        <!-- User messages (stacking upwards) -->
         <div class="message user-message">
             <div class="avatar">
 
@@ -48,7 +49,6 @@
         </p>
     </div>    
 </div>    
-
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
