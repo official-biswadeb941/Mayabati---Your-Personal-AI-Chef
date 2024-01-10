@@ -197,18 +197,27 @@ def index():
 
 def conversation_logs(user_message, bot_message, sentiment):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    conversation_history.append({'timestamp': timestamp, 'user': user_message, 'bot': bot_message, 'sentiment': sentiment})
+    conversation_history.append({
+        'timestamp': timestamp,
+        'user': user_message,
+        'bot': bot_message,
+        'sentiment': sentiment
+    })
     csv_file_path = 'data/output/Conversation/History.csv'
-    if not os.path.exists(csv_file_path):
-        with open(csv_file_path, 'w', newline='') as csvfile:
-            fieldnames = ['Date', 'Time', 'User', 'Bot', 'Sentiment']
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writeheader()
-    with open(csv_file_path, 'a', newline='') as csvfile:
-        writer = csv.writer(csvfile)
+    fieldnames = ['Date', 'Time', 'User', 'Bot', 'Sentiment']
+    with open(csv_file_path, 'w', newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
         for entry in conversation_history:
-            writer.writerow([entry['timestamp'].split()[0], entry['timestamp'].split()[1],
-                             entry['user'], entry['bot'], entry['sentiment']])
+            date, time = entry['timestamp'].split()
+            writer.writerow({
+                'Date': date,
+                'Time': time,
+                'User': entry['user'],
+                'Bot': entry['bot'],
+                'Sentiment': entry['sentiment']
+            })
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
