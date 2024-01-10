@@ -251,7 +251,6 @@ def chat():
     conversation_history[-1]['bot'] = bot_message
     return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
 
-
 if __name__ == '__main__':
     Important_message = "Important: Application started with secret key."
     print(Important_message) 
