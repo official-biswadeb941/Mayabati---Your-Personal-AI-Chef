@@ -1,4 +1,4 @@
-from imports import *
+from Features.Import.imports import *
 
 with open('gram.json', 'r') as json_file:
     corpus = json.load(json_file)

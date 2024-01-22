@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import sys 
 import platform
-from extensions.secret import generate_secret_key
+from Features.secret import generate_secret_key
 import random
 import json
 import pickle
@@ -30,7 +30,7 @@ from concurrent.futures import ThreadPoolExecutor
 from fuzzywuzzy import process, fuzz
 import spacy
 from flask_cors import CORS
-from extensions.sentiments import  analyze_sentiment
+from Features.sentiments import  analyze_sentiment
 from flask_socketio import SocketIO, emit, send, join_room, leave_room
 from nltk.sentiment import SentimentIntensityAnalyzer
 import hashlib
