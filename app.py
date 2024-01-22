@@ -1,25 +1,32 @@
 from imports import *
 
 app = Flask(__name__)
-
 socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
+
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
+
 nlp = spacy.load("en_core_web_sm")
-app.config['SECRET_KEY'] = generate_secret_key()
+
+app.config['SECRET_KEY'] = os.urandom(24)
 conversation_history = []
-recipe_data = []
+
 input_data_path = 'data/input'
 output_data_path = 'data/output'
+
 intents_data_path = os.path.join(input_data_path, 'intents.json')
-intents = json.loads(open(intents_data_path).read())
+with open(intents_data_path, 'r') as intents_file:
+    intents = json.load(intents_file)
+
 model_path = os.path.join(output_data_path, 'Attention', 'attention.model')
 model = load_model(model_path)
+
 words_path = os.path.join(output_data_path, 'Attention', 'words.pkl')
 classes_path = os.path.join(output_data_path, 'Attention', 'classes.pkl')
 words = pickle.load(open(words_path, 'rb'))
 classes = pickle.load(open(classes_path, 'rb'))
+
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['recipes'])
@@ -28,12 +35,11 @@ recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['reci
 def get_input_file(filename):
     file_path = os.path.join(input_data_path, filename)
     return send_file(file_path, as_attachment=True)
+
 @app.route('/api/get_output_file/<path:filename>', methods=['GET'])
 def get_output_file(filename):
     file_path = os.path.join(output_data_path, filename)
     return send_file(file_path, as_attachment=True)
-intents_data_path = os.path.join(input_data_path, 'intents.json')
-intents = json.loads(open(intents_data_path).read())
 
 def preprocess_input(input_text):
     input_text = input_text.lower()
@@ -59,9 +65,8 @@ def bag_of_words(sentence):
     sentence_words.extend(pos_tags)
     bag = [0] * len(words)
     for w in sentence_words:
-        for i, word in enumerate(words):
-            if word == w:
-                bag[i] = 1
+        if w in words:
+            bag[words.index(w)] = 1
     return np.array(bag)
 
 def pos_tags_in_sentence(sentence):
@@ -97,24 +102,24 @@ def similar(a, b):
 def get_closest_recipe_names(user_message):
     user_message = user_message.lower()
     similarity_threshold = 0.5
-    best_matches = []
-    for recipe_name in recipe_names_set:
-        similarity = similar(user_message, recipe_name)
-        if similarity >= similarity_threshold:
-            best_matches.append(recipe_name)
+    best_matches = [recipe_name for recipe_name in recipe_names_set
+                    if similar(user_message, recipe_name) >= similarity_threshold]
+    
     synonym_dict = {"biriyni": "biriyani"}
     for synonym, canonical in synonym_dict.items():
         if synonym in user_message:
             best_matches.append(canonical)
+    
     return best_matches
 
 def get_recipe_details(recipe_name):
-    if recipe_name in recipe_data:
-        ingredients = recipe_data[recipe_name]["ingredients"]
-        methods = recipe_data[recipe_name]["methods"]
+    if recipe_name in intents['recipes']:
+        recipe = next(recipe for recipe in intents['recipes'] if recipe['recipe_name'].lower() == recipe_name.lower())
+        ingredients = recipe.get('ingredients', [])
+        methods = recipe.get('methods', [])
         recipe_details = {
-            "text": f"Here's the recipe for {recipe_name}:\n\nIngredients:\n" + "\n".join(
-                ingredients) + "\n\nMethods:\n" + "\n".join(methods),
+            "text": f"Here's the recipe for {recipe_name}:\n\nIngredients:\n" + "\n".join(ingredients) + 
+                    "\n\nMethods:\n" + "\n".join(methods),
             "is_recipe": True
         }
         print("Recipe details:", recipe_details)
@@ -141,9 +146,9 @@ def predict_class(sentence):
 def get_response(intents_list, intents_json, user_message):
     recipe_name = extract_recipe_name(user_message)
     if recipe_name:
-        for recipe in intents_json['recipes']:
-            if recipe['recipe_name'].lower() == recipe_name.lower():
-                return format_recipe(recipe)
+        recipe = next((r for r in intents_json['recipes'] if r['recipe_name'].lower() == recipe_name.lower()), None)
+        if recipe:
+            return format_recipe(recipe)
         response = "I'm sorry, I couldn't find the recipe you're looking for."
     else:
         tag = intents_list[0]['intent']
@@ -157,13 +162,7 @@ def get_response(intents_list, intents_json, user_message):
             bot_message = get_recipe_details(recipe_name)
         else:
             list_of_intents = intents_json['intents']
-            response = None
-            for i in list_of_intents:
-                if i['tag'] == tag:
-                    response = random.choice(i['responses'])
-                    break
-            if not response:
-                response = "Hi there, how can I help?"
+            response = next((i['responses'][0] for i in list_of_intents if i['tag'] == tag), "Hi there, how can I help?")
             print("Using fallback response.")
             bot_message = response
         app.logger.info(f"Predicted Intent: {tag}, Response: {bot_message}")
@@ -171,17 +170,12 @@ def get_response(intents_list, intents_json, user_message):
 
 @socketio.on('signal')
 def handle_signal(data):
-    encrypted_message = cipher_suite.encrypt(data['message'].encode())
-    emit('signal', {'message': encrypted_message}, broadcast=True)
-    app.logger.info(f"Encrypted message: {data['message']}")
-
-def handle_message():
-    user_message = request.json.get('message')
-    encrypted_user_message = cipher_suite.encrypt(user_message.encode())
-    send('message from server', f"Bot: You said - '{encrypted_user_message.decode()}'", broadcast=True)
-    decrypted_user_message = cipher_suite.decrypt(encrypted_user_message).decode()
-    app.logger.info(f"Decrypted message: {decrypted_user_message}")
-    return {'message': 'Message received successfully!'}
+    try:
+        encrypted_message = cipher_suite.encrypt(data['message'].encode())
+        emit('signal', {'message': encrypted_message}, broadcast=True)
+        app.logger.info(f"Encrypted message: {data['message']}")
+    except Exception as e:
+        app.logger.error(f"Error handling signal: {e}")
 
 @socketio.on('connect')
 def handle_connect():
@@ -218,40 +212,43 @@ def conversation_logs(user_message, bot_message, sentiment):
                 'Sentiment': entry['sentiment']
             })
 
-
 @app.route('/chat', methods=['POST'])
 def chat():
-    user_message = request.json.get('message')
-    sentiment = analyze_sentiment(user_message) 
-    print(f"Sentiment: {sentiment}")
-    pos_tags = pos_tags_in_sentence(user_message)
-    print(f"POS Tags: {pos_tags}")
-    keyword_for_recipe = 'recipe'
-    if keyword_for_recipe in user_message.lower():
-        suggestions = get_closest_recipe_names(user_message)
-        if suggestions:
-            suggestion_message = "Did you mean: "
-            if len(suggestions) == 2:
-                suggestion_message += f"{suggestions[0]} or {suggestions[1]}"
+    try:
+        user_message = request.json.get('message')
+        sentiment = analyze_sentiment(user_message)
+        print(f"Sentiment: {sentiment}")
+        pos_tags = pos_tags_in_sentence(user_message)
+        print(f"POS Tags: {pos_tags}")
+        keyword_for_recipe = 'recipe'
+        if keyword_for_recipe in user_message.lower():
+            suggestions = get_closest_recipe_names(user_message)
+            if suggestions:
+                suggestion_message = "Did you mean: "
+                if len(suggestions) == 2:
+                    suggestion_message += f"{suggestions[0]} or {suggestions[1]}"
+                else:
+                    suggestion_message += ', '.join(suggestions)
+                bot_message = suggestion_message
             else:
-                suggestion_message += ', '.join(suggestions)
-            bot_message = suggestion_message
+                bot_message = "I couldn't find any recipe suggestions."
         else:
-            bot_message = "I couldn't find any recipe suggestions."
-    else:
-        ints = predict_class(user_message)
-        tag = ints[0]['intent']
-        if tag == 'recipe_details':
-            recipe_name = extract_recipe_name(user_message)
-            bot_message = get_recipe_details(recipe_name)
-        else:
-            bot_message = get_response(ints, intents, user_message)
-            pos_tags = pos_tags_in_sentence(user_message)
-            print(f"POS Tags within get_response: {pos_tags}")
-    conversation_logs(user_message, bot_message, sentiment)
-    return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
+            ints = predict_class(user_message)
+            tag = ints[0]['intent']
+            if tag == 'recipe_details':
+                recipe_name = extract_recipe_name(user_message)
+                bot_message = get_recipe_details(recipe_name)
+            else:
+                bot_message = get_response(ints, intents, user_message)
+                pos_tags = pos_tags_in_sentence(user_message)
+                print(f"POS Tags within get_response: {pos_tags}")
+        conversation_logs(user_message, bot_message, sentiment)
+        return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
+    except Exception as e:
+        app.logger.error(f"Error in chat endpoint: {e}")
+        return jsonify({'message': 'Error occurred in processing the request.'})
 
 if __name__ == '__main__':
-    important_message = "Important: Application started with secret key."
+    important_message = "Important: Application started with a securely with secret key."
     print(important_message)
     socketio.run(app, debug=True, host='0.0.0.0', port=1000, use_reloader=False)
