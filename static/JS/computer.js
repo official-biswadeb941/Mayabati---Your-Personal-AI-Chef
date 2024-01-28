@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayBotResponse(response) {
     const botDiv = createMessageDiv('bot-message');
-    const botAvatar = createAvatar('https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg');
-    botDiv.appendChild(botAvatar);
+    const botAvatar = createAvatar('');
+    botDiv.appendChild(botAvatar);https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg
     simulateTyping(response, botDiv);
     document.getElementById('chatbox').scrollTop = document.getElementById('chatbox').scrollHeight;
   }

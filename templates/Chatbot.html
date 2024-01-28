@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styles/Chatbot.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Styles/mobile.css')}}" />
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-messages">
+      <div class="logo-container">
+        <div class="logo">
+            <img src="https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg" alt="Logo">
+            <h1><b>Mayabtai - Your Most Personal AI Chef</b></h1>
+            <h1><b>So what do you want to cook today?</b></h1>
+        </div>
+    </div>
+      <div class="thinking-message" id="thinking-message" style="display:none;">Bot is thinking...</div>
+    </div>
+    <div id="input-message" class="input-group">
+        <div class="input-group-prepend">
+            <button class="btn camera-btn" type="button"><i class="fas fa-camera"></i></button>
+            <button class="btn microphone-btn" type="button"><i class="fas fa-microphone"></i></button>
+        </div>
+        <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
+        <div class="input-group-append">
+            <button id="send-btn" class="btn" type="button"><i id="send-icon" class="fa fa-paper-plane"></i></button>
+        </div>
+        <input type="file" id="file-input" accept="image/*" style="display:none;">
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='JS/Chatbot.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='JS/mobile.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='JS/peer2peer/simplepeer.min.js') }}"></script>
+
+</body>
+</html>

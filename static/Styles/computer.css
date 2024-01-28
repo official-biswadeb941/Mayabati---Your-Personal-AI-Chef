@@ -14,10 +14,10 @@ body {
     max-height: calc(100vh - 190px);
     padding: 20px;
     margin-bottom: 80px;
-    border-color: #cd8305;
+    border-color: #ffffff;
     border-width: 5px;
-    box-shadow: 0 10px 20px #ff620092;
-    background-color: #b8870ba0;
+    box-shadow: 0 10px 20px #ffffff92;
+    background-color: #ffffff;
 }
 
 .card-footer {
@@ -75,13 +75,13 @@ body {
 .bot-message {
     font-family: 'Kalnia', sans-serif; /* Replace 'BotFont' with the desired font for bot messages */
     font-weight: bolder; /* Add bold style to bot messages */
-    font-size:18px;
+    font-size:25px;
 }
 
 .user-message {
     font-family: 'Afacad', sans-serif; /* Replace 'UserFont' with the desired font for user messages */
     font-weight: bold; /* Add bold style to user messages */
-    font-size: 18px;
+    font-size: 25px;
 }
 
 /* Style for the bot avatar */

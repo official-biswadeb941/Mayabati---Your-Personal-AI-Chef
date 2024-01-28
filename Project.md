@@ -1,37 +1,44 @@
 Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations.)]
-│
-├── data/
-│   ├── input/
-│   │   ├── gram.json                  # Input data for training using Word2vec model.
-│   │   └── intents.json               # Input data for training using custom dataset.
-│   └── output/
-│       ├── Transformer Based Model/
-│       │   ├── Rasika.model               # Output model.
-│       │   ├── classes.pkl                # Output classes.
-│       │   └── words.pkl                  # Output words.
-│       └── gram.model                    # Output model.
-│
-├── static/
-│   ├── css/
-│   │   ├── style.css                  # CSS styles.
-│   └── images/
-│       ├── user.jpg                   # User image.
-│       └── bot.jpg                    # Bot image.
-│
-├── templates/
-│   ├── index.html                     # HTML template.
-│
-├── trainer/
-│   ├── __init__.py                   # Empty file to make 'trainer' a Python package.
-│   ├── trainer.py                     # Trainer module.
-│   └── gram.py                        # Gram module.
-│
-├── .gitignore                         # Contain names of the files or folders to be ignored by git.
-├── app.py                             # Main Flask App.
-├── imports.py                         # To import all libraries.
-├── secret.py                          # Encryption algorithm which provides security for overall website.
-├── decision.py                        # So that the bot can think and take hardcore decisions just like humans.
-├── License.md                         # Contain the license instructions about this project.
-├── Project.md                         # Contain the Project Directory Structure.
-├── README.md                          # Full Project Explanation for GitHub.
-└── requirements.txt                   # Python libraries used in this project.
+|
+├── Backend/                           # Backend directory
+│   ├── data/                          # Directory for backend data processing
+│   │   ├── input/                     # Input data directory
+│   │   │   ├── gram.json              # Input data for training using Word2vec model
+│   │   │   └── intents.json           # Input data for training using custom dataset
+│   │   └── output/                    # Output data directory
+│   │       ├── Transformer Based Model/  # Directory for Transformer Based Model output
+│   │       │   ├── Rasika.model       # Output model for Transformer Based Model
+│   │       │   ├── classes.pkl        # Output classes for Transformer Based Model
+│   │       │   └── words.pkl          # Output words for Transformer Based Model
+│   │       └── gram.model             # Output model for Gram model
+│   ├── trainer/                       # Directory for training-related modules
+│   │   ├── __init__.py                # Empty file to make 'trainer' a Python package
+│   │   ├── trainer.py                 # Main trainer module
+│   │   └── gram.py                    # Module for Gram model
+│   ├── app.py                         # Main Flask App
+│   ├── imports.py                     # File to import all libraries
+│   ├── secret.py                      # Encryption algorithm for website security
+│   ├── decision.py                    # Module for bot decision-making
+│   └── requirements.txt               # File listing Python libraries used in the project
+|
+├── Frontend/                          # Frontend directory
+│   ├── public/                        # Public assets directory
+│   │   ├── index.html                 # Main HTML template
+│   │   └── images/                    # Directory for images
+│   │       ├── user.jpg               # User image
+│   │       └── bot.jpg                # Bot image
+│   ├── src/                           # Source code directory
+│   │   ├── components/                # Directory for React components
+│   │   │   ├── Chat.js                # Chat component
+│   │   │   └── ...                    # Other components
+│   │   ├── App.js                     # Main App component
+│   │   ├── index.js                   # Entry point for React app
+│   │   └── styles/                    # Directory for CSS styles or SCSS
+│   │       └── style.css              # CSS styles file
+│   ├── .gitignore                     # File containing names of files/folders ignored by git
+│   ├── package.json                   # npm package configuration
+│   ├── package-lock.json              # npm package lock file
+│   └── README.md                      # Frontend README
+├── README.txt                         # Project README
+├── Project.md                         # Project Directory Structure documentation
+└── License.md                         # License instructions for the project

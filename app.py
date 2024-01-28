@@ -41,6 +41,7 @@ def get_output_file(filename):
     file_path = os.path.join(output_data_path, filename)
     return send_file(file_path, as_attachment=True)
 
+
 def preprocess_input(input_text):
     input_text = input_text.lower()
     doc = nlp(input_text)
@@ -187,7 +188,7 @@ def handle_disconnect():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('Chatbot.html')
 
 def conversation_logs(user_message, bot_message, sentiment):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

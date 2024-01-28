@@ -10,9 +10,9 @@
     .card {
         max-height: calc(100vh - 180px); /* Adjust max height for a shorter card */
         margin-bottom: 10px; /* Add a smaller margin between the card and the card footer */
-        background-color: #e624f8d3;
-        border-color: #6d0477;
-        box-shadow: 0 10px 20px #ad1fb9d3;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        box-shadow: 0 10px 20px #ffffff92;
     }
 
     .card-footer {
@@ -55,7 +55,7 @@
     }
 
     .text {
-        font-size: 12px; /* Adjusted font size for smaller screens */
+        font-size: 20px; /* Adjusted font size for smaller screens */
         font-weight: bold;
         text-align: center; /* Center text horizontally */
         color: rgb(12, 8, 8);
