@@ -8,6 +8,7 @@ symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
 
 nlp = spacy.load("en_core_web_sm")
+recognizer = sr.Recognizer()
 
 app.config['SECRET_KEY'] = os.urandom(24)
 conversation_history = []
@@ -41,6 +42,21 @@ def get_output_file(filename):
     file_path = os.path.join(output_data_path, filename)
     return send_file(file_path, as_attachment=True)
 
+def recognize_speech(request):
+    try:
+        # Check if the request contains speech data
+        if 'speech' in request.files:
+            # Get the speech file
+            speech_file = request.files['speech']
+            # Read the speech file using SpeechRecognition
+            with sr.AudioFile(speech_file) as audio_file:
+                audio_data = recognizer.record(audio_file)
+            # Perform speech recognition
+            user_message = recognizer.recognize_google(audio_data)
+            return user_message
+    except Exception as e:
+        app.logger.error(f"Error in speech recognition: {e}")
+        return None
 
 def preprocess_input(input_text):
     input_text = input_text.lower()
@@ -222,6 +238,11 @@ def chat():
         pos_tags = pos_tags_in_sentence(user_message)
         print(f"POS Tags: {pos_tags}")
         keyword_for_recipe = 'recipe'
+        if 'speech' in request.files:
+            user_message = recognize_speech(request)
+        else:
+            user_message = request.json.get('message')
+            
         if keyword_for_recipe in user_message.lower():
             suggestions = get_closest_recipe_names(user_message)
             if suggestions:

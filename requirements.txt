@@ -21,3 +21,5 @@ textblob
 python-Levenshtein
 gevent-websocket
 Flask-SQLAlchemy
+SpeechRecognition
+Pyaudio
