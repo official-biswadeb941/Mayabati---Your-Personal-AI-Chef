@@ -4,7 +4,6 @@ nltk
 keras
 Flask
 fuzzysearch
-cdifflib
 tensorflow
 transformers
 scikit-learn
