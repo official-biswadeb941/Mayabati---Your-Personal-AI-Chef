@@ -1,8 +1,6 @@
 from imports import *
 
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
-CORS(app)
 
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
@@ -20,7 +18,7 @@ intents_data_path = os.path.join(input_data_path, 'intents.json')
 with open(intents_data_path, 'r') as intents_file:
     intents = json.load(intents_file)
 
-model_path = os.path.join(output_data_path, 'Attention', 'attention.model')
+model_path = os.path.join(output_data_path, 'Attention', 'Rasika.model')
 model = load_model(model_path)
 
 words_path = os.path.join(output_data_path, 'Attention', 'words.pkl')
@@ -185,23 +183,6 @@ def get_response(intents_list, intents_json, user_message):
         app.logger.info(f"Predicted Intent: {tag}, Response: {bot_message}")
     return bot_message
 
-@socketio.on('signal')
-def handle_signal(data):
-    try:
-        encrypted_message = cipher_suite.encrypt(data['message'].encode())
-        emit('signal', {'message': encrypted_message}, broadcast=True)
-        app.logger.info(f"Encrypted message: {data['message']}")
-    except Exception as e:
-        app.logger.error(f"Error handling signal: {e}")
-
-@socketio.on('connect')
-def handle_connect():
-    print('Client connected')
-
-@socketio.on('disconnect')
-def handle_disconnect():
-    print('Client disconnected')
-
 @app.route('/')
 def index():
     return render_template('Chatbot.html')
@@ -273,4 +254,4 @@ def chat():
 if __name__ == '__main__':
     important_message = "Important: Application started with a securely with secret key."
     print(important_message)
-    socketio.run(app, debug=True, host='0.0.0.0', port=1000, use_reloader=False)
+    app.run(debug=True, host='0.0.0.0', port=700)
