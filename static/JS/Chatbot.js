@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Display "Bot is thinking" message
         const thinkingMessage = document.createElement('div');
         thinkingMessage.classList.add('thinking-message');
-        thinkingMessage.textContent = "Bot is thinking...";
+        thinkingMessage.textContent = "let me think...";
         chatMessages.appendChild(thinkingMessage);
     
         // Simulate Bot response after a delay
@@ -128,14 +128,14 @@ document.addEventListener("DOMContentLoaded", function() {
         let messageContent = '';
         if (image) {
             messageContent = `<div class="avatar ${fromMe ? 'user-img' : ''}">
-                                <img src="${fromMe ? senderAvatar : 'chatgpt_avatar.png'}" alt="${sender}">
+                                <img src="${fromMe ? senderAvatar : 'Bot.png'}" alt="${sender}">
                               </div>
                               <span class="user">${sender}</span>
                               <span class="text">${message}</span>
                               <img src="${URL.createObjectURL(image)}" style="max-width: 100px;">`;
         } else {
             messageContent = `<div class="avatar ${fromMe ? 'user-img' : ''}">
-                                <img src="${senderAvatarType === 'online' ? senderAvatar : 'chatgpt_avatar.png'}" alt="${sender}">
+                                <img src="${senderAvatarType === 'online' ? senderAvatar : 'Bot.png'}" alt="${sender}">
                               </div>
                               <span class="user">${sender}</span>
                               <span class="text">${message}</span>`;

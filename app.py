@@ -1,6 +1,7 @@
 from imports import *
 
 app = Flask(__name__)
+cache = Cache(app, config={'CACHE_TYPE': 'simple'})
 
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
@@ -11,8 +12,10 @@ recognizer = sr.Recognizer()
 app.config['SECRET_KEY'] = os.urandom(24)
 conversation_history = []
 
-input_data_path = 'data/input'
-output_data_path = 'data/output'
+num_folds = 5  
+threshold_percentage = 80
+input_data_path = os.path.join('data', 'input')
+output_data_path = os.path.join('data', 'output')
 
 intents_data_path = os.path.join(input_data_path, 'intents.json')
 with open(intents_data_path, 'r') as intents_file:
@@ -33,29 +36,45 @@ recipe_names_set = set(recipe['recipe_name'].lower() for recipe in intents['reci
 @app.route('/api/get_input_file/<filename>', methods=['GET'])
 def get_input_file(filename):
     file_path = os.path.join(input_data_path, filename)
-    return send_file(file_path, as_attachment=True)
+    if os.path.exists(file_path):
+        return send_file(file_path, as_attachment=True)
+    else:
+        return jsonify({'error': 'File not found'}), 404
 
 @app.route('/api/get_output_file/<path:filename>', methods=['GET'])
 def get_output_file(filename):
     file_path = os.path.join(output_data_path, filename)
-    return send_file(file_path, as_attachment=True)
+    if os.path.exists(file_path):
+        return send_file(file_path, as_attachment=True)
+    else:
+        return jsonify({'error': 'File not found'}), 404
 
+@cache.memoize(timeout=300)
 def recognize_speech(request):
     try:
-        # Check if the request contains speech data
         if 'speech' in request.files:
-            # Get the speech file
             speech_file = request.files['speech']
-            # Read the speech file using SpeechRecognition
             with sr.AudioFile(speech_file) as audio_file:
                 audio_data = recognizer.record(audio_file)
-            # Perform speech recognition
             user_message = recognizer.recognize_google(audio_data)
             return user_message
+    except IOError as e:
+        app.logger.error(f"io_error in speech recognition: {e}")
+        return "io_error occurred in speech recognition."
+    except FileNotFoundError as e:
+        app.logger.error(f"file_not_found_error in speech recognition: {e}")
+        return "file_not_found_error occurred in speech recognition."
+    except sr.UnknownValueError as e:
+        app.logger.error(f"unknown_value_error in speech recognition: {e}")
+        return "unknown_value_error occurred in speech recognition."
+    except sr.RequestError as e:
+        app.logger.error(f"request_error in speech recognition: {e}")
+        return "request_error occurred in speech recognition."
     except Exception as e:
-        app.logger.error(f"Error in speech recognition: {e}")
-        return None
+        app.logger.error(f"error in speech recognition: {e}")
+        return "error occurred in speech recognition."
 
+@cache.memoize(timeout=300)  # Cache results for 5 minutes
 def preprocess_input(input_text):
     input_text = input_text.lower()
     doc = nlp(input_text)
@@ -75,8 +94,9 @@ def clean_up_sentence(sentence):
     return sentence_words
 
 def bag_of_words(sentence):
-    sentence_words = clean_up_sentence(sentence)
-    pos_tags = pos_tags_in_sentence(sentence)
+    preprocessed_sentence = preprocess_input(sentence)
+    sentence_words = nltk.word_tokenize(preprocessed_sentence)
+    pos_tags = pos_tags_in_sentence(preprocessed_sentence)
     sentence_words.extend(pos_tags)
     bag = [0] * len(words)
     for w in sentence_words:
@@ -84,10 +104,10 @@ def bag_of_words(sentence):
             bag[words.index(w)] = 1
     return np.array(bag)
 
+@cache.memoize(timeout=300) 
 def pos_tags_in_sentence(sentence):
     doc = nlp(sentence.lower())
     pos_tags = [token.pos_ for token in doc]
-    print(f"POS Tags: {pos_tags}")
     return pos_tags
 
 def format_recipe(recipe):
@@ -112,28 +132,30 @@ def extract_recipe_name(user_message):
         return None
 
 def similar(a, b):
+    if len(a) != len(b):
+        return 0  
     return SequenceMatcher(None, a, b).ratio()
 
 def get_closest_recipe_names(user_message):
     user_message = user_message.lower()
-    similarity_threshold = 0.5
+    average_length = sum(len(name) for name in recipe_names_set) / len(recipe_names_set)
+    similarity_threshold = 0.5 * (len(user_message) / average_length)
     best_matches = [recipe_name for recipe_name in recipe_names_set
                     if similar(user_message, recipe_name) >= similarity_threshold]
-    
     synonym_dict = {"biriyni": "biriyani"}
     for synonym, canonical in synonym_dict.items():
         if synonym in user_message:
             best_matches.append(canonical)
-    
     return best_matches
 
 def get_recipe_details(recipe_name):
-    if recipe_name in intents['recipes']:
-        recipe = next(recipe for recipe in intents['recipes'] if recipe['recipe_name'].lower() == recipe_name.lower())
+    lowercase_recipe_name = recipe_name.lower()  #
+    if lowercase_recipe_name in (recipe['recipe_name'].lower() for recipe in intents['recipes']):
+        recipe = next(recipe for recipe in intents['recipes'] if recipe['recipe_name'].lower() == lowercase_recipe_name)
         ingredients = recipe.get('ingredients', [])
         methods = recipe.get('methods', [])
         recipe_details = {
-            "text": f"Here's the recipe for {recipe_name}:\n\nIngredients:\n" + "\n".join(ingredients) + 
+            "text": f"Here's the recipe for {recipe['recipe_name']}:\n\nIngredients:\n" + "\n".join(ingredients) + 
                     "\n\nMethods:\n" + "\n".join(methods),
             "is_recipe": True
         }
@@ -145,10 +167,9 @@ def get_recipe_details(recipe_name):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    threshold_percentage = 80
-    dynamic_threshold = max(res) * (threshold_percentage / 100)
-    print(f"Dynamic Threshold: {dynamic_threshold}")
-    results = [[i, r] for i, r in enumerate(res) if r > dynamic_threshold]
+    threshold = np.mean(res) + np.std(res)
+    print(f"Dynamic Threshold: {threshold}")
+    results = [[i, r] for i, r in enumerate(res) if r > threshold]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     if not results:
@@ -160,14 +181,16 @@ def predict_class(sentence):
 
 def get_response(intents_list, intents_json, user_message):
     recipe_name = extract_recipe_name(user_message)
+    pos_tags = pos_tags_in_sentence(user_message)
     if recipe_name:
-        recipe = next((r for r in intents_json['recipes'] if r['recipe_name'].lower() == recipe_name.lower()), None)
-        if recipe:
-            return format_recipe(recipe)
-        response = "I'm sorry, I couldn't find the recipe you're looking for."
+        user_message_with_pos = user_message + ' ' + ' '.join(pos_tags)
+        if recipe_name:
+            recipe = next((r for r in intents_json['recipes'] if r['recipe_name'].lower() == recipe_name.lower()), None)
+            if recipe:
+                return format_recipe(recipe)
+            response = "I'm sorry, I couldn't find the recipe you're looking for."
     else:
         tag = intents_list[0]['intent']
-        pos_tags = pos_tags_in_sentence(user_message)
         user_message_with_pos = user_message + ' ' + ' '.join(pos_tags)
         ints = predict_class(user_message_with_pos)
         extracted_pos_features = ', '.join(pos_tags)
@@ -187,43 +210,45 @@ def get_response(intents_list, intents_json, user_message):
 def index():
     return render_template('Chatbot.html')
 
-def conversation_logs(user_message, bot_message, sentiment):
+def conversation_logs(user_message, bot_message, sentiment, response_time):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     conversation_history.append({
         'timestamp': timestamp,
         'user': user_message,
         'bot': bot_message,
-        'sentiment': sentiment
+        'sentiment': sentiment,
+        'response_time': response_time  # Include response time in the conversation history
     })
-    csv_file_path = 'data/output/Conversation/History.csv'
-    fieldnames = ['Date', 'Time', 'User', 'Bot', 'Sentiment']
-    with open(csv_file_path, 'w', newline='') as csvfile:
+    csv_file_path = os.path.join(output_data_path, 'Conversation', 'History.csv')
+    fieldnames = ['Date', 'Time', 'User', 'Bot', 'Sentiment', 'Response Time']  # Include 'Response Time' in fieldnames
+    with open(csv_file_path, 'a', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        for entry in conversation_history:
+        if csvfile.tell() == 0:
+            writer.writeheader()
+        for entry in conversation_history[-1:]:
             date, time = entry['timestamp'].split()
             writer.writerow({
                 'Date': date,
                 'Time': time,
                 'User': entry['user'],
                 'Bot': entry['bot'],
-                'Sentiment': entry['sentiment']
+                'Sentiment': entry['sentiment'],
+                'Response Time': entry['response_time']  # Write response time to CSV
             })
+    return conversation_history
 
+
+@cache.memoize(timeout=300) 
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
+        start_time = time.time()  # Capture the start time
         user_message = request.json.get('message')
         sentiment = analyze_sentiment(user_message)
         print(f"Sentiment: {sentiment}")
         pos_tags = pos_tags_in_sentence(user_message)
         print(f"POS Tags: {pos_tags}")
         keyword_for_recipe = 'recipe'
-        if 'speech' in request.files:
-            user_message = recognize_speech(request)
-        else:
-            user_message = request.json.get('message')
-            
         if keyword_for_recipe in user_message.lower():
             suggestions = get_closest_recipe_names(user_message)
             if suggestions:
@@ -245,12 +270,15 @@ def chat():
                 bot_message = get_response(ints, intents, user_message)
                 pos_tags = pos_tags_in_sentence(user_message)
                 print(f"POS Tags within get_response: {pos_tags}")
-        conversation_logs(user_message, bot_message, sentiment)
-        return jsonify({'message': bot_message, 'history': conversation_history, 'sentiment': sentiment})
+        end_time = time.time()  # Capture the end time
+        response_time = end_time - start_time  # Calculate the response time  
+        conversation_logs(user_message, bot_message, sentiment, response_time)
+        print(f"Bot Response Time: {response_time} seconds")  # Print the response time
+        return {'message': bot_message, 'history': conversation_history, 'sentiment': sentiment}
     except Exception as e:
-        app.logger.error(f"Error in chat endpoint: {e}")
-        return jsonify({'message': 'Error occurred in processing the request.'})
-
+        app.logger.error(f"error in chat endpoint: {e}")
+        return {'message': 'Error occurred in processing the request.'}
+    
 if __name__ == '__main__':
     important_message = "Important: Application started with a securely with secret key."
     print(important_message)

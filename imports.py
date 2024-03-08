@@ -51,3 +51,9 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import speech_recognition as sr
+import os
+from sklearn.model_selection import cross_val_predict
+import os
+from flask import Flask, send_file, jsonify, request, render_template
+from flask_caching import Cache
+import time
