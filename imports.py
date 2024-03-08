@@ -57,3 +57,22 @@ import os
 from flask import Flask, send_file, jsonify, request, render_template
 from flask_caching import Cache
 import time
+from functools import wraps
+from flask_caching import Cache
+from flask import Flask, request, jsonify, send_file, render_template
+import os
+import json
+import spacy
+import speech_recognition as sr
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+import pickle
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+from fuzzywuzzy import process
+from difflib import SequenceMatcher
+from datetime import datetime
+import time
+import csv
+import redis

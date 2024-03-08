@@ -1,10 +1,9 @@
 /* Updated styles.css */
-
 body {
     background: url('https://r4.wallpaperflare.com/wallpaper/524/228/970/life-interior-home-room-wallpaper-79a0780dd1da4d5bb6a7e8cfc061665d.jpg') center/cover no-repeat;
     margin: 0;
     padding: 6px;
-    height: 100vh;
+    height: 70% !important;
     background-attachment: fixed;
     transition: background 0.5s ease-in-out; /* Add a smooth transition effect */
 }
@@ -58,7 +57,7 @@ body {
     bottom: -20px;
     left: 0;
     font-size: 12px;
-    color: #777;
+    color: #ffffff;
 }
 
 .user-message,
@@ -86,7 +85,7 @@ body {
 
 /* Style for the bot avatar */
 .avatar {
-    width: 40px; /* Set the width of the avatar */
+    width: 90px; /* Set the width of the avatar */
     height: 40px; /* Set the height of the avatar */
     margin-right: 10px; /* Add margin to separate avatar from text */
     border-radius: 50%; /* Make the avatar circular */
@@ -139,7 +138,7 @@ body {
 .logo h1 {
     font-size: 25px;
     margin: 6;
-    color: #000000; /* Set the desired color for the text */
+    color: #ffffff; /* Set the desired color for the text */
 }
 
 .text {
@@ -174,3 +173,6 @@ body {
     background-color: #fca503; /* Set the color of the scrollbar corners */
 }
 
+.highlight{
+    color: white;
+}

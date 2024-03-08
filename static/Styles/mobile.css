@@ -1,65 +1,177 @@
-/* mobile.css */
-
-/* Media Query for Mobile Devices */
-@media only screen and (max-width: 600px) {
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
     body {
-        overflow: hidden; /* Prevent body from scrolling */
-        background: url('https://c1.wallpaperflare.com/path/732/683/662/hogwarts-table-dining-hall-harry-potter-c43a6939b20fc11f4dafdfd993cb0ca7.jpg') center/cover no-repeat;
+      background: url('https://r4.wallpaperflare.com/wallpaper/524/228/970/life-interior-home-room-wallpaper-79a0780dd1da4d5bb6a7e8cfc061665d.jpg') center/cover no-repeat;
+      margin: 0;
+      padding: 6px;
+      height: 70% !important;
+      background-attachment: fixed;
+      transition: background 0.5s ease-in-out; /* Add a smooth transition effect */
     }
-
+  
     .card {
-        max-height: calc(100vh - 180px); /* Adjust max height for a shorter card */
-        margin-bottom: 10px; /* Add a smaller margin between the card and the card footer */
-        background-color: #ffffff;
-        border-color: #ffffff;
-        box-shadow: 0 10px 20px #ffffff92;
+      overflow-y: auto;
+      max-height: 70vh;
+      padding: 20px;
+      margin-bottom: 80px;
+      border-color: #ffffff;
+      border-width: 3px;
+      box-shadow: 0 5px 10px #ffffff92;
+      background-color: #ffffff;
     }
-
+  
     .card-footer {
-        bottom: 0;
-        height: auto;
-        padding: 10px;
-        box-shadow: 0 4px 8px rgba(197, 11, 253, 0.1);
-        background-color: #4a70a1b6;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      height: 70px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #513703cb;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
+  
+    .card-footer #user_input {
+      width: 80%; /* Adjusted for mobile */
+      padding: 10px;
+      border: 1px solid #000000;
+      border-radius: 8px;
+    }
+  
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .message {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+      position: relative;
+    }
+  
+    .message span {
+      display: none;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      font-size: 12px;
+      color: #777;
+    }
+  
     .user-message,
     .bot-message {
-        margin-left: 5px;
-        margin-right: 5px;
+      display: flex;
+      align-items: flex-start;
+      margin-left: 15px; /* Adjusted for mobile */
+      margin-right: 15px; /* Adjusted for mobile */
+      color: #000000;
+      margin-top: -100px;
+      margin-bottom: 110px;
     }
-
+  
+    .bot-message {
+      font-family: 'Kalnia', sans-serif; /* Replace 'BotFont' with the desired font for bot messages */
+      font-weight: bolder; /* Add bold style to bot messages */
+      font-size: 16px; /* Adjusted for mobile */
+    }
+  
+    .user-message {
+      font-family: 'Afacad', sans-serif; /* Replace 'UserFont' with the desired font for user messages */
+      font-weight: bold; /* Add bold style to user messages */
+      font-size: 16px; /* Adjusted for mobile */
+    }
+  
+    /* Style for the bot avatar */
+    .avatar {
+      width: 30px; /* Adjusted for mobile */
+      height: 30px; /* Adjusted for mobile */
+      margin-right: 10px; /* Add margin to separate avatar from text */
+      border-radius: 50%; /* Make the avatar circular */
+    }
+  
+    .avatar img {
+      width: 40px; /* Adjusted for mobile */
+      height: 40px; /* Adjusted for mobile */
+      border-radius: 50%;
+    }
+  
+    .avatar-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  /* Align avatar details vertically in the middle */
+    }
+  
+    .avatar-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    .avatar-label {
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      margin-top: 15px;
+    }
+  
+    .message-text-label {
+      display: none;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  
     .logo {
-        margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 80px;
     }
-
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px; /* Adjusted margin-top for smaller screens */
-    }
-
+  
     .logo img {
-        width: 80px; /* Adjusted width of the logo for smaller screens */
-        height: auto;
-        margin-bottom: 5px; /* Adjusted margin-bottom for smaller screens */
-        border-radius: 50px;
+      width: 70px; /* Adjust the width of the logo as needed */
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 50px;
     }
-
+  
     .logo h1 {
-        font-size: 18px; /* Adjusted font size for smaller screens */
-        margin: 6px;
-        color: #000000; /* Set the desired color for the text */
-        text-align: center; /* Center text horizontally */
+      font-size: 15px;
+      margin: 6;
+      color: #ffffff; /* Set the desired color for the text */
     }
-
+  
     .text {
-        font-size: 20px; /* Adjusted font size for smaller screens */
-        font-weight: bold;
-        text-align: center; /* Center text horizontally */
-        color: rgb(12, 8, 8);
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      color: rgb(0, 0, 0);
     }
-}
-
-
+  
+    #user_input::placeholder {
+      color: #000000; /* Set the desired color for the placeholder text */
+    }
+  
+    ::-webkit-scrollbar {
+      /* Set the color of the main track (background) */
+      width: 12px; /* Adjust the width of the scrollbar */
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      /* Set the color of the scrollbar thumb (the draggable handle) */
+      background-color: #010d17; /* Set the color of the thumb */
+      border-radius: 12px; /* Optional: Round the corners of the thumb */
+    }
+  
+    ::-webkit-scrollbar-track {
+      /* Set the color of the scrollbar track (the area the thumb moves on) */
+      background-color: #ffffff; /* Set the color of the track */
+    }
+  
+    ::-webkit-scrollbar-corner {
+      /* Optional: Style the corners of the scrollbar */
+      background-color: #fca503; /* Set the color of the scrollbar corners */
+    }
+  }
+  

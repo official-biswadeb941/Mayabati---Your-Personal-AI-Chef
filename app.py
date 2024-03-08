@@ -1,7 +1,8 @@
 from imports import *
 
 app = Flask(__name__)
-cache = Cache(app, config={'CACHE_TYPE': 'simple'})
+redis_client = redis.StrictRedis(host='0.0.0.0', port=705, db=0)
+cache = Cache(app, config={'CACHE_TYPE': 'redis', 'CACHE_REDIS_URL': 'redis://0.0.0.0:700/0'})
 
 symmetric_key = Fernet.generate_key()
 cipher_suite = Fernet(symmetric_key)
@@ -49,7 +50,7 @@ def get_output_file(filename):
     else:
         return jsonify({'error': 'File not found'}), 404
 
-@cache.memoize(timeout=300)
+
 def recognize_speech(request):
     try:
         if 'speech' in request.files:
@@ -74,7 +75,7 @@ def recognize_speech(request):
         app.logger.error(f"error in speech recognition: {e}")
         return "error occurred in speech recognition."
 
-@cache.memoize(timeout=300)  # Cache results for 5 minutes
+
 def preprocess_input(input_text):
     input_text = input_text.lower()
     doc = nlp(input_text)
@@ -104,7 +105,7 @@ def bag_of_words(sentence):
             bag[words.index(w)] = 1
     return np.array(bag)
 
-@cache.memoize(timeout=300) 
+ 
 def pos_tags_in_sentence(sentence):
     doc = nlp(sentence.lower())
     pos_tags = [token.pos_ for token in doc]
@@ -238,7 +239,7 @@ def conversation_logs(user_message, bot_message, sentiment, response_time):
     return conversation_history
 
 
-@cache.memoize(timeout=300) 
+ 
 @app.route('/chat', methods=['POST'])
 def chat():
     try:
