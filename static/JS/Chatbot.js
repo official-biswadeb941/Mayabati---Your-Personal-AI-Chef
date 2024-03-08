@@ -128,14 +128,14 @@ document.addEventListener("DOMContentLoaded", function() {
         let messageContent = '';
         if (image) {
             messageContent = `<div class="avatar ${fromMe ? 'user-img' : ''}">
-                                <img src="${fromMe ? senderAvatar : 'Bot.png'}" alt="${sender}">
+                                <img src="${fromMe ? senderAvatar : 'https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg'}" alt="${sender}">
                               </div>
                               <span class="user">${sender}</span>
                               <span class="text">${message}</span>
                               <img src="${URL.createObjectURL(image)}" style="max-width: 100px;">`;
         } else {
             messageContent = `<div class="avatar ${fromMe ? 'user-img' : ''}">
-                                <img src="${senderAvatarType === 'online' ? senderAvatar : 'Bot.png'}" alt="${sender}">
+                                <img src="${senderAvatarType === 'online' ? senderAvatar : 'https://cdn.leonardo.ai/users/5e0f042e-ecf8-40b4-b267-d22a266ffa23/generations/8489dd4d-4996-4248-a86e-5498af5af5ac/DreamShaper_v7_Mayabati_as_a_chef_in_kitchen_cooking_food_0.jpg'}" alt="${sender}">
                               </div>
                               <span class="user">${sender}</span>
                               <span class="text">${message}</span>`;
