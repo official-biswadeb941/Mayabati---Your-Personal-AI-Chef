@@ -22,7 +22,7 @@ intents_data_path = os.path.join(input_data_path, 'intents.json')
 with open(intents_data_path, 'r') as intents_file:
     intents = json.load(intents_file)
 
-model_path = os.path.join(output_data_path, 'Attention', 'Rasika.model')
+model_path = os.path.join(output_data_path, 'Attention', 'Rasika.keras')
 model = load_model(model_path)
 
 words_path = os.path.join(output_data_path, 'Attention', 'words.pkl')

@@ -20,7 +20,7 @@ import tensorflow as tf
 import tensorflow_datasets as tfds
 from transformers import BertTokenizer, TFBertForSequenceClassification, AdamWeightDecay
 from sklearn.model_selection import train_test_split
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.layers import Input, Embedding, LSTM, Dense, concatenate, Bidirectional, Attention, Flatten, Concatenate
 from keras.optimizers import Adam, SGD
