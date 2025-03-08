@@ -22,4 +22,5 @@ gevent-websocket
 Flask-SQLAlchemy
 SpeechRecognition
 tf-keras
+pandas
 flask-caching
