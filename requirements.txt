@@ -21,4 +21,5 @@ python-Levenshtein
 gevent-websocket
 Flask-SQLAlchemy
 SpeechRecognition
-Pyaudio
+tf-keras
+flask-caching
