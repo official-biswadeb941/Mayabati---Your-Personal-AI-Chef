@@ -209,7 +209,7 @@ def get_response(intents_list, intents_json, user_message):
 
 @app.route('/')
 def index():
-    return render_template('Chatbot.html')
+    return render_template('index1.html')
 
 def conversation_logs(user_message, bot_message, sentiment, response_time):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -240,7 +240,7 @@ def conversation_logs(user_message, bot_message, sentiment, response_time):
 
 
  
-@app.route('/chat', methods=['POST'])
+@app.route('/chat', methods=['POST', 'GET'])
 def chat():
     try:
         start_time = time.time()  # Capture the start time

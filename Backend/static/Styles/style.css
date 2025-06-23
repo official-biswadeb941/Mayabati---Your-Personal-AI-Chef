@@ -22,6 +22,7 @@
     --colour-4: #f0f0f0;
     --colour-5: #181818;
     --colour-6: #242424;
+    --main-theme-color: #3498db; /* Default fallback color */
 
     --accent: #8b3dff;
     --blur-bg: #16101b66;
@@ -52,9 +53,14 @@ body {
 
 body {
     padding: var(--section-gap);
-    background: var(--colour-1);
+    background-color: var(--main-theme-color);
+    transition: background-color 0.3s ease-in-out;
     color: var(--colour-3);
     min-height: 100vh;
+}
+
+.box {
+    border-color: var(--main-theme-color);
 }
 
 .row {
@@ -864,4 +870,61 @@ a:-webkit-any-link {
     font-size: 25px;
     margin: 6;
     color: #000000; /* Set the desired color for the text */
+}
+
+
+/*Customise Color */
+
+.custom-color-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background: #222; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+.custom-color-picker label {
+    font-weight: bold;
+    color: white;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#customColor {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+}
+
+.color-preview {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    background-color: #3498db; /* Default preview */
+}
+
+.apply-btn {
+    background-color: var(--main-theme-color, #3498db);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.apply-btn:hover {
+    background: #2673c4;
 }

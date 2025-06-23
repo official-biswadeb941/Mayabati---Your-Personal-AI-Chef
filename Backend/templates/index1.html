@@ -15,7 +15,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='Image/Favicon16.jpg') }}">
         <link rel="manifest" href="{{ url_for('static', filename='Image/site.webmanifest') }}">
         <script src="{{ url_for('static', filename='JS/icons.js') }}"></script>
-        <script src="{{ url_for('static', filename='JS/scripts.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='JS/chat.js') }}" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/markdown-it@latest/dist/markdown-it.min.js"></script>
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/styles/base16/dracula.min.css">
         <script>
@@ -80,51 +80,6 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <div class="field">
-                        <input type="checkbox" id="switch"/>
-                        <label for="switch"></label>
-                        <span class="about">Web Access</span>
-                    </div>
-                    <div class="field">
-                        <select name="model" id="model">
-                            <option value="gpt-3.5-turbo" selected>gpt-3.5-turbo</option>
-                            <option value="gpt-4">gpt-4</option>
-                            <option value="gpt-3.5-turbo-0301">gpt-3.5-turbo-0301</option>
-                            <option value="gpt-4-0314">gpt-4-0314</option>
-                        </select>
-                        <!-- <span class="about">Model</span> -->
-                    </div>
-                    <div class="field">
-                        <select name="jailbreak" id="jailbreak">
-                            <option value="default" selected>default</option>
-                            <option value="gpt-math-1.0">math 1.0</option>
-                            <option value="gpt-dude-1.0">dude 1.0</option>
-                            <option value="gpt-dan-1.0">dan 1.0</option>
-                            <option value="gpt-dan-2.0">dan 2.0</option>
-                            <option value="gpt-dev-2.0">dev 2.0</option>
-                            <option value="gpt-evil-1.0">evil 1.0</option>
-                        </select>
-                    </div>
-
-                <form class="color-picker" action="">
-                    <fieldset>
-                        <legend class="visually-hidden">Pick a color scheme</legend>
-                        <label for="light" class="visually-hidden">Light</label>
-                        <input type="radio" title="light" name="theme" id="light" checked>
-                    
-                        <label for="pink" class="visually-hidden">Pink theme</label>
-                        <input type="radio" title="pink" id="pink" name="theme">
-                    
-                        <label for="blue" class="visually-hidden">Blue theme</label>
-                        <input type="radio" title="blue" id="blue" name="theme">
-                    
-                        <label for="green" class="visually-hidden">Green theme</label>
-                        <input type="radio" title="green" id="green" name="theme">
-                    
-                        <label for="dark" class="visually-hidden">Dark theme</label>
-                        <input type="radio" title="dark" id="dark" name="theme">
-                    </fieldset>
-                    </form>
                 </div>
             </div>
         </div>

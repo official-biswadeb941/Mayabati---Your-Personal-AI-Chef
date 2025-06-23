@@ -1,44 +1,73 @@
-Mayabati - Your Personal AI Chef [Made by Biswadeb Mukherjee (Lead Developer of ParseSphere Innovations.)]
+# Mayabati - Your Personal AI Chef  -  **Developed by Biswadeb Mukherjee (Lead Developer, ParseSphere Innovations)**
+```
+Mayabati/
 |
-├── Backend/                           # Backend directory
-│   ├── data/                          # Directory for backend data processing
-│   │   ├── input/                     # Input data directory
-│   │   │   ├── gram.json              # Input data for training using Word2vec model
-│   │   │   └── intents.json           # Input data for training using custom dataset
-│   │   └── output/                    # Output data directory
-│   │       ├── Transformer Based Model/  # Directory for Transformer Based Model output
-│   │       │   ├── Rasika.model       # Output model for Transformer Based Model
-│   │       │   ├── classes.pkl        # Output classes for Transformer Based Model
-│   │       │   └── words.pkl          # Output words for Transformer Based Model
-│   │       └── gram.model             # Output model for Gram model
-│   ├── trainer/                       # Directory for training-related modules
-│   │   ├── __init__.py                # Empty file to make 'trainer' a Python package
-│   │   ├── trainer.py                 # Main trainer module
-│   │   └── gram.py                    # Module for Gram model
-│   ├── app.py                         # Main Flask App
-│   ├── imports.py                     # File to import all libraries
-│   ├── secret.py                      # Encryption algorithm for website security
-│   ├── decision.py                    # Module for bot decision-making
-│   └── requirements.txt               # File listing Python libraries used in the project
+├── Backend/                          # Backend Directory
+│   ├── data/                         # Data processing directory
+│   │   ├── input/                    # Input data for training models
+│   │   │   ├── gram.json
+│   │   │   └── intents.json
+│   │   └── output/                   # Model outputs
+│   │       ├── Transformer Based Model/
+│   │       │   ├── Rasika.model
+│   │       │   ├── classes.pkl
+│   │       │   └── words.pkl
+│   │       └── gram.model
+│   ├── trainer/                      # Model training modules
+│   │   ├── __init__.py
+│   │   ├── trainer.py
+│   │   └── gram.py
+│   ├── app.py                        # Flask App entry point
+│   ├── imports.py                    # Import all backend libraries
+│   ├── secret.py                     # Encryption algorithms
+│   ├── decision.py                   # Bot decision-making logic
+│   └── requirements.txt              # Backend dependencies
 |
-├── Frontend/                          # Frontend directory
-│   ├── public/                        # Public assets directory
-│   │   ├── index.html                 # Main HTML template
-│   │   └── images/                    # Directory for images
-│   │       ├── user.jpg               # User image
-│   │       └── bot.jpg                # Bot image
-│   ├── src/                           # Source code directory
-│   │   ├── components/                # Directory for React components
-│   │   │   ├── Chat.js                # Chat component
-│   │   │   └── ...                    # Other components
-│   │   ├── App.js                     # Main App component
-│   │   ├── index.js                   # Entry point for React app
-│   │   └── styles/                    # Directory for CSS styles or SCSS
-│   │       └── style.css              # CSS styles file
-│   ├── .gitignore                     # File containing names of files/folders ignored by git
-│   ├── package.json                   # npm package configuration
-│   ├── package-lock.json              # npm package lock file
-│   └── README.md                      # Frontend README
-├── README.txt                         # Project README
-├── Project.md                         # Project Directory Structure documentation
-└── License.md                         # License instructions for the project
+├── Frontend/                         # Advanced Frontend Directory
+│   ├── public/                       # Public static files
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── images/
+│   │       ├── user.jpg
+│   │       └── bot.jpg
+│   ├── src/                          # Frontend source code
+│   │   ├── assets/                   # Images, icons, fonts
+│   │   │   ├── images/
+│   │   │   └── icons/
+│   │   ├── components/               # Reusable UI components
+│   │   │   ├── Chat/
+│   │   │   │   ├── Chat.jsx
+│   │   │   │   ├── Chat.module.css
+│   │   │   │   └── Chat.test.jsx
+│   │   │   ├── Header/
+│   │   │   ├── Footer/
+│   │   │   └── UI/                   # Buttons, Loaders, Cards, Modals
+│   │   ├── layouts/                  # Page layouts with header/sidebar
+│   │   ├── pages/                    # Route-based pages
+│   │   │   ├── Home/
+│   │   │   ├── About/
+│   │   │   └── NotFound/
+│   │   ├── hooks/                    # Custom React hooks
+│   │   ├── context/                  # Context API Providers
+│   │   ├── services/                 # API service handlers
+│   │   ├── utils/                    # Utility functions
+│   │   ├── router/                   # Router configuration
+│   │   │   └── index.jsx
+│   │   ├── store/                    # State management setup (Redux/Zustand)
+│   │   ├── i18n/                     # Internationalization (optional)
+│   │   ├── App.jsx
+│   │   ├── main.jsx                  # Main entry point (Vite)
+│   │   └── styles/                   # Global styles and variables
+│   │       ├── variables.css
+│   │       └── globals.css
+│   ├── .env                          # Environment configurations
+│   ├── .gitignore
+│   ├── package.json                  # Frontend dependencies
+│   ├── package-lock.json
+│   ├── vite.config.js                # Vite configuration (if used)
+│   └── README.md                     # Frontend documentation
+|
+├── README.txt                        # Main Project README
+├── Project.md                        # 📖 Project Directory Documentation (This file)
+└── License.md                        # License details
+```
